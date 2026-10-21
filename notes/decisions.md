@@ -44,7 +44,7 @@ What I checked: every ETO input, whether it has rows at country level, whether t
 | Advanced packaging | Eleven narrow **tool** inputs for advanced packaging, 2025. There is no share of advanced-packaging *services or capacity* (e.g. CoWoS). The stage-level ATP figure covers all packaging, by site, for 2022. | **Tools only** |
 | (Out of scope) Raw minerals | Not in ETO at all. | n/a |
 
-## 2026-10-21 07:15 · Proposed second sources, one per gap · DRAFT: needs Andrew's OK
+## 2026-10-21 07:10 · Proposed second sources, one per gap · DRAFT: needs Andrew's OK
 
 I have **not** used any of these. Each is free to read. Note: I saw each source's headline numbers while searching for it, before writing the rules below.
 
@@ -55,7 +55,7 @@ I have **not** used any of these. Each is free to read. Note: I saw each source'
 | Advanced packaging | DIGITIMES Research, "Global capacity of CoWoS packaging" (2024), https://digitimes.com/news/a20240829RS400.html | Forecast for end-2025 monthly CoWoS and CoWoS-like capacity: TSMC >65k wafers, ASE/SPIL + Amkor 17k combined. | A **forecast**, and the full report is **paywalled** (the free summary gives those two numbers). A share would have to be **derived** by us from two figures, and it leaves out Intel and Samsung. This is the weakest of the three. If we can't find a better free source, we could keep the step qualitative and say so. |
 | Materials (most have no numbers) | CSET, *The Semiconductor Supply Chain: Assessing National Competitiveness* (Jan 2021), https://cset.georgetown.edu/publication/the-semiconductor-supply-chain/ | 2019, the same underlying source as ETO's materials rows. | ETO's notes say it left these blank because the report splits them into sub-types. Using the sub-type shares would be our own step on top of ETO. **OPEN QUESTION:** fill these in from the report, or leave materials partly unscreened and say so? |
 
-## 2026-10-21 07:20 · Draft mapping of ETO inputs onto the five plan steps · DRAFT: needs Andrew's OK
+## 2026-10-21 07:10 · Draft mapping of ETO inputs onto the five plan steps · DRAFT: needs Andrew's OK
 
 The full table, covering all 126 ETO inputs, is in `notes/eto_step_mapping.csv`. The script reads that file, so it is the working copy. A summary follows the rules below.
 
@@ -68,7 +68,7 @@ Judgment calls in the draft:
 5. **Packaging materials** (substrates, lead frames and so on) go under *materials*. In practice almost none of them have numbers (see the gap check).
 6. **Broad categories are not screened.** Examples are "Lithography tools", "Deposition tools" and "Etch and clean tools", which are sums of narrower inputs. Only the narrowest inputs are screened. This follows the brief ("screen EUV tools, not equipment as a whole") and avoids counting the same chokepoint twice.
 
-## 2026-10-21 07:20 · Screening rules (set before seeing any results) · DRAFT: needs Andrew's OK with the mapping
+## 2026-10-21 07:10 · Screening rules (set before seeing any results) · DRAFT: needs Andrew's OK with the mapping
 
 1. **What counts as a share:** ETO's own **country-level** rows (`provider_type == country` in `provision.csv`), used as given. I do not add up firm shares myself.
 2. **What gets screened:** inputs marked `screened = yes` in `notes/eto_step_mapping.csv`. These are the narrowest in-scope inputs.
@@ -101,7 +101,7 @@ Judgment calls in the draft:
 
 ---
 
-## 2026-10-21 07:31 · Andrew's decisions on the drafts above · FINAL
+## 2026-10-21 07:15 · Andrew's decisions on the drafts above · FINAL
 
 Andrew answered in chat:
 
@@ -111,7 +111,7 @@ Andrew answered in chat:
 4. **Tiny markets are kept but flagged:** inputs with a world market under $100 million stay in the screen and are flagged in the results.
 5. **The rest of the mapping is approved as drafted.** `notes/eto_step_mapping.csv` is now final. The status of its rows is FINAL.
 
-## 2026-10-21 07:32 · Rules for the second sources (set before extracting their numbers) · FINAL
+## 2026-10-21 07:15 · Rules for the second sources (set before extracting their numbers) · FINAL
 
 I saw the HBM and fab headline numbers while searching for the sources (logged above). I have not opened the CSET materials tables yet.
 
