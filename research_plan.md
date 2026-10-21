@@ -41,7 +41,7 @@ To compare past cases with today fairly, we describe both with the same six feat
 | State control | Can the government direct the firms that hold the supply? |
 
 - [ ] Agree the six variables and the questions above
-- [ ] Write one line on what low, medium and high mean for each variable
+- [x] Write one line on what low, medium and high mean for each variable
 - [ ] Agree how you'll settle disagreements in scoring
 
 ## Step 3 · Score the past cases (about 3 hours)
