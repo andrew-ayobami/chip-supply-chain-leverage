@@ -36,7 +36,7 @@ To compare past cases with today fairly, we describe both with the same six feat
 | Concentration | What share of the supply the target needs from outside does the supplier (or group) hold? |
 | Substitutability | Can the target switch to another supplier or redesign around it? |
 | Time to replace | How long would the target need to build its own supply? |
-| Cohesion | Would the supplier (or group) stick with the policy under pressure? |
+| Cohesion | How many separate actors must hold the line to keep the supplier's share? (counted, not judged; changed 21 Oct, see notes/decisions.md) |
 | Dependence on the target | How much does the supplier rely on the target, for security or markets? |
 | State control | Can the government direct the firms that hold the supply? |
 
@@ -58,7 +58,7 @@ Credibility is a prediction, and the only evidence we have is past attempts with
 
 - [ ] Gather two or three good sources per case
 - [ ] Write a three-line summary per case: what the supplier wanted, how the target responded, how long the leverage lasted
-- [ ] Score each case on the six variables, each of you separately
+- [ ] Score each case on the six variables, each of you separately (reading is split, 3 cases for Andrew and 2 for Ayodele, but both score all five)
 - [ ] Compare scores, settle differences, and record how often you agreed
 - [ ] Record each case's outcome: worked, partly worked, or backfired
 - [ ] Write three or four rules of thumb from the pattern, e.g. "threats backfire when the target can replace supply within a few years"
@@ -70,7 +70,7 @@ This gives the coalition's leverage profile: where its hold is strong, where it 
 
 - [ ] Make one row per chokepoint (country and step), e.g. Netherlands–EUV lithography, Korea–HBM memory
 - [ ] Add the share, year and source for each row
-- [ ] Score each row on the six variables with the US as the target, each of you separately
+- [ ] Score each row on the six variables with the US as the target, each of you separately (both score a shared 10 rows for the agreement figure, and the other 25 are split; see the `assigned_to` column)
 - [ ] Compare scores, settle differences, and record how often you agreed
 - [ ] Write a short profile: where the leverage is strongest and weakest, and which past case it most resembles
 

@@ -97,6 +97,23 @@ def test_mismatched_rows_are_rejected(tmp_path):
         cs.pair_scores(a, b, ["case"])
 
 
+def test_only_rows_assigned_to_both_are_compared(tmp_path):
+    for name in ("cases_andrew.csv", "cases_ayodele.csv"):
+        lines = (FIXTURES / name).read_text().splitlines()
+        lines[0] = lines[0].replace("case_id,", "case_id,assigned_to,")
+        lines[1:] = [l.replace(",", ",ayodele," if l.startswith("T3") else ",both,", 1) for l in lines[1:]]
+        (tmp_path / name).write_text("\n".join(lines) + "\n")
+    a = cs.load_sheet(tmp_path / "cases_andrew.csv", "case_id")
+    b = cs.load_sheet(tmp_path / "cases_ayodele.csv", "case_id")
+    pairs, unscored = cs.pair_scores(a, b, ["case"])
+    s = cs.agreement_stats(pairs)
+    assert set(pairs["id"]) == {"T1", "T2"}  # T3 is Ayodele's alone
+    assert unscored == 0
+    assert (s["n"], s["exact"], s["one_apart"], s["two_apart"]) == (12, 10, 1, 1)
+    text, _ = cs.report("cases", tmp_path)
+    assert "not compared: 1" in text
+
+
 def test_full_report(tmp_path):
     for name in ("cases_andrew.csv", "cases_ayodele.csv"):
         (tmp_path / name).write_text((FIXTURES / name).read_text())

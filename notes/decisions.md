@@ -168,3 +168,23 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
   - C38 Singapore, wafer level stud bonders
 - **Row IDs:** IDs were assigned before the drop, so the kept rows keep their original IDs, and gaps in the numbering mark the dropped rows.
 - **Effect on rows to score:** Germany and Singapore now have one row each (mask aligners; auto ball bonders for IC). Austria has 2 and Japan 21.
+
+## 2026-10-21 15:29 · Cohesion made countable; scoring split; sharing · FINAL (Andrew's decisions in chat)
+
+- **Cohesion is redefined as a count, not a judgment.** Andrew wanted to drop cohesion as too subjective. I argued for keeping it: it is the variable closest to the hypothesis ("threats split the coalition"), and two cases (CIPEC and the tin council) are there because the group failed to hold. Andrew chose the middle option.
+  - **New question:** "How many separate actors must hold the line to keep the supplier's share?" 1 actor = high, 2–3 = medium, 4 or more = low.
+  - **Who the actors are:** member countries for a group, and firms for a single country.
+  - **How to count:** count from the largest down until the actors together hold at least 80% of the supplier's share. Use shares at the start of the episode.
+  - **Why counting fewer actors as high cohesion is reasonable:** the standard cartel finding is that groups with fewer members hold together better. The 80% cut-off leaves out fringe players that are too small to undercut the rest.
+  - **Draft status:** the anchors are still a draft for approval.
+- **Circularity guard added to the anchors:** past cases are scored as they stood at the **start** of the episode, never from how it ended, because the outcome is what the scores are meant to explain.
+- **Scoring split.** Andrew first proposed splitting the cases (3 for him and 2 for Ayodele, with Andrew cross-checking). I pointed out that this removes the agreement figure, which is the plan's main defence against subjectivity. Andrew chose instead:
+  - **Past cases:** the reading and summaries are split (3 and 2), but **both score all 5**. Known limit: the scores share the same summaries, so the agreement figure measures whether the same facts are read the same way.
+  - **Chokepoints:** a shared set of **10 rows** that both score, chosen at random, one per country plus 2 more, with seed 20261021 in `src/make_scoring_sheets.py`. The other **25 rows alternate**, giving Andrew 13 and Ayodele 12. Who scores each row is in an `assigned_to` column on the sheets. `compare_scores.py` compares only the shared rows and reports how many rows were scored by one person.
+  - **Cross-check:** each of them reads over the other's single-scored rows and summaries after the agreement figure is worked out, and flagged items are settled by the disagreement rule.
+  - **The random draw left the HBM row (C39, South Korea) single-scored.** Swapping it into the shared set by hand would be a manual change and would need logging.
+- **Plan text updated to match:** the cohesion question in Step 2, and the "each of you separately" tasks in Steps 3 and 4. No tasks were ticked.
+- **Blind scoring with a shared repo:** score offline and don't commit or push a sheet until both are done, because GitHub's web editor commits at once. This is written into `notes/disagreement_rule.md`.
+- **Sharing:** Andrew chose a **private GitHub repo** with Ayodele as a collaborator.
+  - `winget` was blocked from this sandboxed shell. Instead, GitHub CLI **v2.102.0** (released 30 Sep 2026) was downloaded from the official `cli/cli` releases page, checked against GitHub's published SHA-256 checksum, and unpacked to `C:\Users\Hp\tools\gh-2.102.0`. Nothing was installed system-wide and PATH was not changed.
+  - I chose v2.102.0 rather than v2.102.1, which was released only a day earlier, as a supply-chain precaution.

@@ -16,6 +16,11 @@ VARIABLES = ["concentration", "substitutability", "time_to_replace",
              "cohesion", "dependence_on_target", "state_control"]
 TAIL = ["evidence", "sources"]
 
+# Who scores which chokepoint row (Andrew, 2026-10-21): a shared set both score, for the
+# agreement figure; the rest split. Fixed seed so the draw can be repeated.
+SHARED_ROWS = 10
+SEED = 20261021
+
 # Cases from research_plan.md, Step 3. "target" is the side the leverage was aimed at
 # (draft wording; Andrew and Ayodele to confirm before scoring).
 CASES = [
@@ -30,6 +35,7 @@ CASES = [
 
 def cases_sheet():
     df = pd.DataFrame(CASES, columns=["case_id", "case", "who_used_leverage", "target"])
+    df.insert(1, "assigned_to", "both")  # reading is split; both score every case
     return add_blank_score_columns(df)
 
 
@@ -37,7 +43,25 @@ def chokepoints_sheet():
     rows = pd.read_csv(CHOKEPOINT_ROWS)
     df = rows[["row_id", "country", "step", "input", "share", "year"]].copy()
     df.insert(df.columns.get_loc("year") + 1, "target", "United States")
+    df.insert(1, "assigned_to", assign_rows(df))
     return add_blank_score_columns(df)
+
+
+def assign_rows(df):
+    """One random row per country plus random top-ups make the shared set; the rest alternate."""
+    shared = set(df.groupby("country").sample(n=1, random_state=SEED).row_id)
+    if len(shared) > SHARED_ROWS:
+        raise ValueError(f"{len(shared)} countries but only {SHARED_ROWS} shared rows")
+    rest = df[~df.row_id.isin(shared)]
+    shared |= set(rest.sample(n=SHARED_ROWS - len(shared), random_state=SEED).row_id)
+    out, turn = [], 0
+    for row_id in df.row_id:
+        if row_id in shared:
+            out.append("both")
+        else:
+            out.append(PEOPLE[turn % 2])
+            turn += 1
+    return out
 
 
 def add_blank_score_columns(df):

@@ -42,13 +42,22 @@ def load_sheet(path, id_col):
     return df.set_index(id_col)
 
 
+def shared_ids(sheet):
+    """Rows both people are meant to score: assigned_to == 'both', or every row if there is no such column."""
+    if "assigned_to" not in sheet.columns:
+        return list(sheet.index)
+    return list(sheet.index[sheet["assigned_to"].str.strip().str.lower() == "both"])
+
+
 def pair_scores(a, b, labels):
-    """Long table of (id, variable) pairs scored by both people, as 0/1/2."""
+    """Long table of (id, variable) pairs on shared rows scored by both people, as 0/1/2."""
     if set(a.index) != set(b.index):
         raise ValueError(f"the two sheets have different rows: only in first {sorted(set(a.index) - set(b.index))}, "
                          f"only in second {sorted(set(b.index) - set(a.index))}")
+    if set(shared_ids(a)) != set(shared_ids(b)):
+        raise ValueError("the two sheets disagree on which rows are assigned_to 'both'")
     rows, unscored = [], 0
-    for i in a.index:
+    for i in shared_ids(a):
         for var in VARIABLES:
             x, y = a.at[i, var], b.at[i, var]
             if not x or not y:
@@ -115,9 +124,11 @@ def report(kind, scoring_dir):
     s = agreement_stats(pairs)
     dis = disagreements(pairs)
 
+    single = len(a) - len(shared_ids(a))
     lines = [f"# Scoring agreement: {kind}", "",
              f"- Scores compared: {s['n']} (row and variable pairs scored by both of you)",
-             f"- Not compared because at least one of you left it blank: {unscored}",
+             f"- Rows scored by only one of you by design (assigned_to is not 'both'), not compared: {single}",
+             f"- Shared-row scores not compared because at least one of you left them blank: {unscored}",
              f"- **Exact agreement:** {s['exact']} of {s['n']} ({pct(s['exact'], s['n'])})",
              f"- **One level apart:** {s['one_apart']} ({pct(s['one_apart'], s['n'])})",
              f"- **Two levels apart (low vs high):** {s['two_apart']} ({pct(s['two_apart'], s['n'])})",
