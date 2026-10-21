@@ -98,3 +98,25 @@ Judgment calls in the draft:
 | leading-edge fabrication | (none in ETO) | Proposed second source, see above | pending |
 | HBM memory | (none in ETO) | Proposed second source, see above | pending |
 | advanced packaging | (none in ETO) | Proposed second source, see above | pending |
+
+---
+
+## 2026-10-21 07:31 · Andrew's decisions on the drafts above · FINAL
+
+Andrew answered in chat:
+
+1. **Advanced-packaging tools count as manufacturing equipment** (the draft). So the *advanced packaging* step means advanced-packaging capacity only (CoWoS-class).
+2. **Second sources approved:** HBM from TrendForce (2025), leading-edge fabrication from SIA/BCG (2024 report, 2022 data), and the materials ETO leaves blank from the CSET 2021 report (2019 data).
+3. **The DIGITIMES source for advanced packaging is not approved.** The advanced packaging step stays **qualitative**: there is no share and no screen, and this is stated as a limit. (From what we know, TSMC, a Taiwan firm, holds most CoWoS-class capacity, but we have no free, dated, citable share for it.)
+4. **Tiny markets are kept but flagged:** inputs with a world market under $100 million stay in the screen and are flagged in the results.
+5. **The rest of the mapping is approved as drafted.** `notes/eto_step_mapping.csv` is now final. The status of its rows is FINAL.
+
+## 2026-10-21 07:32 · Rules for the second sources (set before extracting their numbers) · FINAL
+
+I saw the HBM and fab headline numbers while searching for the sources (logged above). I have not opened the CSET materials tables yet.
+
+1. **HBM memory** (one input, "HBM memory"): TrendForce's firm shares are added up by **headquarters country**. SK hynix and Samsung are South Korea, Micron is the US. Year 2025, labelled a projection. Basis: HQ, the same as ETO.
+2. **Leading-edge fabrication** (one input, "Leading-edge logic fabrication (<10nm capacity)"): the country shares are used as SIA/BCG report them. Year 2022. Basis: **site location**, which differs from ETO and is flagged on every row. If the PDF figures differ from the press coverage, the PDF wins.
+3. **Materials from CSET 2021:** only for materials where ETO has no numbers. I use the report's own country-level figures, as given, at the narrowest level the report gives. If it splits a material into sub-types (for example ArF and EUV photoresists), each sub-type is screened as its own input, which matches rule 2 of the screening rules. I don't build country shares from firm shares. Year 2019, with the source given as the report and the page or table. If the report gives no country figure for a material, it stays in the "could not screen" table.
+4. Second-source rows go through the same thresholds and the same US/China and Taiwan rules as ETO rows.
+5. **Raw copies:** each source's original file goes in its own folder under `data/raw/`. For any file whose licence doesn't clearly allow sharing, that folder is gitignored and the citation and URL are logged here instead.
