@@ -162,6 +162,20 @@ def country_set_md(screens, cns):
     return "\n".join(lines) + "\n"
 
 
+def step4_rows_md(kept, dropped):
+    lines = ["", "## Row list for Step 4", "",
+             f"`chokepoint_rows.csv` has {len(kept)} rows. The {len(dropped)} rows for inputs with a world market "
+             f"under ${SMALL_MARKET_MUSD}m were dropped from Step 4 scoring (Andrew's decision, made before any "
+             "scoring). They still count in the country set above, and every country keeps at least one row. "
+             "Dropped rows are in `chokepoint_rows_dropped_small_markets.csv`.", "",
+             "| Row | Country | Input | Share | Year | World market |", "| --- | --- | --- | --- | --- | --- |"]
+    lines += [f"| {r.row_id} | {r.country} | {r.input} | {r.share:g}% | {r.year} | {r.global_market_size} |"
+              for r in dropped.itertuples()]
+    lines += ["", "| Country | Rows kept for Step 4 |", "| --- | --- |"]
+    lines += [f"| {c} | {n} |" for c, n in kept.groupby("country").size().items()]
+    return "\n".join(lines) + "\n"
+
+
 def main():
     PROCESSED.mkdir(exist_ok=True)
     RESULTS.mkdir(exist_ok=True)
@@ -179,11 +193,14 @@ def main():
     rows = screens[MAIN_THRESHOLD]
     rows = rows[rows.bargaining_party == "no"].drop(columns="bargaining_party")
     rows = rows.sort_values(["country", "step", "input"]).reset_index(drop=True)
-    rows.insert(0, "row_id", [f"C{i + 1:02d}" for i in range(len(rows))])
-    rows.to_csv(RESULTS / "chokepoint_rows.csv", index=False)
+    rows.insert(0, "row_id", [f"C{i + 1:02d}" for i in range(len(rows))])  # ids fixed before the drop
+    small = rows.small_market == "yes"  # dropped from Step 4 (Andrew, 2026-10-21, before any scoring)
+    rows[~small].to_csv(RESULTS / "chokepoint_rows.csv", index=False)
+    rows[small].to_csv(RESULTS / "chokepoint_rows_dropped_small_markets.csv", index=False)
 
-    (RESULTS / "country_set.md").write_text(country_set_md(screens, cns), encoding="utf-8")
-    print(f"shares: {len(shares)} rows; chokepoint rows: {len(rows)}")
+    text = country_set_md(screens, cns) + step4_rows_md(rows[~small], rows[small])
+    (RESULTS / "country_set.md").write_text(text, encoding="utf-8")
+    print(f"shares: {len(shares)} rows; chokepoint rows: {(~small).sum()} kept, {small.sum()} small-market dropped")
     for t in THRESHOLDS:
         print(t, sorted(set(screens[t][screens[t].bargaining_party == "no"].country)))
 

@@ -152,3 +152,19 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
 - **Blank cells:** a cell left blank by either person is not compared, and the report shows how many were skipped, so gaps are visible rather than silently dropped.
 - **Agreement is always computed on the original personal sheets.** Settled scores go in a separate `scoring/*_final.csv` (see the disagreement rule).
 - **Tests use made-up sheets** in `tests/fixtures/` only, marked as invented. `scoring/` holds no scores.
+
+## 2026-10-21 08:15 · Small-market rows dropped from Step 4 scoring · FINAL (Andrew, before any scoring)
+
+- **Decision:** Andrew decided in chat to drop the 7 chokepoint rows whose input has a world market **under $100 million** from the Step 4 row list. This brings `results/chokepoint_rows.csv` and both `scoring/chokepoints_*.csv` sheets from 42 rows to **35**.
+- **Why:** the tiny markets give little real leverage, and 42 rows meant 252 judgments per person in about 1.5 hours. Andrew saw the 7 rows listed before deciding.
+- **Timing:** this was decided **after** the screen results were seen, but **before any scoring**. It changes the Step 4 row list only. The screen rules and the country set are unchanged. All 8 countries still pass at 40%, the small-market passes still count, and every country keeps at least one row to score. The 2 rows with no market size in their source (HBM and leading-edge fabrication) are clearly large markets and are kept.
+- **Dropped rows**, kept in `results/chokepoint_rows_dropped_small_markets.csv`:
+  - C01 Austria, imprint lithography
+  - C04 Germany, crystal-growing furnaces
+  - C05 Germany, manual wire bonders
+  - C10 Japan, direct write systems
+  - C36 Singapore, automatic wedge bonders
+  - C37 Singapore, integrated assembly tools
+  - C38 Singapore, wafer level stud bonders
+- **Row IDs:** IDs were assigned before the drop, so the kept rows keep their original IDs, and gaps in the numbering mark the dropped rows.
+- **Effect on rows to score:** Germany and Singapore now have one row each (mask aligners; auto ball bonders for IC). Austria has 2 and Japan 21.

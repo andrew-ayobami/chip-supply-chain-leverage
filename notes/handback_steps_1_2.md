@@ -40,9 +40,10 @@
 - **Against the expected set** (Netherlands, Japan, South Korea, Taiwan, Germany), all five are in, plus **Austria, Singapore and Sweden**.
   - Why: ETO's 2025 equipment data splits tools into narrow niches, and small specialist firms dominate some of them.
   - I haven't forced the result. Whether these three belong in a coalition story is your call.
-- **42 chokepoint rows:**
-  - 38 equipment, 2 materials, 1 HBM and 1 leading-edge fabrication.
-  - 7 of the 42 are flagged as small markets (under $100m). No country is in the set *only* because of small markets.
+- **35 chokepoint rows for Step 4.** The screen gave 42.
+  - After seeing the list, Andrew dropped the 7 small-market rows (under $100m) before any scoring (see `notes/decisions.md`, 08:15).
+  - The 35 rows are 31 equipment, 2 materials, 1 HBM and 1 leading-edge fabrication.
+  - The country set is unchanged, and every country keeps at least one row.
 - **US and China, for context:** the US passes on 27 inputs and China on 1 (miscellaneous dry etch tools, 61.1%).
 
 ## Choices I made, and why (details in `notes/decisions.md`)
@@ -53,7 +54,7 @@
 4. **"Various countries" and "Europe" can't pass**, since they aren't countries.
 5. **Four non-IC and discrete-device tool inputs are out of scope**, and core IP is out along with EDA. Andrew approved this.
 6. **Advanced-packaging tools count as equipment.** Andrew chose this. The advanced packaging step itself stays **qualitative**, because no approved source exists.
-7. **Small markets are kept but flagged.** Andrew chose this.
+7. **Small markets are kept but flagged in the screen.** Andrew chose this. Later, before any scoring, he dropped them from the Step 4 row list.
 8. **Raw files with unclear licences are gitignored:** the SIA/BCG PDF and the TrendForce web page. Their URLs and checksums are logged.
 9. **Kappa uses linear weights** (half credit for being one level apart). Quadratic weights would flatter agreement when there are only three levels.
 10. **The anchors' concentration cut-offs (25% and 60%) match the screen's thresholds.**
@@ -64,12 +65,7 @@
    - Neither ETO nor the CSET report gives country shares for photoresists, gases, wet chemicals, CMP and deposition materials, or any packaging material. That is 11 inputs in total.
    - Japan's hold here (ETO: "Japanese firms are the leading producers" of photoresists) is therefore missing from the rows.
    - Do you want a further source for photoresists, or should we state this as a limit?
-2. **42 rows is a lot to score in about 1.5 hours.** Each of you would make 252 judgments. Options:
-   - score all 42
-   - drop the 7 small-market rows
-   - score at country-and-step level instead
-
-   This should be decided **before** anyone scores. Changing it afterwards would be a rule change made after seeing results.
+2. **Settled: the 7 small-market rows were dropped from Step 4** (Andrew, 21 Oct, before any scoring), which leaves 35 rows.
 3. **Taiwan is in the set only because of the second source.**
    - Using ETO alone, Taiwan passes on nothing, because ETO's fab figure covers all nodes and is measured by site.
    - The Taiwan row is 2022 data, by fab location, while most other rows are 2025, by HQ.

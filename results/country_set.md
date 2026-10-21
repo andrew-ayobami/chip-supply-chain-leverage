@@ -63,3 +63,28 @@ ETO lists the countries but gives no share numbers. Not filled in (see decisions
 | materials | Lead frames | 2019 | China, Japan, Singapore |
 | materials | Substrates | 2019 | China, Japan, South Korea, Taiwan |
 | advanced packaging | Advanced-packaging capacity (e.g. CoWoS) | - | No approved source; step kept qualitative |
+
+## Row list for Step 4
+
+`chokepoint_rows.csv` has 35 rows. The 7 rows for inputs with a world market under $100m were dropped from Step 4 scoring (Andrew's decision, made before any scoring). They still count in the country set above, and every country keeps at least one row. Dropped rows are in `chokepoint_rows_dropped_small_markets.csv`.
+
+| Row | Country | Input | Share | Year | World market |
+| --- | --- | --- | --- | --- | --- |
+| C01 | Austria | Imprint lithography | 90.8% | 2025 | $40.1 million (2025) |
+| C04 | Germany | Crystal growing furnaces | 100% | 2022 | $44 million (2022) |
+| C05 | Germany | Manual wire bonders | 92.5% | 2025 | $5 million (2025) |
+| C10 | Japan | Direct write systems | 67.2% | 2025 | $32.7 million (2025) |
+| C36 | Singapore | Automatic wedge bonders | 83.7% | 2025 | $96.6 million (2025) |
+| C37 | Singapore | Integrated assembly tools | 100% | 2025 | $24.7 million (2025) |
+| C38 | Singapore | Wafer level stud bonders | 67.6% | 2025 | $21.6 million (2025) |
+
+| Country | Rows kept for Step 4 |
+| --- | --- |
+| Austria | 2 |
+| Germany | 1 |
+| Japan | 21 |
+| Netherlands | 6 |
+| Singapore | 1 |
+| South Korea | 2 |
+| Sweden | 1 |
+| Taiwan | 1 |
