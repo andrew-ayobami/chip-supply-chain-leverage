@@ -120,3 +120,24 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
 3. **Materials from CSET 2021:** only for materials where ETO has no numbers. I use the report's own country-level figures, as given, at the narrowest level the report gives. If it splits a material into sub-types (for example ArF and EUV photoresists), each sub-type is screened as its own input, which matches rule 2 of the screening rules. I don't build country shares from firm shares. Year 2019, with the source given as the report and the page or table. If the report gives no country figure for a material, it stays in the "could not screen" table.
 4. Second-source rows go through the same thresholds and the same US/China and Taiwan rules as ETO rows.
 5. **Raw copies:** each source's original file goes in its own folder under `data/raw/`. For any file whose licence doesn't clearly allow sharing, that folder is gitignored and the citation and URL are logged here instead.
+
+## 2026-10-21 07:20 · CSET 2021 report cannot fill the materials gap · FINAL (a fact, with an open question)
+
+- The approved CSET report gives **no country shares** for the materials ETO leaves blank. Its Table 1 (p. 8) says it "excludes fab materials besides wafers … and packaging materials" **"because of lack of data"**. Its materials table (Table 18, pp. 55–56) lists key firms and China's share only.
+- Following rule 3 of the second-source rules, these 11 inputs stay **unscreened** and are listed in `results/could_not_screen.csv`: photoresists, electronic gases, wet chemicals, CMP materials, deposition materials, substrates, lead frames, bond wires, ceramic packages, encapsulation resins and die attach materials.
+- This matters. ETO's own text says "Japanese firms are the leading producers" of photoresists, so Japan's materials hold is **under-counted** in the screen. Japan passes anyway on other inputs.
+- **OPEN QUESTION for Andrew:** approve a further source for photoresists (and perhaps gases), or leave materials partly unscreened and state it as a limit?
+- Housekeeping: I first downloaded the wrong CSET file (a one-page issue brief, `...Issue-Brief.pdf`). I deleted it before committing and replaced it with the full 98-page report (`...Issue-Brief-1.pdf`, SHA-256 319d942ba53468a6d5af97c9e46f6134fda2bf03958237e966bdc8c9cc8098ff). Flagging it because the brief says to ask before deleting files. It was my own uncommitted mistake, and the wrong file was never used.
+
+## 2026-10-21 07:25 · How the second-source figures were taken · FINAL
+
+- **HBM:** TrendForce's 2025 projection, quoted in the article: SK hynix 52.3%, Samsung 28.7%, Micron 19%. By HQ, that gives **South Korea 81.0%** and **United States 19.0%**. The firm rows are in `data/processed/second_source_figures.csv`.
+- **Leading-edge fabrication:** SIA/BCG (May 2024), Exhibit 6, p. 14, row "Logic: <10 nm", 2022. **Taiwan 69%, South Korea 31%, United States 0%**, by fab location. The chart's text labels can't be read reliably from the PDF text, so I matched them by position and then checked them against an image of the page. China, Japan, Europe and Other carry no label in that row, and I have not entered them.
+- **Licences and raw copies:**
+  - CSET report: "© 2021 … licensed under a Creative Commons Attribution-Non Commercial 4.0 International License". It is **committed** in `data/raw/cset_2021_semiconductor_supply_chain/`.
+  - SIA/BCG PDF: I found no licence statement, so it is **gitignored** (`data/raw/sia_bcg_2024_emerging_resilience/`). SHA-256 27040f69e8e036c927a193a8477e7d975a2ae35fb7e7cf37f759553fc14ff9cf. URL: https://www.semiconductors.org/wp-content/uploads/2024/05/Report_Emerging-Resilience-in-the-Semiconductor-Supply-Chain.pdf
+  - TrendForce article: a copyrighted web page, saved as HTML on 2026-10-21 and **gitignored** (`data/raw/trendforce_2025-08-18_hbm/`). SHA-256 2956a09d0282f88b7d4fb6364183b692791e78b99d3ca9de6dc28d2db80a1d2e.
+
+## 2026-10-21 07:27 · Results reporting: input counts per threshold · FINAL (how results are shown, not a rule change)
+
+- The **country** set is the same at 25%, 40% and 60%. To show what does change, `results/country_set.md` also gives each country's **number of inputs** passed at each threshold, and which inputs join or drop out. No screening rule was changed.

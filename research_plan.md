@@ -18,12 +18,12 @@ Step 5 lists and screens the asks, Step 6 sorts them, and Step 7 writes it up. T
 
 We select chokepoints first and let the countries follow, so the set comes from a stated rule rather than our own picks.
 
-- [ ] Download the data from the [ETO Supply Chain Explorer](https://eto.tech/tool-docs/chipexplorer) and note the year of each figure
-- [ ] List the supply chain steps in scope: manufacturing equipment, materials, leading-edge fabrication, HBM memory, advanced packaging. Out of scope: chip design and design software (US-held) and raw minerals (mostly China)
-- [ ] For each step, list the countries whose firms hold at least 40% of world supply
-- [ ] Remove the US and China, the parties the coalition would bargain with
-- [ ] Rerun the screen at 25% and 60%, and note who moves in or out
-- [ ] Write down the final country set (expected: Netherlands, Japan, South Korea, Taiwan, Germany)
+- [x] Download the data from the [ETO Supply Chain Explorer](https://eto.tech/tool-docs/chipexplorer) and note the year of each figure
+- [x] List the supply chain steps in scope: manufacturing equipment, materials, leading-edge fabrication, HBM memory, advanced packaging. Out of scope: chip design and design software (US-held) and raw minerals (mostly China)
+- [x] For each step, list the countries whose firms hold at least 40% of world supply
+- [x] Remove the US and China, the parties the coalition would bargain with
+- [x] Rerun the screen at 25% and 60%, and note who moves in or out
+- [x] Write down the final country set (expected: Netherlands, Japan, South Korea, Taiwan, Germany)
 
 Taiwan stays in if it passes the screen and is scored like any other country. We don't analyse whether it could join a coalition openly; that goes in the limits.
 

@@ -2,3 +2,8 @@ __pycache__/
 *.pyc
 .pytest_cache/
 .venv/
+
+# Second-source raw files whose licence does not clearly allow redistribution
+# (citation, URL and SHA-256 are logged in notes/decisions.md instead)
+data/raw/sia_bcg_2024_emerging_resilience/
+data/raw/trendforce_2025-08-18_hbm/
