@@ -1,7 +1,7 @@
 # Project brief: chip-supply-chain leverage for AI safety
 
 Andrew and Ayodele's project for the middle-powers hackathon on Mangrove, Track C (Diplomacy).
-Hackathon date and submission deadline: **[Andrew to fill in]**
+Hackathon date and submission deadline: **1 November 2026**
 
 The full plan is in `research_plan.md`. It is the source of truth for the steps and tasks.
 
