@@ -141,3 +141,14 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
 ## 2026-10-21 07:27 · Results reporting: input counts per threshold · FINAL (how results are shown, not a rule change)
 
 - The **country** set is the same at 25%, 40% and 60%. To show what does change, `results/country_set.md` also gives each country's **number of inputs** passed at each threshold, and which inputs join or drop out. No screening rule was changed.
+
+## 2026-10-21 07:35 · Step 2 set-up choices · FINAL unless Andrew changes them
+
+- **Anchors** (`notes/variable_anchors.md`) and the **disagreement rule** (`notes/disagreement_rule.md`) are **drafts** for Andrew and Ayodele to approve. The concentration cut-offs (25% and 60%) match the screen's robustness thresholds, so "medium" covers the band where the screen result itself would change.
+- **Targets on the cases sheet** (for example, "Copper-importing countries" for CIPEC) are my draft wording, based on the plan's case table. **Confirm them before scoring**, because every score depends on who the target is.
+- **Chokepoint sheet:** one row per line of `results/chokepoint_rows.csv` (42 rows), with share, year and target (United States) shown for reference. All six score cells, `evidence` and `sources` are empty.
+- **Kappa uses linear weights.** Being one level apart gets half credit, and low against high gets none. Linear rather than quadratic weights, because with only three levels quadratic weights give 75% credit for a one-level gap, which would flatter our agreement.
+- **The plain-language reading of kappa** uses the Landis and Koch (1977) bands: slight, fair, moderate, substantial, almost perfect. These are conventions, not tests.
+- **Blank cells:** a cell left blank by either person is not compared, and the report shows how many were skipped, so gaps are visible rather than silently dropped.
+- **Agreement is always computed on the original personal sheets.** Settled scores go in a separate `scoring/*_final.csv` (see the disagreement rule).
+- **Tests use made-up sheets** in `tests/fixtures/` only, marked as invented. `scoring/` holds no scores.

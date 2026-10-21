@@ -1,0 +1,4 @@
+case_id,case,concentration,substitutability,time_to_replace,cohesion,dependence_on_target,state_control,evidence,sources
+T1,Made-up case A,low,medium,high,low,medium,high,,
+T2,Made-up case B,high,high,medium,low,low,medium,,
+T3,Made-up case C,medium,low,low,high,high,,,
