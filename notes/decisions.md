@@ -188,3 +188,17 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
 - **Sharing:** Andrew chose a **private GitHub repo** with Ayodele as a collaborator.
   - `winget` was blocked from this sandboxed shell. Instead, GitHub CLI **v2.102.0** (released 30 Sep 2026) was downloaded from the official `cli/cli` releases page, checked against GitHub's published SHA-256 checksum, and unpacked to `C:\Users\Hp\tools\gh-2.102.0`. Nothing was installed system-wide and PATH was not changed.
   - I chose v2.102.0 rather than v2.102.1, which was released only a day earlier, as a supply-chain precaution.
+
+## 2026-10-31 05:28 · Scoring process changed because of time · FINAL (Andrew's decision in chat)
+
+- **Why:** the submission deadline turned out to be **08:00 on 1 November 2026**, not end of day, and there is no longer time for independent double-scoring.
+- **New process for past cases:** Andrew covers K1–K4 and Ayodele covers K5 (Japan–Korea).
+  - Claude drafts the summaries, scores and outcomes for K1–K4 (`notes/step3_case_drafts.md`, `notes/step3_draft_scores_claude.csv`).
+  - Andrew reviews them, changes any score he thinks is wrong, and is the **final judge**. He then fills in `scoring/cases_andrew.csv` himself.
+  - Claude also drafted the outcomes, rules of thumb and non-separating variables (`notes/step3_patterns_draft.md`).
+- **This overrides** hard rule 5 in CLAUDE.md ("do not score anything") and the double-scoring set-up in `notes/disagreement_rule.md`. On Andrew's explicit instruction, no disagreements will be settled, and the methodology will say so.
+- **Limits to state:**
+  - Each case has a single final scorer, so there is **no inter-rater agreement figure**.
+  - K1–K4 scores started as AI drafts.
+  - The drafter knew the outcomes, so there is a risk the scores were fitted to them.
+- **Outcome categories:** CIPEC (K2) doesn't fit "worked / partly worked / backfired" because it simply had no effect. It is drafted as "failed", and Andrew decides whether to keep that category.

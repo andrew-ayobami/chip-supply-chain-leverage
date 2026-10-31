@@ -1,11 +1,12 @@
 # Chip-supply-chain leverage for AI safety
 
-Andrew and Ayodele's project for the Middle Powers hackathon (Track C, Diplomacy). The submission deadline is 1 November 2026.
+Andrew and Ayodele's project for the Middle Powers hackathon (Track C, Diplomacy). The submission deadline is 08:00 on 1 November 2026.
 
 The question: which AI-safety asks could the countries that hold chip-supply-chain chokepoints (other than the US and China) credibly attach to their leverage?
 
 ## Start here (Step 3)
 
+0. [`notes/step3_case_drafts.md`](notes/step3_case_drafts.md) and [`notes/step3_patterns_draft.md`](notes/step3_patterns_draft.md): Claude's drafts of the case summaries, scores, outcomes and patterns, awaiting Andrew's review.
 1. [`notes/brief_for_ayodele_step3.md`](notes/brief_for_ayodele_step3.md): a short need-to-know brief for Step 3.
 2. [`notes/variable_anchors.md`](notes/variable_anchors.md): what low, medium and high mean for each of the six variables.
 3. [`notes/disagreement_rule.md`](notes/disagreement_rule.md): who scores what, and how disagreements are settled.
@@ -19,7 +20,7 @@ For the bigger picture:
 
 ## Rules for anyone working in this repo, including AI assistants
 
-- **Never fill in, suggest or change any score in `scoring/`.** The scores must be Andrew's and Ayodele's own independent judgments. How often they agree is part of the result, and that check means nothing if anyone else, or any tool, helps with the scores.
+- **Scores are Andrew's and Ayodele's to decide.** Because of time (deadline 08:00 on 1 Nov 2026), Claude drafted the K1–K4 case scores for Andrew to review, and Andrew has the final say on every score (see `notes/decisions.md`). No other tool or assistant should fill in or change anything in `scoring/`.
 - **Don't open the other person's scoring sheet** before both of you have finished. Score offline, and don't commit or push a sheet until both are done.
 - **Every number needs a year and a source.** Log every choice in `notes/decisions.md`, with the time and a one-line reason.
 - **Keep `data/raw/` untouched.** Work on copies in `data/processed/`.
