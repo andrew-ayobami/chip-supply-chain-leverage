@@ -208,3 +208,9 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
 - At Andrew's request, Claude drafted scores for the 13 rows with `assigned_to = andrew`, in `notes/step4_draft_scores_andrew_rows.md` and `.csv`. Andrew reviews them and has the final say. `scoring/` is untouched.
 - **Concentration and cohesion are mechanical.** Concentration comes from the ETO share. Cohesion is the number of firms needed to reach 80% of the country's share, from ETO firm rows (from TrendForce for HBM). For wafers, ETO has no firm shares, so the count of 2 firms (Shin-Etsu, SUMCO) is from general knowledge and flagged.
 - **The other four variables are judgments,** each with a one-line reason in the draft.
+
+## 2026-10-31 13:23 · Claude drafts K5 and Ayodele's 12 chokepoint rows · FINAL process (scores are drafts)
+
+- At Andrew's request (Ayodele ran short of time), Claude drafted K5 (Japan–Korea) in `notes/step3_case_drafts.md`, and Ayodele's 12 rows in `notes/step4_draft_scores_ayodele_rows.md` and `.csv`, for Andrew to compare with Ayodele's partial scores. Andrew has the final say.
+- **Time to replace now has a written rule** (in that file): low if a US or US-controlled maker already covers most of the need; medium if there's a minority US maker, or a mature technology a new entrant could manage in 2–5 years; high if there's no US maker and it's a lithography-class frontier system. Earlier drafts used the same reasoning without writing it down. Under the rule, C14 would move from high to medium if IMS is Intel-controlled.
+- **Housekeeping:** a failed command briefly emptied `notes/step3_case_drafts.md`. It was restored from the last commit before any edit. The working tree had been clean, so nothing was lost.

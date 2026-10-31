@@ -1,0 +1,13 @@
+row_id,country,input,share,year,concentration,substitutability,time_to_replace,cohesion,dependence_on_target,state_control,status
+C09,Japan,Dicing tools,95.0,2025,high,low,medium,high,high,medium,Claude draft - Andrew to review
+C12,Japan,Handlers and probers,41.5,2025,medium,medium,medium,medium,high,medium,Claude draft - Andrew to review
+C15,Japan,Memory test tools,63.7,2025,high,medium,medium,high,high,medium,Claude draft - Andrew to review
+C17,Japan,Photomask handlers,90.3,2025,high,low,medium,high,high,medium,Claude draft - Andrew to review
+C19,Japan,Resist processing tools,95.2,2025,high,low,high,high,high,medium,Claude draft - Andrew to review
+C21,Japan,Single wafer spin & spray systems (adv. pkg.),66.8,2025,high,medium,medium,medium,high,medium,Claude draft - Andrew to review
+C23,Japan,Tube-based diffusion and deposition tools,75.1,2025,high,medium,medium,medium,high,medium,Claude draft - Andrew to review
+C25,Japan,Wet etching and cleaning tools,51.9,2025,medium,medium,medium,medium,high,medium,Claude draft - Andrew to review
+C27,Japan,Photomasks,53.0,2019,medium,high,low,medium,high,medium,Claude draft - Andrew to review
+C30,Netherlands,ArF immersion (DUV) lithography tools,99.3,2025,high,low,high,high,high,medium,Claude draft - Andrew to review
+C32,Netherlands,EUV lithography tools,100.0,2025,high,low,high,high,high,medium,Claude draft - Andrew to review
+C34,Netherlands,Overlay metrology tools,47.9,2025,medium,high,low,high,high,medium,Claude draft - Andrew to review

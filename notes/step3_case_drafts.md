@@ -108,8 +108,30 @@
 
 ---
 
-## K5 · Japan's materials restrictions on Korea, 2019–2023 (Ayodele's case)
+## K5 · Japan's materials restrictions on Korea, 2019–2023 (target: South Korea)
 
-Ayodele writes the summary and scores. This is only a **draft outcome**, which Ayodele should confirm.
+Drafted by Claude at Andrew's request (31 Oct), because Ayodele ran out of time. Andrew has the final say.
 
-**Draft outcome: backfired ⚠.** In July 2019 Japan tightened export licensing for three chipmaking chemicals (hydrogen fluoride, photoresists and fluorinated polyimide). This followed Korean court rulings on wartime forced labour. Korea did not reverse the rulings while the controls were in force. It sped up local production and alternative sourcing, especially of hydrogen fluoride, and filed a WTO complaint. Japan lifted the measures in March 2023, after Korea's new government proposed its own compensation plan. Japanese suppliers lost Korean market share in the meantime.
+**Summary**
+- **What the supplier wanted:** in July 2019 Japan ended bulk export licences to Korea for three chipmaking chemicals: hydrogen fluoride, photoresists and fluorinated polyimide. In August it removed Korea from its trusted-trade "white list". Officially the reason was export-control concerns. It was widely read as pressure over the 2018 Korean court rulings that ordered Japanese firms to compensate wartime forced labourers.
+- **How the target responded:** Korea did not reverse the rulings. It filed a WTO complaint (September 2019), struck Japan off its own white list, and funded domestic production. Korean chipmakers switched much of their hydrogen fluoride to local and other suppliers.
+- **How long it lasted:** the controls stayed for almost four years. They were lifted in March 2023, after Korea's new government offered a plan in which a Korean foundation pays the forced-labour victims. Korea then withdrew its WTO case, and both sides restored each other's white-list status in mid-2023.
+
+**Draft outcome: backfired ⚠.**
+- **The case for "backfired":** Japanese hydrogen fluoride exports to Korea fell sharply and Korean domestic production rose (RIETI study), so Japanese suppliers lost a market. Korea did not concede while the controls were in force.
+- **The case for "partly worked":** the 2023 Korean compensation plan is roughly what Japan wanted, although it came with a change of government and US pressure for Japan–Korea security cooperation.
+- **Andrew to decide.**
+
+| Variable | Draft score | Evidence (one line) |
+| --- | --- | --- |
+| Concentration | high ⚠ | Japan supplied about 90% of the fluorinated polyimide and photoresist used by Korean chipmakers, and about 70% of their hydrogen fluoride. |
+| Substitutability | medium | Hydrogen fluoride could be sourced elsewhere or made locally after quality testing. Leading-edge photoresists had few non-Japanese makers. The RIETI study found substitution happened only for hydrogen fluoride. |
+| Time to replace | medium ⚠ | Korean hydrogen fluoride production scaled up within about 1–2 years, but resists and polyimide took longer. Boundary of low and medium for hydrogen fluoride. |
+| Cohesion | low ⚠ | Across the three chemicals, 4 or more Japanese firms were involved (for example Stella Chemifa and Morita for hydrogen fluoride; JSR, Tokyo Ohka and Shin-Etsu for resists). Per chemical it would be 2–3. |
+| Dependence on the target | high ⚠ | Korea was a major customer for these Japanese chemicals, because its chipmakers are among the world's biggest buyers. There was no security dependence on Korea. |
+| State control | medium ⚠ | METI's licensing powers were used, and in practice slowed exports, but the producers are private firms. One could argue high, because the government showed it could restrict exports at will. |
+
+**Sources**
+- Baker McKenzie Sanctions News, METI's 2019 licensing changes for exports to Korea: https://sanctionsnews.bakermckenzie.com/additional-restrictions-added-to-metis-licensing-policies-and-procedures-on-exports-of-controlled-items-to-the-republic-of-korea
+- Makioka and Zhang (RIETI, 2023), effects of the export controls on Japan–Korea trade and Korean production: https://www.rieti.go.jp/en/publications/summary/23030011.html
+- Korea Times, "Korea withdraws WTO complaint about Japan's export curb", 16 Mar 2023: https://www.koreatimes.co.kr/foreignaffairs/20230316/korea-withdraws-wto-complaint-about-japans-export-curb
