@@ -10,7 +10,7 @@ N13,DAO chip design,design_resource,,out of scope,chip design,no,2022,$188.7 bil
 N7,EDA and Core IP,process,,out of scope,EDA and core IP,no,2019,,Design software and design IP are out of scope in the plan
 N8,Crystal growing furnaces,tool_resource,,manufacturing equipment,front-end fab tools,yes,2022,$44 million (2022),Tool used in wafer fabrication
 N9,Crystal machining tools,tool_resource,,manufacturing equipment,front-end fab tools,yes,2025,$296 million (2025),Tool used in wafer fabrication
-N10,Wafer bonding and aligning tools,tool_resource,N109,manufacturing equipment,advanced-packaging tools,yes,2025,$665.7 million (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
+N10,Wafer bonding and aligning tools,tool_resource,N109,manufacturing equipment,advanced-packaging tools,yes,2025,$665.7 million (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
 N11,Wafer handlers,tool_resource,N59,manufacturing equipment,front-end fab tools,yes,2025,$2.9 billion (2025),Tool used in wafer fabrication
 N12,Photomask handlers,tool_resource,N59,manufacturing equipment,front-end fab tools,yes,2025,$131.9 million (2025),Tool used in wafer fabrication
 N16,Ion implantation,process,,,process step,no,,,"Process step, not a traded input; ETO gives no shares"
@@ -60,7 +60,7 @@ N59,Wafer and photomask handlers,tool_resource,,manufacturing equipment,aggregat
 N60,Process control tools,tool_resource,,manufacturing equipment,aggregate,no,2025,$15.7 billion (2025),Category that adds up narrower inputs; the narrower inputs are screened instead
 N61,Wafer inspection tools,tool_resource,N60,manufacturing equipment,aggregate,no,2019,,Category that adds up narrower inputs; the narrower inputs are screened instead
 N62,Photomask inspection and repair tools,tool_resource,N60,manufacturing equipment,front-end fab tools,yes,2025,$2.2 billion (2025),Tool used in wafer fabrication
-N63,Inspection tools (adv. pkg.),tool_resource,N109,manufacturing equipment,advanced-packaging tools,yes,2025,$1.2 billion (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
+N63,Inspection tools (adv. pkg.),tool_resource,N109,manufacturing equipment,advanced-packaging tools,yes,2025,$1.2 billion (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
 N64,Process monitoring tools,tool_resource,N60,manufacturing equipment,front-end fab tools,yes,2025,$49.9 million (2025),Tool used in wafer fabrication
 N65,"Film, stack, and shape metrology tools",tool_resource,N61,manufacturing equipment,front-end fab tools,yes,2025,$2.6 billion (2025),Tool used in wafer fabrication
 N66,Critical dimensions metrology tools,tool_resource,N61,manufacturing equipment,front-end fab tools,yes,2025,$1.2 billion (2025),Tool used in wafer fabrication
@@ -106,22 +106,22 @@ N98,Die attach materials,material_resource,N100,materials,packaging materials,ye
 N99,Finished logic chip,ultimate_output,,,process step,no,,,"Process step, not a traded input; ETO gives no shares"
 N100,Packaging materials,material_resource,,materials,aggregate,no,2019,,Category that adds up narrower inputs; the narrower inputs are screened instead
 N109,Fabrication tools (for advanced packaging),tool_resource,,manufacturing equipment,aggregate,no,2025,$6.2 billion (2025),Category that adds up narrower inputs; the narrower inputs are screened instead
-N101,Dry etching tools (adv. pkg.),tool_resource,N129,manufacturing equipment,advanced-packaging tools,yes,2025,$590.4 million (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
-N110,CVD tools (adv. pkg.),tool_resource,N128,manufacturing equipment,advanced-packaging tools,yes,2025,$418.8 million (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
-N111,PVD tools (adv. pkg.),tool_resource,N128,manufacturing equipment,advanced-packaging tools,yes,2025,$1.1 billion (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
-N112,Spin-on deposition tools (adv. pkg.),tool_resource,N128,manufacturing equipment,advanced-packaging tools,yes,2025,$4.7 million (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
-N113,ECP tools (adv. pkg.),tool_resource,N128,manufacturing equipment,advanced-packaging tools,yes,2025,$1.1 billion (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
-N122,Resist processing tools (adv. pkg.),tool_resource,N127,manufacturing equipment,advanced-packaging tools,yes,2025,$314.1 million (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
+N101,Dry etching tools (adv. pkg.),tool_resource,N129,manufacturing equipment,advanced-packaging tools,yes,2025,$590.4 million (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
+N110,CVD tools (adv. pkg.),tool_resource,N128,manufacturing equipment,advanced-packaging tools,yes,2025,$418.8 million (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
+N111,PVD tools (adv. pkg.),tool_resource,N128,manufacturing equipment,advanced-packaging tools,yes,2025,$1.1 billion (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
+N112,Spin-on deposition tools (adv. pkg.),tool_resource,N128,manufacturing equipment,advanced-packaging tools,yes,2025,$4.7 million (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
+N113,ECP tools (adv. pkg.),tool_resource,N128,manufacturing equipment,advanced-packaging tools,yes,2025,$1.1 billion (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
+N122,Resist processing tools (adv. pkg.),tool_resource,N127,manufacturing equipment,advanced-packaging tools,yes,2025,$314.1 million (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
 N117,Fabrication materials,process,,,aggregate,no,2022,$40 billion (2022),Category heading with no country rows of its own
 N118,Process control and handling,process,,,process step,no,,,"Process step, not a traded input; ETO gives no shares"
 N119,Assembly tools,tool_resource,,manufacturing equipment,aggregate,no,,,Category that adds up narrower inputs; the narrower inputs are screened instead
 N120,Test tools,tool_resource,,manufacturing equipment,aggregate,no,2025,$9.1 billion (2025),Category that adds up narrower inputs; the narrower inputs are screened instead
 N121,ATP materials,material_resource,,,aggregate,no,2022,$24 billion (2022),Category heading with no country rows of its own
 N123,Mask aligners,tool_resource,N19,manufacturing equipment,front-end fab tools,yes,2025,$177.3 million (2025),Tool used in wafer fabrication
-N124,CMP tools (adv. pkg.),tool_resource,N109,manufacturing equipment,advanced-packaging tools,yes,2025,$437.5 million (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
-N125,Single wafer spin & spray systems (adv. pkg.),tool_resource,N129,manufacturing equipment,advanced-packaging tools,yes,2025,$402 million (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
+N124,CMP tools (adv. pkg.),tool_resource,N109,manufacturing equipment,advanced-packaging tools,yes,2025,$437.5 million (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
+N125,Single wafer spin & spray systems (adv. pkg.),tool_resource,N129,manufacturing equipment,advanced-packaging tools,yes,2025,$402 million (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)
 N126,Process-specific fabrication materials,material_resource,,,aggregate,no,,,Category heading with no country rows of its own
 N127,Lithography tools (adv. pkg.),tool_resource,N109,manufacturing equipment,aggregate,no,2025,$347.9 million (2025),Category that adds up narrower inputs; the narrower inputs are screened instead
 N128,Deposition tools (adv. pkg.),tool_resource,N109,manufacturing equipment,aggregate,no,2025,$2.6 billion (2025),Category that adds up narrower inputs; the narrower inputs are screened instead
 N129,Etch and clean tools (adv. pkg.),tool_resource,N109,manufacturing equipment,aggregate,no,2025,$992.4 million (2025),Category that adds up narrower inputs; the narrower inputs are screened instead
-N130,Direct write systems (adv. pkg.),tool_resource,N127,manufacturing equipment,advanced-packaging tools,yes,2025,$33.7 million (2025),Tool used in advanced packaging. DECISION NEEDED: equipment (draft) or the advanced packaging step
+N130,Direct write systems (adv. pkg.),tool_resource,N127,manufacturing equipment,advanced-packaging tools,yes,2025,$33.7 million (2025),Tool used in advanced packaging; counted as equipment (Andrew's decision)

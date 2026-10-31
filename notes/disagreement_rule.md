@@ -1,4 +1,6 @@
-# Who scores what, and how disagreements are settled (DRAFT for Andrew and Ayodele to approve or change)
+# Who scores what, and how disagreements are settled
+
+**Planned but not used:** time ran out, so each case and chokepoint row ended up with one final scorer and no agreement figure (see the README).
 
 This applies to both kinds of sheet: past cases (Step 3) and today's chokepoints (Step 4).
 

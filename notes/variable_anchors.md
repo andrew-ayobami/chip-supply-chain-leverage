@@ -1,4 +1,4 @@
-# Variable anchors (DRAFT for Andrew and Ayodele to approve or change)
+# Variable anchors
 
 These are the meanings of low, medium and high for the six Step 2 variables. They need to work for a 1970s commodity case and for a 2026 chip input alike.
 

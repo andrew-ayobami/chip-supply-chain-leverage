@@ -1,10 +1,6 @@
-# Step 3 case drafts (Claude's DRAFT; Andrew reviews and has the final say)
+# Step 3: past cases
 
-**Status:** these are drafts written by Claude on 31 Oct 2026 for Andrew to check. Nothing here is final until Andrew accepts it and copies it into `scoring/cases_andrew.csv`. K5 (Japan–Korea) is Ayodele's; only a draft outcome is given for it.
-
-**How to read the scores:** they use the anchors in `notes/variable_anchors.md`, as things stood at the **start** of each episode. **Known weakness:** Claude knew how each episode ended while scoring, so there is a risk the outcome coloured the scores. This is worth stating in the method.
-
-**Confidence flags:** ⚠ marks a score that sits near a boundary or rests on approximate figures. Check these first.
+Each case has a 3-line summary, an outcome, scores on the six variables with one line of evidence each, and sources. Scores use the anchors in `notes/variable_anchors.md`, as things stood at the **start** of each episode. The final scores are in `scoring/cases_final.csv`.
 
 ---
 
@@ -15,15 +11,15 @@
 - **How the target responded:** the US kept supplying Israel. It then brokered the Egypt–Israel (January 1974) and Syria–Israel (May 1974) disengagements, and led consumer countries in founding the International Energy Agency (November 1974), which included an emergency oil-sharing system.
 - **How long it lasted:** the embargo on the US was lifted on 18 March 1974, after about 5 months, and on the Netherlands in July 1974. The price rise it helped trigger, roughly a fourfold increase, lasted much longer.
 
-**Draft outcome: partly worked.** It pulled the US into active Middle East diplomacy and produced a large, lasting price and revenue gain. It did not get withdrawal to the 1967 lines, and it prompted buyers to organise (the IEA) and diversify.
+**Outcome: partly worked.** It pulled the US into active Middle East diplomacy and produced a large, lasting price and revenue gain. It did not get withdrawal to the 1967 lines, and it prompted buyers to organise (the IEA) and diversify.
 
-| Variable | Draft score | Evidence (one line) |
+| Variable | Score | Evidence |
 | --- | --- | --- |
-| Concentration | medium ⚠ | Arab producers supplied roughly half of world oil exports, but a smaller share of US imports. This is borderline with high if world exports are used. |
+| Concentration | medium | Arab producers supplied roughly half of world oil exports, but a smaller share of US imports. This is borderline with high if world exports are used. |
 | Substitutability | medium | Non-Arab producers (Iran, Venezuela, Nigeria) and oil companies redirecting cargoes covered part of the gap, but spare capacity was thin. |
 | Time to replace | high | Building new US and allied supply (Alaska, North Sea) took until the late 1970s, and US import dependence kept rising. |
-| Cohesion | low ⚠ | 4 members (Saudi Arabia, Kuwait, Libya, Iraq) were needed to reach about 80% of Arab output. The figures are approximate, and Iraq did not join the production cuts. |
-| Dependence on the target | high ⚠ | Saudi Arabia relied on the US for security, even though the US took a small share of Arab oil exports. This follows the "take the higher of markets or security" rule, but it is group-level and mixed. |
+| Cohesion | low | 4 members (Saudi Arabia, Kuwait, Libya, Iraq) were needed to reach about 80% of Arab output. The figures are approximate, and Iraq did not join the production cuts. |
+| Dependence on the target | high | Saudi Arabia relied on the US for security, even though the US took a small share of Arab oil exports. This follows the "take the higher of markets or security" rule, but it is group-level and mixed. |
 | State control | high | Producer governments set production levels and ordered the cuts, even where foreign firms operated the fields. |
 
 **Sources**
@@ -40,14 +36,14 @@
 - **How the target responded:** importers barely needed to respond. Producers outside CIPEC (notably the US, Canada and Australia), recycled scrap copper, and substitution (for example, aluminium) kept supply flowing.
 - **How long it lasted:** CIPEC never gained real price power. Its one coordinated move, a 10% export cut agreed in November 1974 and later raised to 15%, did not lift prices in the 1975–76 slump. The council faded and was dissolved around 1990 (sources differ on the year).
 
-**Draft outcome: failed (no effect) ⚠.** This doesn't fit "worked / partly worked / backfired" well. It didn't backfire; it just never worked. **Andrew to decide:** add a "failed" category, or fold it into one of the three.
+**Outcome: failed.** It never worked, but it didn't backfire either, so "failed" was added as a fourth outcome category alongside worked, partly worked and backfired.
 
-| Variable | Draft score | Evidence (one line) |
+| Variable | Score | Evidence |
 | --- | --- | --- |
 | Concentration | medium | The founding members held a large share of world copper **exports**, but far less of world output, because the US and Canada were big producers outside the group. |
 | Substitutability | high | Copper was a commodity with many producers outside CIPEC, plus scrap and aluminium substitution. |
-| Time to replace | medium ⚠ | Importers could lean on the US, Canada and others, and new mines take several years. With substitutability high, this matters less. |
-| Cohesion | medium ⚠ | 3 members (Chile, Zambia, Zaire) made up about 80% of the group's output. The figures are approximate. |
+| Time to replace | medium | Importers could lean on the US, Canada and others, and new mines take several years. With substitutability high, this matters less. |
+| Cohesion | medium | 3 members (Chile, Zambia, Zaire) made up about 80% of the group's output. The figures are approximate. |
 | Dependence on the target | high | Copper was most of export earnings for Zambia and Chile, and the industrialised importers were the main markets. |
 | State control | medium | Nationalisation was under way when CIPEC was founded (Zaire 1967, Chile's "Chileanisation" from 1967, Zambia 1969), but was not complete in 1967. |
 
@@ -65,14 +61,14 @@
 - **How the target responded:** buyers used less tin (thinner tinplate, aluminium cans). The US, which was outside the agreement, sold from its strategic stockpile, and non-members such as Brazil expanded output.
 - **How long it lasted:** the support held prices up for about four years on borrowed money. On 24 October 1985 the buffer stock ran out of funds and defaulted on about £900 million, the London Metal Exchange suspended tin trading, and the price collapsed. The council was later wound up.
 
-**Draft outcome: backfired.** Prices ended far lower than before, the council collapsed into years of lawsuits, and producers lost the market share they had given up to non-members.
+**Outcome: backfired.** Prices ended far lower than before, the council collapsed into years of lawsuits, and producers lost the market share they had given up to non-members.
 
-| Variable | Draft score | Evidence (one line) |
+| Variable | Score | Evidence |
 | --- | --- | --- |
-| Concentration | medium ⚠ | The producer members (Malaysia, Indonesia, Thailand and others) held most but not all non-communist output. Bolivia and Brazil were outside. |
+| Concentration | medium | The producer members (Malaysia, Indonesia, Thailand and others) held most but not all non-communist output. Bolivia and Brazil were outside. |
 | Substitutability | high | Aluminium and plastics replaced tinplate in many uses, and non-member producers were expanding. |
-| Time to replace | low ⚠ | The US strategic stockpile and quick growth in Brazil's output met buyers' needs within a short time. |
-| Cohesion | medium ⚠ | 3 producers (Malaysia, Indonesia, Thailand) made up about 80% of members' output. The figures are approximate. |
+| Time to replace | medium | Buyers never had to build their own supply, because the market was in surplus. The US strategic stockpile was existing inventory, not new supply, and opening new mines takes several years. |
+| Cohesion | medium | 3 producers (Malaysia, Indonesia, Thailand) made up about 80% of members' output. The figures are approximate. |
 | Dependence on the target | medium | Tin was an important but not dominant export for the main members, for example Malaysia, whose exports had diversified. |
 | State control | medium | The council could set export quotas, and some producers were state-owned (for example, Indonesia's PT Timah), but much mining was private. |
 
@@ -90,46 +86,45 @@
 - **How the target responded:** Japan released the captain within weeks. It then diversified: it funded non-Chinese supply (Lynas in Australia), stockpiled, recycled and cut rare-earth use. It also joined the US and EU in a WTO case that China lost in 2014.
 - **How long it lasted:** shipments were back to normal by late November 2010, about two months later. Japan's dependence on China fell over the following years from about 90%.
 
-**Draft outcome: backfired ⚠.** The captain was released quickly, but the main lasting effect was that Japan diversified and China lost the WTO case. Note: whether China deliberately targeted Japan is disputed, because China had already cut its worldwide export quotas in mid-2010 (King and Armstrong, 2013).
+**Outcome: backfired.** The captain was released quickly, but the main lasting effect was that Japan diversified and China lost the WTO case. Note: whether China deliberately targeted Japan is disputed, because China had already cut its worldwide export quotas in mid-2010 (King and Armstrong, 2013).
 
-| Variable | Draft score | Evidence (one line) |
+| Variable | Score | Evidence |
 | --- | --- | --- |
 | Concentration | high | China produced the vast majority of the world's rare earths, and supplied about 90% of Japan's imports. |
 | Substitutability | low | No other producer operated at scale in 2010. Mountain Pass in the US was closed, and Lynas was not yet producing. |
 | Time to replace | medium | Lynas began shipping in 2012–13, and Japan cut its dependence substantially within a few years. |
-| Cohesion | low ⚠ | Chinese output was spread across many firms, including small and illegal miners. Under the count rule this scores low, even though the state controlled exports (see state control). |
-| Dependence on the target | high ⚠ | Japan was among the largest buyers of China's rare-earth exports, though rare earths were a tiny part of China's economy. |
+| Cohesion | low | Chinese output was spread across many firms, including small and illegal miners. Under the count rule this scores low, even though the state controlled exports (see state control). |
+| Dependence on the target | high | Japan took well over 30% of China's rare-earth exports, probably about half or more. It imported about 23,300 t from China in 2010, against roughly 35,000 t of Chinese exports in January–November 2010. This is a rough estimate from two sources that may count products differently. Rare earths were a tiny part of China's economy, so this market-share measure may overstate China's real dependence on Japan. |
 | State control | high | The government set export quotas and licences and controlled customs clearance. |
 
 **Sources**
 - A. King and S. Armstrong, "Did China really ban rare earth metals exports to Japan?", East Asia Forum, 18 Aug 2013: https://eastasiaforum.org/2013/08/18/did-china-really-ban-rare-earth-metals-exports-to-japan/
 - NATO StratCom COE, "Hybrid threats: 2010 Senkaku crisis" (timeline, including exports fully restored on 29 Nov): https://stratcomcoe.org/cuploads/pfiles/senkaku_crisis.pdf
 - Mining.com, "China-Japan rare earth spat curbs exports" (2010): https://www.mining.com/china-japan-rare-earth-spat-curbs-exports/
+- VOA, \"China rare earths exports up in 2010\" (China Commerce Ministry figures, about 35,000 t in January–November 2010): https://voa.pangea-cms.com/preview/en-US/a/china-rare-earths-exports-up-in-2010-114128034/168512.html
+- LAEX, \"Tokyo's strategy to counter China's rare earths grip\" (Japan imported about 23,300 t from China in 2010, 82% of its rare-earth imports): https://laex.in/daily-issue/tokyos-strategy-to-counter-chinas-rare-earths-grip/
 
 ---
 
 ## K5 · Japan's materials restrictions on Korea, 2019–2023 (target: South Korea)
-
-Drafted by Claude at Andrew's request (31 Oct), because Ayodele ran out of time. Andrew has the final say.
 
 **Summary**
 - **What the supplier wanted:** in July 2019 Japan ended bulk export licences to Korea for three chipmaking chemicals: hydrogen fluoride, photoresists and fluorinated polyimide. In August it removed Korea from its trusted-trade "white list". Officially the reason was export-control concerns. It was widely read as pressure over the 2018 Korean court rulings that ordered Japanese firms to compensate wartime forced labourers.
 - **How the target responded:** Korea did not reverse the rulings. It filed a WTO complaint (September 2019), struck Japan off its own white list, and funded domestic production. Korean chipmakers switched much of their hydrogen fluoride to local and other suppliers.
 - **How long it lasted:** the controls stayed for almost four years. They were lifted in March 2023, after Korea's new government offered a plan in which a Korean foundation pays the forced-labour victims. Korea then withdrew its WTO case, and both sides restored each other's white-list status in mid-2023.
 
-**Draft outcome: backfired ⚠.**
-- **The case for "backfired":** Japanese hydrogen fluoride exports to Korea fell sharply and Korean domestic production rose (RIETI study), so Japanese suppliers lost a market. Korea did not concede while the controls were in force.
-- **The case for "partly worked":** the 2023 Korean compensation plan is roughly what Japan wanted, although it came with a change of government and US pressure for Japan–Korea security cooperation.
-- **Andrew to decide.**
+**Outcome: backfired.**
+- **Why backfired:** Japanese hydrogen fluoride exports to Korea fell sharply and Korean domestic production rose (RIETI study), so Japanese suppliers lost a market. Korea did not concede while the controls were in force.
+- **Alternative reading (partly worked):** the 2023 Korean compensation plan is roughly what Japan wanted, although it came with a change of government and US pressure for Japan–Korea security cooperation.
 
-| Variable | Draft score | Evidence (one line) |
+| Variable | Score | Evidence |
 | --- | --- | --- |
-| Concentration | high ⚠ | Japan supplied about 90% of the fluorinated polyimide and photoresist used by Korean chipmakers, and about 70% of their hydrogen fluoride. |
+| Concentration | high | Japan supplied about 90% of the fluorinated polyimide and photoresist used by Korean chipmakers, and about 70% of their hydrogen fluoride. |
 | Substitutability | medium | Hydrogen fluoride could be sourced elsewhere or made locally after quality testing. Leading-edge photoresists had few non-Japanese makers. The RIETI study found substitution happened only for hydrogen fluoride. |
-| Time to replace | medium ⚠ | Korean hydrogen fluoride production scaled up within about 1–2 years, but resists and polyimide took longer. Boundary of low and medium for hydrogen fluoride. |
-| Cohesion | low ⚠ | Across the three chemicals, 4 or more Japanese firms were involved (for example Stella Chemifa and Morita for hydrogen fluoride; JSR, Tokyo Ohka and Shin-Etsu for resists). Per chemical it would be 2–3. |
-| Dependence on the target | high ⚠ | Korea was a major customer for these Japanese chemicals, because its chipmakers are among the world's biggest buyers. There was no security dependence on Korea. |
-| State control | medium ⚠ | METI's licensing powers were used, and in practice slowed exports, but the producers are private firms. One could argue high, because the government showed it could restrict exports at will. |
+| Time to replace | medium | Korean hydrogen fluoride production scaled up within about 1–2 years, but resists and polyimide took longer. Boundary of low and medium for hydrogen fluoride. |
+| Cohesion | low | Across the three chemicals, 4 or more Japanese firms were involved (for example Stella Chemifa and Morita for hydrogen fluoride; JSR, Tokyo Ohka and Shin-Etsu for resists). Per chemical it would be 2–3. |
+| Dependence on the target | high | Korea was a major customer for these Japanese chemicals, because its chipmakers are among the world's biggest buyers. There was no security dependence on Korea. |
+| State control | medium | METI's licensing powers were used, and in practice slowed exports, but the producers are private firms. One could argue high, because the government showed it could restrict exports at will. |
 
 **Sources**
 - Baker McKenzie Sanctions News, METI's 2019 licensing changes for exports to Korea: https://sanctionsnews.bakermckenzie.com/additional-restrictions-added-to-metis-licensing-policies-and-procedures-on-exports-of-controlled-items-to-the-republic-of-korea

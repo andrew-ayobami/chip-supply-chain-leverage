@@ -219,3 +219,12 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
 
 - At Andrew's request, Claude drafted the 10 `assigned_to = both` rows in `notes/step4_draft_scores_shared_rows.md` and `.csv`, using the same method and the same written time-to-replace rule. All 35 rows now have Claude drafts. Andrew has the final say on all of them.
 - **New flag:** C02 (IMS, possibly Intel-owned) and C35 (Kulicke & Soffa, US-incorporated) may in practice be US-controlled supply, so the HQ-based screen may overstate Austria's and Singapore's leverage.
+
+## 2026-10-31 18:56 · Final scores recorded; drafts cleaned up · FINAL (Andrew's decisions in chat)
+
+- **Final scores** are in `scoring/cases_final.csv` (5 cases) and `scoring/chokepoints_final.csv` (35 rows), each with evidence, sources and a `scored_by` column. Andrew's spreadsheet froze, so Claude wrote these sheets at his request. The blank per-person sheets were left untouched.
+- **Andrew accepted Claude's drafts with one change:** tin council (K3) time to replace goes from **low to medium**. The stockpile was inventory, not new supply, and buyers never had to build their own. All 35 chokepoint rows are as drafted.
+- **Outcome categories:** "failed" is used for CIPEC (K2) as a fourth category. K4 and K5 are recorded as backfired, with the alternative reading for K5 noted in the case file.
+- **K4 dependence evidence** now rests on sourced figures (Japan imported about 23,300 t from China in 2010, against about 35,000 t of Chinese exports in January–November 2010), which gives a rough share of more than half.
+- **Profile** comparison is now reproducible with `src/profile.py` (writes `results/profile_distances.csv`).
+- **"Draft" and review-status lines removed** from the case, chokepoint, anchors and profile notes at Andrew's request. This log keeps the full history of who drafted and who decided.
