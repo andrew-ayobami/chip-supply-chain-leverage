@@ -228,3 +228,13 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
 - **K4 dependence evidence** now rests on sourced figures (Japan imported about 23,300 t from China in 2010, against about 35,000 t of Chinese exports in January–November 2010), which gives a rough share of more than half.
 - **Profile** comparison is now reproducible with `src/profile.py` (writes `results/profile_distances.csv`).
 - **"Draft" and review-status lines removed** from the case, chokepoint, anchors and profile notes at Andrew's request. This log keeps the full history of who drafted and who decided.
+
+## 2026-10-31 19:00 · Outdated working files deleted; draft-named files renamed · FINAL (Andrew approved in chat)
+
+- **Deleted, with Andrew's OK:** the Step 3 brief for Ayodele, the disagreement rule, the four blank per-person scoring sheets, the four draft score CSVs, `src/compare_scores.py`, and its tests and made-up fixtures. They described the double-scoring plan, which wasn't used, or were superseded by `scoring/*_final.csv`. They remain in the git history.
+- **Renamed:**
+  - `step3_case_drafts.md` → `step3_cases.md`
+  - `step3_patterns_draft.md` → `step3_patterns.md`
+  - `step4_profile_draft.md` → `step4_profile.md`
+  - `step4_draft_scores_{andrew,ayodele,shared}_rows.md` → `step4_scores_part{1,2,3}.md`
+- **Older entries above still use the old file names.**

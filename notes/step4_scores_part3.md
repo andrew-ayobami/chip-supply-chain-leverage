@@ -1,6 +1,6 @@
 # Step 4 chokepoint scores, part 3 (10 rows)
 
-The method and the time-to-replace rule are the same as in part 2 (`notes/step4_draft_scores_ayodele_rows.md`). All 35 final scores are in `scoring/chokepoints_final.csv`.
+The method and the time-to-replace rule are the same as in part 2 (`notes/step4_scores_part2.md`). All 35 final scores are in `scoring/chokepoints_final.csv`.
 
 **These rows bring in new countries, so dependence and state control vary for the first time.** Austria is militarily neutral and Singapore is a US security partner but not a treaty ally. Both score lower on dependence than the US treaty allies (Japan, the Netherlands, Germany, Sweden, South Korea and, in practice, Taiwan).
 

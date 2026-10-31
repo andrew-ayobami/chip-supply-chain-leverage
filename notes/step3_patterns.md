@@ -1,6 +1,6 @@
 # Step 3 patterns: what the past cases show
 
-Built from the final case scores in `scoring/cases_final.csv`. The case details are in `notes/step3_case_drafts.md`.
+Built from the final case scores in `scoring/cases_final.csv`. The case details are in `notes/step3_cases.md`.
 
 ## Scores against outcomes
 

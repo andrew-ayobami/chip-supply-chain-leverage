@@ -2,7 +2,7 @@
 
 The target is the US, scored as of 2026, using the anchors in `notes/variable_anchors.md`. All 35 final scores are in `scoring/chokepoints_final.csv`.
 
-**How each score was set:** the same method as part 1 (`notes/step4_draft_scores_andrew_rows.md`).
+**How each score was set:** the same method as part 1 (`notes/step4_scores_part1.md`).
 - **Concentration** uses the ETO world share: 60% or more is high, 25–60% is medium.
 - **Cohesion** is the number of firms needed to reach 80% of the country's share, from ETO firm rows.
 - **Dependence on the target** is high and **state control** medium for every row, for the same reasons as Andrew's rows.

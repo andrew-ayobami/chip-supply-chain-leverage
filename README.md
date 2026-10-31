@@ -101,7 +101,7 @@ Every past case and every chokepoint row is scored low, medium or high on six va
 - **How the target responded:** Korea did not back down while the controls were in force. It filed a WTO complaint and built local hydrogen fluoride supply.
 - **How long it lasted:** the controls stayed for almost four years. Japan lifted them in 2023 after Korea's new government offered its own compensation plan. That plan can be read as a late partial success for Japan.
 
-Full summaries, scores with evidence, and sources: [`notes/step3_case_drafts.md`](notes/step3_case_drafts.md) and [`scoring/cases_final.csv`](scoring/cases_final.csv).
+Full summaries, scores with evidence, and sources: [`notes/step3_cases.md`](notes/step3_cases.md) and [`scoring/cases_final.csv`](scoring/cases_final.csv).
 
 ### Scores against outcomes
 
@@ -124,7 +124,7 @@ Full summaries, scores with evidence, and sources: [`notes/step3_case_drafts.md`
 
 **Factors the variables may miss:** the kind of demand (and whether the target can save face), whether the supplier gains anyway, market conditions, stockpiles and money, leakage through intermediaries, and ambiguity over intent.
 
-Details: [`notes/step3_patterns_draft.md`](notes/step3_patterns_draft.md).
+Details: [`notes/step3_patterns.md`](notes/step3_patterns.md).
 
 ---
 
@@ -160,7 +160,7 @@ Five of these (EUV, both ArF tools, Taiwan's fabs, Tokyo Electron) are also sing
 - **For most of today's chokepoints,** a threat to cut supply resembles past cases that failed or backfired. That supports the hypothesis that conditions on supply are more credible than threats.
 - **The strongest rows are a mix no past case had.** EUV, ArF, Taiwan's fabs and Tokyo Electron are as concentrated as the cases that backfired, but as slow to replace as oil was in 1973. So the five past cases don't directly cover them.
 
-Details: [`results/step4_profile_draft.md`](results/step4_profile_draft.md), [`scoring/chokepoints_final.csv`](scoring/chokepoints_final.csv), [`results/profile_distances.csv`](results/profile_distances.csv).
+Details: [`results/step4_profile.md`](results/step4_profile.md), [`scoring/chokepoints_final.csv`](scoring/chokepoints_final.csv), [`results/profile_distances.csv`](results/profile_distances.csv).
 
 ---
 
@@ -191,19 +191,17 @@ data/raw/          original downloads, untouched
 data/processed/    shares.csv (one row per input and country), second-source figures
 results/           screen outputs, country set, chokepoint rows, leverage profile
 scoring/           cases_final.csv and chokepoints_final.csv (the final scores)
-src/               screen.py, profile.py, make_scoring_sheets.py, compare_scores.py
-tests/             tests for compare_scores.py, using made-up scores
+src/               screen.py (Step 1 screen), profile.py (Step 4 closest-case comparison)
 notes/             decision log, variable anchors, case notes, chokepoint score notes
 ```
 
 ## Running the code
 
-Python 3.11 or later, with pandas, scikit-learn and pytest.
+Python 3.11 or later, with pandas.
 
 ```
 python src/screen.py       # Step 1 screen: shares, screens, country set, chokepoint rows
 python src/profile.py      # Step 4: closest past case for each chokepoint row
-python -m pytest tests
 ```
 
 ## Data and licences
@@ -211,4 +209,4 @@ python -m pytest tests
 - Emerging Technology Observatory, *Semiconductor Supply Chain Dataset* (September 2026 release), https://eto.tech/dataset-docs/chipexplorer. CC BY-NC 4.0.
 - CSET, *The Semiconductor Supply Chain: Assessing National Competitiveness* (2021). CC BY-NC 4.0.
 - TrendForce (HBM shares, 2025) and SIA/BCG, *Emerging Resilience in the Semiconductor Supply Chain* (2024). These are cited, but their files are not stored here, because their licences are unclear.
-- Case sources are listed with each case in `notes/step3_case_drafts.md`.
+- Case sources are listed with each case in `notes/step3_cases.md`.
