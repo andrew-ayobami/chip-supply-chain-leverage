@@ -56,23 +56,23 @@ Credibility is a prediction, and the only evidence we have is past attempts with
 | China's rare-earth squeeze on Japan, 2010 | China | Coercive use of a chokepoint that pushed the buyer to diversify |
 | Japan's materials restrictions on Korea, 2019–2023 | Japan | A squeeze inside our own candidate set |
 
-- [ ] Gather two or three good sources per case
-- [ ] Write a three-line summary per case: what the supplier wanted, how the target responded, how long the leverage lasted
-- [ ] Score each case on the six variables, each of you separately (reading is split, 3 cases for Andrew and 2 for Ayodele, but both score all five)
-- [ ] Compare scores, settle differences, and record how often you agreed
-- [ ] Record each case's outcome: worked, partly worked, or backfired
-- [ ] Write three or four rules of thumb from the pattern, e.g. "threats backfire when the target can replace supply within a few years"
-- [ ] Note any variable that doesn't separate successes from failures, and any factor you're missing
+- [x] Gather two or three good sources per case
+- [x] Write a three-line summary per case: what the supplier wanted, how the target responded, how long the leverage lasted
+- [x] Score each case on the six variables (changed 31 Oct for time: Claude drafted, Andrew reviewed and decided; one scorer per case)
+- [ ] Compare scores, settle differences, and record how often you agreed (not done: one scorer, so no agreement figure; stated as a limit)
+- [x] Record each case's outcome: worked, partly worked, or backfired
+- [x] Write three or four rules of thumb from the pattern, e.g. "threats backfire when the target can replace supply within a few years"
+- [x] Note any variable that doesn't separate successes from failures, and any factor you're missing
 
 ## Step 4 · Score today's chokepoints (about 1.5 hours)
 
 This gives the coalition's leverage profile: where its hold is strong, where it is weak, and which past case it most resembles.
 
-- [ ] Make one row per chokepoint (country and step), e.g. Netherlands–EUV lithography, Korea–HBM memory
-- [ ] Add the share, year and source for each row
-- [ ] Score each row on the six variables with the US as the target, each of you separately (both score a shared 10 rows for the agreement figure, and the other 25 are split; see the `assigned_to` column)
-- [ ] Compare scores, settle differences, and record how often you agreed
-- [ ] Write a short profile: where the leverage is strongest and weakest, and which past case it most resembles
+- [x] Make one row per chokepoint (country and step), e.g. Netherlands–EUV lithography, Korea–HBM memory
+- [x] Add the share, year and source for each row
+- [x] Score each row on the six variables with the US as the target (changed 31 Oct for time: Claude drafted, Andrew reviewed and decided; one scorer per row)
+- [ ] Compare scores, settle differences, and record how often you agreed (not done: one scorer, so no agreement figure; stated as a limit)
+- [x] Write a short profile: where the leverage is strongest and weakest, and which past case it most resembles
 
 ## Step 5 · List and screen the asks (about 1 hour)
 
