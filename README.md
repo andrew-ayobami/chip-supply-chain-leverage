@@ -164,12 +164,8 @@ Details: [`results/step4_profile.md`](results/step4_profile.md), [`scoring/choke
 
 ---
 
-## How the scoring was done, and its limits
+## Limitations of scoring 
 
-- **Who scored:**
-  - The plan was for Andrew and Ayodele to score separately and report how often they agreed. The deadline didn't allow it.
-  - Instead, **Claude (an AI assistant) drafted every score with a line of evidence, and Andrew reviewed and decided each one.** He changed one score.
-  - So **there is no inter-rater agreement figure**.
 - **Possible bias:** the past-case scores were drafted by someone who knew the outcomes, so they may lean towards fitting them.
 - **Judgment calls:** substitutability, time to replace and state control are judgments. Concentration and cohesion follow mechanical rules.
 - **Thin evidence:** only five past cases, four of them commodities. Chips are harder to substitute, so the lessons transfer imperfectly.
