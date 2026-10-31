@@ -214,3 +214,8 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
 - At Andrew's request (Ayodele ran short of time), Claude drafted K5 (Japan–Korea) in `notes/step3_case_drafts.md`, and Ayodele's 12 rows in `notes/step4_draft_scores_ayodele_rows.md` and `.csv`, for Andrew to compare with Ayodele's partial scores. Andrew has the final say.
 - **Time to replace now has a written rule** (in that file): low if a US or US-controlled maker already covers most of the need; medium if there's a minority US maker, or a mature technology a new entrant could manage in 2–5 years; high if there's no US maker and it's a lithography-class frontier system. Earlier drafts used the same reasoning without writing it down. Under the rule, C14 would move from high to medium if IMS is Intel-controlled.
 - **Housekeeping:** a failed command briefly emptied `notes/step3_case_drafts.md`. It was restored from the last commit before any edit. The working tree had been clean, so nothing was lost.
+
+## 2026-10-31 13:25 · Claude drafts the 10 shared chokepoint rows · FINAL process (scores are drafts)
+
+- At Andrew's request, Claude drafted the 10 `assigned_to = both` rows in `notes/step4_draft_scores_shared_rows.md` and `.csv`, using the same method and the same written time-to-replace rule. All 35 rows now have Claude drafts. Andrew has the final say on all of them.
+- **New flag:** C02 (IMS, possibly Intel-owned) and C35 (Kulicke & Soffa, US-incorporated) may in practice be US-controlled supply, so the HQ-based screen may overstate Austria's and Singapore's leverage.

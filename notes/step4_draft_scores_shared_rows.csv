@@ -1,0 +1,11 @@
+row_id,country,input,share,year,concentration,substitutability,time_to_replace,cohesion,dependence_on_target,state_control,status
+C02,Austria,Mask exposure systems - e-beam,46.6,2025,medium,medium,medium,high,medium,medium,Claude draft - Andrew to review
+C03,Austria,Wafer bonding and aligning tools,47.9,2025,medium,medium,medium,high,medium,medium,Claude draft - Andrew to review
+C06,Germany,Mask aligners,82.2,2025,high,medium,medium,high,high,medium,Claude draft - Andrew to review
+C07,Japan,Critical dimensions metrology tools,72.1,2025,high,medium,medium,high,high,medium,Claude draft - Andrew to review
+C13,Japan,Insulator etching tools,55.9,2025,medium,medium,medium,high,high,medium,Claude draft - Andrew to review
+C29,Netherlands,ArF dry (DUV) lithography tools,94.4,2025,high,low,high,high,high,medium,Claude draft - Andrew to review
+C35,Singapore,Auto ball bonders for IC,90.9,2025,high,medium,low,high,medium,low,Claude draft - Andrew to review
+C40,South Korea,Burn-in test tools,61.4,2025,high,medium,medium,high,high,medium,Claude draft - Andrew to review
+C41,Sweden,Mask exposure systems - laser beam,70.7,2025,high,medium,medium,high,high,medium,Claude draft - Andrew to review
+C42,Taiwan,Leading-edge logic fabrication (<10nm capacity),69.0,2022,high,low,high,high,high,medium,Claude draft - Andrew to review
