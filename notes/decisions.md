@@ -202,3 +202,9 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
   - K1–K4 scores started as AI drafts.
   - The drafter knew the outcomes, so there is a risk the scores were fitted to them.
 - **Outcome categories:** CIPEC (K2) doesn't fit "worked / partly worked / backfired" because it simply had no effect. It is drafted as "failed", and Andrew decides whether to keep that category.
+
+## 2026-10-31 05:42 · Claude drafts Andrew's 13 chokepoint rows · FINAL process (scores are drafts)
+
+- At Andrew's request, Claude drafted scores for the 13 rows with `assigned_to = andrew`, in `notes/step4_draft_scores_andrew_rows.md` and `.csv`. Andrew reviews them and has the final say. `scoring/` is untouched.
+- **Concentration and cohesion are mechanical.** Concentration comes from the ETO share. Cohesion is the number of firms needed to reach 80% of the country's share, from ETO firm rows (from TrendForce for HBM). For wafers, ETO has no firm shares, so the count of 2 firms (Shin-Etsu, SUMCO) is from general knowledge and flagged.
+- **The other four variables are judgments,** each with a one-line reason in the draft.
