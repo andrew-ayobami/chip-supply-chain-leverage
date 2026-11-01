@@ -6,7 +6,7 @@ A project by Andrew, Ayodele and Gideon for the Middle Powers hackathon (Track C
 
 **Working hypothesis:** the credible asks are conditions that can be attached to supply, more so than threats to cut it. 
 
-**Where the work stands:** Research done; report is being written.
+**Where the work stands:** We've submitted this project at the Hackathon and are awaiting peer-review before building in on some of the ideas we identified in the future work section of the paper: https://drive.google.com/file/d/136G7zb7bu-BkI16zH5SedE39qHyg6rF7/view?usp=drive_link.
 
 ---
 
