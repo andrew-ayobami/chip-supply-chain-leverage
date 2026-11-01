@@ -41,6 +41,5 @@ Five of these (C19, C29, C30, C32, C42) are also **single-firm holds with low su
 
 ## Caveats
 
-- **One scorer per case and row, so there is no agreement figure.** Claude drafted the scores and Andrew reviewed them.
 - **The distances are partly driven by variables that barely vary today** (dependence and state control).
 - **The past-case evidence is thin:** only 5 cases, 4 of them commodities (oil, copper, tin, rare earths).
