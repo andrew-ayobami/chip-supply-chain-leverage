@@ -1,18 +1,24 @@
 # Chip-supply-chain leverage for AI safety
 
-Andrew and Ayodele's project for the Middle Powers hackathon (Track C, Diplomacy).
+A project by Andrew and Ayodele for the Middle Powers hackathon (Track C, Diplomacy). Gideon proofreads and edits the paper draft.
 
 **Question:** which AI-safety asks can the countries that hold chip-supply-chain chokepoints, other than the US and China, credibly attach to their leverage? What should they coordinate on, and what should they avoid?
 
 **Working hypothesis:** the credible asks are conditions attached to supply, not threats to cut it.
 
-**Where the work stands:** Steps 1–5 of [`research_plan.md`](research_plan.md) are done and summarised below. Steps 6–7 (judging and sorting the asks, and the write-up) are not covered here yet.
+**Where the work stands:** Steps 1–6 of [`research_plan.md`](research_plan.md) are done and summarised below. Step 7, the paper, is being written.
 
 ---
 
 ## Step 1 · Which countries hold chokepoints
 
 **Rule:** a country is in the set if its firms hold **40% or more of world supply** of a specific chip input, such as EUV lithography tools (not a whole stage such as "equipment"). The US and China are screened but left out of the set, because they're the sides a coalition would bargain with. The screen was rerun at 25% and 60% as a robustness check.
+
+**Screening rules (fixed before results were seen):**
+- **Only the narrowest inputs are screened**, such as "EUV lithography tools" rather than "lithography tools", so the same hold isn't counted twice. Which ETO inputs belong to which step is in [`notes/eto_step_mapping.csv`](notes/eto_step_mapping.csv).
+- **ETO's own country shares are used as given.** Exactly 40% counts as a pass.
+- **"Various countries" and "Europe" can't pass**, because they aren't countries.
+- **Inputs with no share figure are listed as "could not screen"**, never guessed.
 
 **Data:**
 - **Main source:** Emerging Technology Observatory (ETO), *Semiconductor Supply Chain Dataset*, September 2026 release.
@@ -187,7 +193,46 @@ Details, including what each ask requires of the US and who has to agree: [`note
 
 ---
 
-## Limitations of scoring 
+## Step 6 · Which asks are credible
+
+**Credibility** asks whether the coalition could actually get the ask:
+- **high:** the US would accept it because it costs little or helps the US.
+- **medium:** it can be backed by a *condition* on supply, and it works with part of US policy.
+- **low:** it needs a *threat* to cut supply, or it would be read in Washington as coercion.
+
+The rule was written down before any ask was judged. The plan's sort is: "coordinate on" if credible and worth having, otherwise "avoid".
+
+| Credibility ↓ / Safety value → | low | medium | high |
+| --- | --- | --- | --- |
+| **high** | | | **A1** |
+| **medium** | | **A2, A4** | |
+| **low** | A5, A6 | A7 | A3 |
+
+| Coordinate on | Avoid |
+| --- | --- |
+| **A1** Shared anti-diversion and end-use checks | **A3** Binding safety conditions on large compute buyers |
+| **A2** Model access for members' evaluators, negotiated alongside A1 | **A5** Withholding supply |
+| **A4** Support for US-led hardware verification standards | **A6** Coordinating prices |
+| | **A7** Threatening to sell to China |
+
+**Why:**
+- **A1 is what US export controls already aim at,** so it costs the US little.
+- **A2 and A4 can be backed by conditions rather than cuts, and each lines up with part of US policy.** For A2, US labs already give the US and UK institutes pre-deployment access. For A4, Congress's Chip Security Act points the same way.
+- **The threats (A5, A7) and supply management (A6) look like the past cases that failed or backfired.**
+  - 27 of 35 chokepoint rows can be replaced within about 5 years.
+  - Nearly every holder relies on the US for its security.
+  - Even the strongest chokepoints are as concentrated as the two coercion cases that backfired.
+- **A3 has the most direct safety value, but it is not credible as a binding condition.** The coalition sits several contract steps upstream of the labs, so enforcing it would mean threatening to cut supply.
+
+**The working hypothesis holds:** the credible asks are conditions that work with US policy, and every threat lands in "avoid".
+
+**Sensitivity:** only one verdict flips under a disputed score. If Japan–Korea 2019 is read as "partly worked" rather than "backfired" (Korea offered its own compensation plan in 2023), A3 could become credible. Changing the other disputed scores (time to replace for the strongest rows, A2's need for leverage, A7's safety value) moves no verdict.
+
+Details: [`notes/step6_verdicts.md`](notes/step6_verdicts.md), [`results/asks.csv`](results/asks.csv).
+
+---
+
+## Limitations of scoring
 
 - **Possible bias:** the past-case scores were drafted by someone who knew the outcomes, so they may lean towards fitting them.
 - **Judgment calls:** substitutability, time to replace and state control are judgments. Concentration and cohesion follow mechanical rules.
@@ -198,7 +243,6 @@ Details, including what each ask requires of the US and who has to agree: [`note
   - The HBM figure is a projection.
 - **What the project leaves out:** private negotiations, classified export-control deliberations, and how firms (as opposed to governments) would behave.
 
-Every choice, with its time and reason, is logged in [`notes/decisions.md`](notes/decisions.md).
 
 ---
 
@@ -225,7 +269,7 @@ python src/profile.py      # Step 4: closest past case for each chokepoint row
 
 ## Data and licences
 
-- Emerging Technology Observatory, *Semiconductor Supply Chain Dataset* (September 2026 release), https://eto.tech/dataset-docs/chipexplorer. CC BY-NC 4.0.
+- Emerging Technology Observatory, *Semiconductor Supply Chain Dataset* (September 2026 release), https://eto.tech/dataset-docs/chipexplorer. CC BY-NC 4.0. Files are pinned to GitHub commit `9a4e1b1` of `georgetown-cset/eto-chip-explorer` (13 Oct 2026) and were downloaded on 21 Oct 2026.
 - CSET, *The Semiconductor Supply Chain: Assessing National Competitiveness* (2021). CC BY-NC 4.0.
 - TrendForce (HBM shares, 2025) and SIA/BCG, *Emerging Resilience in the Semiconductor Supply Chain* (2024). These are cited, but their files are not stored here, because their licences are unclear.
 - Case sources are listed with each case in `notes/step3_cases.md`.

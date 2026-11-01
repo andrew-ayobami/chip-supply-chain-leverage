@@ -36,7 +36,7 @@ To compare past cases with today fairly, we describe both with the same six feat
 | Concentration | What share of the supply the target needs from outside does the supplier (or group) hold? |
 | Substitutability | Can the target switch to another supplier or redesign around it? |
 | Time to replace | How long would the target need to build its own supply? |
-| Cohesion | How many separate actors must hold the line to keep the supplier's share? (counted, not judged; changed 21 Oct, see notes/decisions.md) |
+| Cohesion | How many separate actors must hold the line to keep the supplier's share? (counted, not judged; changed 21 Oct) |
 | Dependence on the target | How much does the supplier rely on the target, for security or markets? |
 | State control | Can the government direct the firms that hold the supply? |
 
@@ -81,7 +81,7 @@ These are the candidates the answer will sort.
 - [x] Review the starting list below, adding or cutting to reach six to eight asks
 - [x] For each ask, write down what it requires of the US government or US firms
 - [x] Mark whether it needs a threat to cut or condition supply behind it
-- [ ] Score its safety value (low, medium, high): which risk it reduces, and how directly
+- [x] Score its safety value (low, medium, high): which risk it reduces, and how directly
 - [x] Note who has to agree: members, firms, or the US government
 
 **Starting list of asks**
@@ -97,11 +97,11 @@ These are the candidates the answer will sort.
 
 This is where the answer comes from.
 
-- [ ] For asks with no threat behind them, check whether the US would plausibly accept them because they cost it little or help it too
-- [ ] For asks that need a threat, compare the coalition's profile (Step 4) with the rules of thumb (Step 3): does it look like a case that worked, or one that backfired?
-- [ ] Place each ask on credibility against safety value
-- [ ] Sort the asks into "coordinate on" (credible and worth having) and "avoid" (not credible, or likely to backfire)
-- [ ] Check which verdicts would flip if your most disputed score went the other way
+- [x] For asks with no threat behind them, check whether the US would plausibly accept them because they cost it little or help it too
+- [x] For asks that need a threat, compare the coalition's profile (Step 4) with the rules of thumb (Step 3): does it look like a case that worked, or one that backfired?
+- [x] Place each ask on credibility against safety value
+- [x] Sort the asks into "coordinate on" (credible and worth having) and "avoid" (not credible, or likely to backfire)
+- [x] Check which verdicts would flip if your most disputed score went the other way
 
 ## Step 7 · Write up and submit (about 2.5 hours)
 
