@@ -238,3 +238,12 @@ I saw the HBM and fab headline numbers while searching for the sources (logged a
   - `step4_profile_draft.md` → `step4_profile.md`
   - `step4_draft_scores_{andrew,ayodele,shared}_rows.md` → `step4_scores_part{1,2,3}.md`
 - **Older entries above still use the old file names.**
+
+## 2026-11-01 01:36 · Step 5: list of asks, and rules set before scoring · FINAL (list is Andrew's; rules for his review)
+
+- **The list (Andrew's decision):** the joint consultation seat in US export-control rule-making is **dropped**. Andrew judged it so unlikely on its face that testing it isn't worth the time. The remaining 4 asks and the 3 "things to avoid" are kept, giving 7 items, within the plan's 6–8.
+- **Safety value rule:** this is a judgment, written down before any ask is scored.
+  - **high:** directly reduces a major frontier-AI risk, such as frontier compute reaching actors with no safety oversight, or frontier models deployed without independent testing. The mechanism must act on the chips or on the frontier developers themselves.
+  - **medium:** an enabler. It makes a risk easier to reduce, but other steps must follow before the risk actually falls. Or it covers only part of the frontier.
+  - **low:** a weak or speculative link to AI risk, or it could raise risk.
+- **"Needs a threat or condition on supply" rule:** **yes** if the US government or US firms would be unlikely to agree without the coalition tying the ask to supply. **No** if the ask matches what the US already wants or does. Whether the US would actually accept is judged in Step 6, not here.
