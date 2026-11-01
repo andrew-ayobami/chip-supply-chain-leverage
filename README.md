@@ -6,7 +6,7 @@ Andrew and Ayodele's project for the Middle Powers hackathon (Track C, Diplomacy
 
 **Working hypothesis:** the credible asks are conditions attached to supply, not threats to cut it.
 
-**Where the work stands:** Steps 1–4 of [`research_plan.md`](research_plan.md) are done and summarised below. Steps 5–7 (listing the asks, judging them, and the write-up) are not covered here yet.
+**Where the work stands:** Steps 1–5 of [`research_plan.md`](research_plan.md) are done and summarised below. Steps 6–7 (judging and sorting the asks, and the write-up) are not covered here yet.
 
 ---
 
@@ -164,6 +164,29 @@ Details: [`results/step4_profile.md`](results/step4_profile.md), [`scoring/choke
 
 ---
 
+## Step 5 · The asks
+
+Four asks, plus three moves to test as things to avoid. A fifth ask, a joint consultation seat in US export-control rule-making, was dropped as too unlikely on its face to be worth testing.
+
+| ID | Item | Needs a threat or condition on supply? | Safety value |
+| --- | --- | --- | --- |
+| A1 | Shared anti-diversion and end-use checks | No: it is what US export controls already aim at | High: acts directly on chips reaching actors with no safety oversight |
+| A2 | Frontier model access for members' governments and evaluators | Yes (uncertain): labs already share some access, but the White House reportedly asked them to delay UK testing in 2026 | Medium: testing helps only if findings change what is deployed |
+| A3 | Safety conditions on buyers above a compute threshold (evaluations, incident reporting) | Yes: the clearest "condition on supply" | High: acts directly on frontier developers |
+| A4 | Support for hardware verification features, e.g. location checks | Yes, aimed at chip designers: US bills point the same way, but Nvidia opposes it | Medium: an enabler for anti-diversion checks and for verifying future agreements |
+| A5 | *To avoid?* Withholding supply | It is a threat to cut | Low |
+| A6 | *To avoid?* Coordinating prices | It is supply management | Low |
+| A7 | *To avoid?* Threatening to sell to China | It is a threat | Low (could raise risk) |
+
+**Notes:**
+- **Only A1 matches what the US already wants.** The others need some leverage behind them.
+- **A3 is the hardest to enforce.** The coalition's chokepoints sit upstream, at the tool, fab and memory makers. So conditions on the labs that buy compute would have to be passed down through several contracts.
+- **The safety-value scores are judgments** made against a rule written before scoring.
+
+Details, including what each ask requires of the US and who has to agree: [`notes/step5_asks.md`](notes/step5_asks.md), [`results/asks.csv`](results/asks.csv).
+
+---
+
 ## How the scoring was done, and its limits
 
 - **Who scored:**
@@ -192,7 +215,7 @@ data/processed/    shares.csv (one row per input and country), second-source fig
 results/           screen outputs, country set, chokepoint rows, leverage profile
 scoring/           cases_final.csv and chokepoints_final.csv (the final scores)
 src/               screen.py (Step 1 screen), profile.py (Step 4 closest-case comparison)
-notes/             decision log, variable anchors, case notes, chokepoint score notes
+notes/             decision log, variable anchors, case notes, chokepoint score notes, asks
 ```
 
 ## Running the code
