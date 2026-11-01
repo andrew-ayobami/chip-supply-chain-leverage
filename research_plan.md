@@ -78,7 +78,7 @@ This gives the coalition's leverage profile: where its hold is strong, where it 
 
 These are the candidates the answer will sort.
 
-- [ ] Review the starting list below, adding or cutting to reach six to eight asks
+- [x] Review the starting list below, adding or cutting to reach six to eight asks
 - [ ] For each ask, write down what it requires of the US government or US firms
 - [ ] Mark whether it needs a threat to cut or condition supply behind it
 - [ ] Score its safety value (low, medium, high): which risk it reduces, and how directly
