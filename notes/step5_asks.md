@@ -2,7 +2,7 @@
 
 The list has **4 asks** and **3 things to test as "avoid"**, 7 items in all. The joint consultation seat in US export-control rule-making was dropped: Andrew judged it too unlikely on its face to be worth testing.
 
-The rules for "needs a threat or condition on supply" and for safety value are in `notes/decisions.md` (1 Nov, 01:36). In short:
+Two rules were set before scoring:
 - **Threat or condition needed** means the US government or US firms would be unlikely to agree unless the coalition ties the ask to supply.
 - **Safety value** is high if the ask acts directly on the chips or the frontier developers, medium if it is an enabler, and low if the link is weak or it could raise risk.
 
@@ -16,7 +16,7 @@ The same table is in `results/asks.csv`.
 | A4 | Support for hardware-based verification features (e.g. location checks) | US chip designers (Nvidia, AMD) build location verification into export-controlled chips. The US government sets a requirement or standard. | **Yes, aimed at the firms.** US bills point the same way (the Chip Security Act, not enacted as of May 2026), but Nvidia publicly opposes such features. | **Medium.** It is an enabler for anti-diversion checks and for verifying future agreements. | US chip designers, the US government, and coalition firms that make or package the chips (TSMC, SK hynix) |
 | A5 | *Avoid?* Withholding supply | Nothing it would agree to. It imposes costs on the US. | **Yes.** It *is* a threat to cut. | **Low.** It might slow frontier compute for a while, but past cases suggest it speeds up US replacement and burns the leverage. | All members, and their firms, which would forgo revenue |
 | A6 | *Avoid?* Coordinating prices | Nothing. It raises costs for US buyers. | **Yes.** It is collective supply management. | **Low.** It earns revenue but has no safety link. It also clashes with EU, Japanese and Korean competition law. | Coalition firms and governments |
-| A7 | *Avoid?* Threatening to sell to China | Nothing. It is aimed at US policy. | **Yes.** It *is* a threat. | **Low** (arguably negative). It would spread frontier compute to another frontier developer, which is the opposite of A1. It would also break existing Dutch and Japanese alignment with US export controls. | Members and firms |
+| A7 | *Avoid?* Threatening to sell to China | Nothing. It is aimed at US policy. | **Yes.** It *is* a threat. | **Medium (contested).** It could help AI safety by easing US–China race pressure, reducing China's push for a separate chip ecosystem, and keeping China inside shared safety research, evaluations and governance. It also gives Chinese labs more compute for safety work. Against that, more compute also raises China's capacity for powerful and military AI. The net effect is genuinely contested. (Andrew's judgment; the first draft said low.) | Members and firms |
 
 ## Notes
 

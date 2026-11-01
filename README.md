@@ -176,7 +176,7 @@ Four asks, plus three moves to test as things to avoid. A fifth ask, a joint con
 | A4 | Support for hardware verification features, e.g. location checks | Yes, aimed at chip designers: US bills point the same way, but Nvidia opposes it | Medium: an enabler for anti-diversion checks and for verifying future agreements |
 | A5 | *To avoid?* Withholding supply | It is a threat to cut | Low |
 | A6 | *To avoid?* Coordinating prices | It is supply management | Low |
-| A7 | *To avoid?* Threatening to sell to China | It is a threat | Low (could raise risk) |
+| A7 | *To avoid?* Threatening to sell to China | It is a threat | Medium (contested): could ease US–China race pressure and keep China in shared safety efforts, but adds to China's frontier and military AI capacity |
 
 **Notes:**
 - **Only A1 matches what the US already wants.** The others need some leverage behind them.
