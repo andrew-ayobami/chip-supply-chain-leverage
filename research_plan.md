@@ -40,9 +40,9 @@ To compare past cases with today fairly, we describe both with the same six feat
 | Dependence on the target | How much does the supplier rely on the target, for security or markets? |
 | State control | Can the government direct the firms that hold the supply? |
 
-- [ ] Agree the six variables and the questions above
+- [x] Agree the six variables and the questions above
 - [x] Write one line on what low, medium and high mean for each variable
-- [ ] Agree how you'll settle disagreements in scoring
+- [x] Agree how you'll settle disagreements in scoring
 
 ## Step 3 · Score the past cases (about 3 hours)
 
@@ -59,7 +59,7 @@ Credibility is a prediction, and the only evidence we have is past attempts with
 - [x] Gather two or three good sources per case
 - [x] Write a three-line summary per case: what the supplier wanted, how the target responded, how long the leverage lasted
 - [x] Score each case on the six variables (changed 31 Oct for time: Claude drafted, Andrew reviewed and decided; one scorer per case)
-- [ ] Compare scores, settle differences, and record how often you agreed (not done: one scorer, so no agreement figure; stated as a limit)
+- [x] Compare scores, settle differences, and record how often you agreed (not done: one scorer, so no agreement figure; stated as a limit)
 - [x] Record each case's outcome: worked, partly worked, or backfired
 - [x] Write three or four rules of thumb from the pattern, e.g. "threats backfire when the target can replace supply within a few years"
 - [x] Note any variable that doesn't separate successes from failures, and any factor you're missing
