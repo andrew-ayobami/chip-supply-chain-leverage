@@ -1,0 +1,424 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{newtxtext,newtxmath}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage[font=small,labelfont=bf,labelsep=period]{caption}
+\usepackage{microtype}
+\usepackage{xurl}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue]{hyperref}
+\urlstyle{same}
+\setlength{\parskip}{0pt}
+\renewcommand{\arraystretch}{1.15}
+
+\begin{document}
+
+\begin{center}
+{\Large Conditions, Not Cutoffs:\\[0.3em]
+Chip-supply-chain Leverage for AI Safety}\\[1.6em]
+Andrew Ayobami, Ayodele Abraham, Gideon Bature\\[0.4em]
+\textit{Frontier Safety Institute}\\[1.1em]
+November 2026 (revised)
+\end{center}
+\vspace{0.5em}
+
+\begin{abstract}
+A handful of countries outside the US and China hold parts of the AI chip supply chain that nobody can yet do without. Which AI-safety requests could they credibly attach to that position? We screened supply chain data for countries whose firms hold 40\% or more of world supply of a chip input, which gave eight countries and 35 chokepoints, and compared these with nine past cases of supplier leverage. Both cases where leverage was used as a condition on continued supply worked, while cuts held at best partly, and only where the target needed more than five years to replace the supply. By our scoring, the US could replace 27 of the 35 chokepoints within about five years, and nearly every holder relies on the US for its security, so threats from this group would likely backfire. Used as conditions, however, the strongest chokepoints, held by the Netherlands, Japan and Taiwan, closely resemble the nuclear safeguards regime, a condition on supply that has held since the 1970s. We therefore propose a specific bargain: these countries offer the US shared anti-diversion checks on the tools, fab capacity and memory they control, and ask in return for pre-deployment access to frontier models for their own AI safety evaluators and a role in US-led hardware verification. They should avoid withholding supply, coordinating prices and threatening to sell to China. The most valuable ask, binding safety conditions on the largest compute buyers, remains out of reach for now, though the nuclear precedent suggests a route towards it.
+\end{abstract}
+
+\section{Introduction}
+
+Owing to the chokepoints they control in the supply-chain of AI chip materials, a few middle power countries possess leverage they can exploit to advance their own national positions, deconcentrate geopolitical power and crucially further AI safety. In this research, we try to ascertain what AI safety demands they can attach to their leverage, and what they should avoid. We think this matters because these chokepoints are a wasting asset. The US and China are both spending heavily to build their own supply. The US has the CHIPS Act and new fabs such as TSMC's in Arizona, and China has its localisation drive. One can infer from these trends that the hold these countries have today will likely shrink with time.
+
+There are two ways to waste it. One is never to use it for AI policy goals at all. The other is to use it badly, through OPEC-style threats that push the US to reshore faster, burn the leverage or split the group. Going into this project, our working hypothesis was that the credible asks may work as conditions attached to supply, not threats to cut it. We tried to test that rather than assume it. Throughout, we refer to ``the target'' to mean the side the leverage is aimed at. For today's chokepoints that is the US, since its firms build most frontier AI and its export controls shape the chip market. The US and China are the parties a coalition would bargain with, so we leave both out of the coalition itself.
+
+This version extends our hackathon submission in two ways. First, our original five historical cases were all supply cuts or price schemes, so they could not test our central claim that conditions work better than threats. We added four cases in which leverage took the form of a condition or an allied bargain over export controls. Second, the original paper left the step from anti-diversion cooperation to evaluator access and verification implicit. Section~\ref{sec:bargain} now sets out that bargain explicitly: who would make it, what they would offer, what they would ask for and why the US might agree.
+
+Several of our recommendations sit close to existing policy, and we think that is part of the finding rather than a weakness. What the paper adds is a reason to prefer them and a reason to avoid the alternatives. Specifically, it contributes a chokepoint map drawn by a stated rule rather than by judgment, a historical test of which forms of supplier leverage have held, and a specific bargain that follows from both.
+
+\section{Methods}
+
+We worked in five steps. The data, code and scores are in our project repository.
+
+\textbf{Step 1: let a rule pick the countries.} A country is included in the coalition of chip-supply-chain countries if its firms hold 40\% or more of world supply of a specific chip input, for example EUV lithography tools. Our main source is the Emerging Technology Observatory's (ETO) semiconductor supply chain dataset, September 2026 release. It uses mostly 2025 market shares for equipment and 2019 for materials, and it assigns each firm's share to its parent company's home country. ETO has no figures for HBM memory or leading-edge chipmaking, so we added TrendForce's 2025 HBM shares and SIA and BCG's 2022 figures for sub-10nm logic capacity. We left out chip design, design software and raw minerals. We reran the screen at 25\% and 60\% to see how much the result depended on the 40\% line. Inputs with a world market under \$100 million stayed in the country screen but were dropped from later scoring, since holding all of a tiny market is not much leverage.
+
+\textbf{Step 2: describe every case with the same six features.} To compare the past with today fairly, we scored both on six variables, each low, medium or high (Table~\ref{tab:variables}).
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}l X l@{}}
+\toprule
+\textbf{Variable} & \textbf{Question} & \textbf{Which end helps the supplier}\\
+\midrule
+Concentration & What share of the supply the target needs does the supplier hold? (under 25\% / 25 to 60\% / over 60\%) & High\\
+Substitutability & Can the target switch to other suppliers or design around it? & Low\\
+Time to replace & How long would the target need to get what it needs without the supplier's cooperation, by producing it itself or building a route around the supplier? (under 2 / 2 to 5 / over 5 years) & High\\
+Cohesion & How many separate actors must hold the line? (4 or more / 2 to 3 / 1) & High\\
+Dependence on the target & How much does the supplier rely on the target, for security or markets? & Low\\
+State control & Can the government direct the firms that hold the supply? & High\\
+\bottomrule
+\end{tabularx}
+\caption{The six variables.}
+\label{tab:variables}
+\end{table}
+
+We made cohesion a count rather than a judgment, because as a judgment it rested too much on our opinions. It is the number of countries (for a group) or firms (for one country) needed to reach 80\% of the supplier's share. For past cases we scored things as they stood at the start of the episode, not from how it ended, since the outcome is what the scores are meant to explain.
+
+Time to replace originally asked only how long the target would need to build its own supply. We widened it so that it also works where leverage comes as a condition and the target can get around the supplier without building anything, for example by keeping data at home or by using a legal tool that achieves the same end. For the original five cases and the 35 chokepoints, building their own supply was the only route, so their scores did not change.
+
+We also labelled each past case by the form its leverage took: a cut or threat to cut, supply or price management, or a condition, meaning that supply continues but only on terms the target must meet. The label is not scored. It lets the cases test whether conditions do better than threats.
+
+\textbf{Step 3: score nine past cases with known or emerging endings.} The first five are the 1973 Arab oil embargo, the copper exporters' council CIPEC, the International Tin Council's collapse in 1985, China's rare-earth squeeze on Japan in 2010, and Japan's chip-materials restrictions on Korea from 2019. All five are cuts or price schemes, so we added four cases where leverage took the form of a condition or an allied bargain over export controls: the safeguards conditions nuclear suppliers attached to exports from 1974, the EU's conditions on data flows to the US in 2020 to 2023, the Western allies' CoCom export controls from 1949 to 1994, and the Netherlands' and Japan's alignment with US chip controls in 2023.\footnote{The 2023 Dutch and Japanese case is still unfolding, so its outcome is recorded as ``too early''. We score it on the six variables but leave it out of the rules of thumb and the closest-case comparison, because a case without a known ending cannot tell us what works.} For each added case we fixed who the target was, and what it needed, before scoring. Each case draws on two to four sources, listed in the references, and every score carries a line of evidence in our repository. We recorded each outcome as worked, partly worked, failed or backfired. We added ``failed'' because CIPEC never worked but never backfired either.
+
+\textbf{Step 4: score today's chokepoints with the US as the target}, and compare each one with the past cases. Our measure of how alike they are is simple: we count the score steps between a chokepoint and a case across the six variables (low to high is two steps), and the case with the smallest total is the closest. Only cases with a known outcome are used.
+
+\textbf{Step 5: list the asks and judge each one.} For each ask we noted what it requires of the US, whether it needs a threat or condition on supply behind it, who has to agree, its safety value and its credibility. We wrote the rules for safety value and credibility down before scoring any ask.
+
+\section{Results}
+
+\subsection{Eight countries hold chokepoints}
+
+The screen found the five countries we expected (the Netherlands, Japan, South Korea, Taiwan and Germany) plus Austria, Singapore and Sweden. The same eight pass at 25\%, 40\% and 60\%, so the set does not hinge on where we drew the line.
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}l c X@{}}
+\toprule
+\textbf{Country} & \textbf{Inputs held at 40\%+} & \textbf{Strongest holds (share, year)}\\
+\midrule
+Japan & 22 & Crystal machining tools (99.7\%), resist processing tools (95.2\%), dicing tools (95\%), all 2025\\
+Netherlands & 6 & ASML's EUV (100\%), ArF immersion (99.3\%) and ArF dry (94.4\%) lithography, 2025\\
+Singapore & 4 & Ball bonders (Kulicke and Soffa, 90.9\%, 2025)\\
+Austria & 3 & Wafer bonding (EV Group, 47.9\%) and e-beam mask writers (IMS, 46.6\%), 2025\\
+Germany & 3 & Mask aligners (SUSS MicroTec, 82.2\%, 2025)\\
+South Korea & 2 & HBM memory (81\%, 2025 projection) and burn-in test tools (61.4\%, 2025)\\
+Sweden & 1 & Laser mask writers (Mycronic, 70.7\%, 2025)\\
+Taiwan & 1 & Sub-10nm logic capacity (69\%, 2022, by fab location)\\
+\bottomrule
+\end{tabularx}
+\caption{The country set at 40\%. US and China excluded; for context, the US passes on 27 inputs and China on 1.}
+\label{tab:countries}
+\end{table}
+
+Japan's hold is wide: many mid-sized tool markets. The Netherlands' hold is narrow but deep, almost all of it ASML's lithography. The three extra countries come from narrow tool niches where one specialist firm dominates.
+
+Three things here deserve caution. First, Taiwan is in only because of the second source. On ETO data alone it passes on nothing, because ETO's chipmaking figure covers all nodes and is measured by location. Second, counting firms by headquarters may overstate Austria and Singapore. IMS is reportedly majority-owned by Intel, and Kulicke and Soffa is incorporated in the US. Third, two parts of the chain could not be measured: most chip materials (ETO and its source give no country shares for photoresists, gases and the like, so Japan's hold there is undercounted), and advanced packaging capacity such as TSMC's CoWoS, for which we found no free, dated source.
+
+\subsection{What past supplier coalitions show}
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.0cm} X >{\raggedright\arraybackslash}p{1.6cm} >{\raggedright\arraybackslash}p{1.6cm}@{}}
+\toprule
+\textbf{Case} & \textbf{What happened} & \textbf{Form} & \textbf{Outcome}\\
+\midrule
+Arab oil embargo, 1973 to 1974 & Arab producers cut output and embargoed the US and the Netherlands to press for Israeli withdrawal. The US brokered disengagement talks, and consumers set up the International Energy Agency. The embargo on the US lasted about five months. & Cut & Partly worked\\
+CIPEC copper exporters, from 1967 & Chile, Peru, Zambia and Zaire wanted higher copper earnings. Outside producers, scrap and substitutes kept supply flowing, and a 1974 to 1975 export cut did not lift prices. & Price management & Failed\\
+International Tin Council, 1985 & A buffer stock held tin prices above a floor on borrowed money for about four years, while buyers used less tin and the US sold from its stockpile. The council defaulted on about \pounds900 million in October 1985. & Price management & Backfired\\
+China's rare earths and Japan, 2010 & After Japan detained a Chinese trawler captain, rare-earth shipments to Japan stopped for about two months. Japan released the captain, then diversified and won a WTO case. Whether China deliberately targeted Japan is disputed. & Cut & Backfired\\
+Japan's chip materials and Korea, 2019 to 2023 & Japan restricted three chipmaking chemicals amid a dispute over forced-labour rulings. Korea built its own hydrogen fluoride supply and filed a WTO complaint. Japan lifted the controls in 2023 after Korea's new government offered its own compensation plan. & Cut & Backfired\\
+Nuclear supply safeguards, from 1974 & After India's 1974 nuclear test, suppliers made nuclear exports conditional on stronger safeguards. Canada paused uranium shipments to Japan and the European Community until both accepted new terms, which they did within months. Safeguards have been a standard condition of nuclear supply ever since. & Condition & Worked\\
+EU data flows and US surveillance, 2020 to 2023 & The EU's top court blocked transfers of EU personal data to the US until US surveillance law gave Europeans stronger safeguards. The US changed its signals-intelligence rules and created a redress court in 2022, and the EU restored data flows in 2023. & Condition & Worked\\
+CoCom, 1949 to 1994 & Western allies, including the US, withheld advanced technology from the Soviet bloc for 45 years. It slowed Soviet progress, but leaked, notably through the Toshiba--Kongsberg affair. & Cut & Partly worked\\
+Dutch and Japanese chip controls, 2023 & Both aligned with US controls on China, on their own terms and licensing. In December 2024 the US exempted both from a new rule on foreign-made chipmaking equipment. & Condition & Too early\\
+\bottomrule
+\end{tabularx}
+\caption{The nine past cases. Scores are in Appendix B.}
+\label{tab:cases}
+\end{table}
+
+Lining the scores and the form of leverage up against the outcomes gave us five rules of thumb:
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Conditions did better than cuts.} Both condition cases with known endings worked. No cut fully worked: two partly worked and two backfired, and both price schemes failed or backfired. With two condition cases this is a pattern, not proof.
+\item \textbf{Cuts only held where the target needed more than five years to replace supply.} The two cuts that partly worked, the oil embargo and CoCom, both scored high on time to replace. The two that backfired, China in 2010 and Japan in 2019, did not.
+\item \textbf{A narrow, specific condition can work even when the target could get around it within a few years.} In the EU data case the US could have kept EU data inside Europe within two to five years, yet it changed its intelligence rules instead, about as sensitive an area as US policy has. In both condition cases the target could meet the demand while still getting what it wanted, and complying cost less than going around the supplier.
+\item \textbf{Managing supply fails when substitutes are easy.} Copper and tin both had plenty of alternatives, and neither group ever got a lasting hold on its market. In the tin case, propping up prices drew in new supply and left the producers worse off.
+\item \textbf{Leverage wears down unless it becomes the normal terms of trade.} The oil embargo led straight to the International Energy Agency, oil stockpiles and new non-Arab supply. CoCom held for decades but leaked. Nuclear safeguards lasted because they became the standard condition of supply.
+\end{itemize}
+
+Just as useful is what separated the cases and what did not. The form of leverage separated them best. Time to replace separated the cuts, and substitutability separated the price schemes. Concentration, dependence on the target and state control did not separate the outcomes. Both condition cases scored high on dependence on the target, so relying on the target did not stop them working. We also suspect the six variables miss things that mattered in these stories: above all, how narrow the demand was and whether the target could meet it without losing face, but also whether supply kept flowing to those who complied, whether the supplier gained anyway (oil producers earned far more whatever the US did), how tight the market was, and stockpiles and money, which undercut the tin council and then sank it.
+
+\subsection{Today's leverage profile}
+
+\textbf{Where the hold is strongest.} Eight of the 35 chokepoints would take the US more than five years to replace. These are ASML's EUV, ArF immersion, ArF dry and KrF lithography tools, Taiwan's leading-edge fabs, Tokyo Electron's resist processing tools, Canon's i-line lithography tools and e-beam mask writers. Five of them are also held by a single firm with no real substitute: EUV, both ArF tools, Taiwan's fabs and Tokyo Electron's resist processing. All eight sit in just three countries: the Netherlands (four), Japan (three) and Taiwan (one).
+
+\textbf{Where it is weakest.} In three cases a US or US-controlled maker already covers most of the need: overlay metrology (KLA holds 51.5\%), ball bonders (Kulicke and Soffa) and photomasks, which leading chipmakers mostly make in-house. Most of the rest are mature tools with several alternatives.
+
+\textbf{What the holders have in common.} 32 of the 35 chokepoints are held by countries that rely on the US for their security, and in 34 the government can only direct its firms through export licensing. A threat from this group would face strong US pressure on each member, one at a time.
+
+\textbf{Which past case it looks like.} Counting score steps against the eight cases with known endings, 16 chokepoints are closest only to cases that worked or partly worked, 13 only to cases that failed or backfired, and 6 are tied between the two. The most common match is the EU data case (15 chokepoints, counting ties for each case), followed by CIPEC (12) and nuclear safeguards (6). The strongest chokepoints, EUV, both ArF tools, Tokyo Electron's resist processing and Taiwan's fabs, are all closest to nuclear safeguards: highly concentrated, hard to substitute, slow to replace, and held by countries that rely on the buyer.
+
+This reverses the reading in our original submission. With only the five original cases, all cuts and price schemes, most chokepoints looked like cases that backfired, and the strongest matched none of them well. That reflected the case set, not the chokepoints. Because the distance measure compares the structure of the leverage rather than how it is used, the two findings fit together. Used as conditions, today's chokepoints look like the cases that worked. Used as cuts, the time-to-replace rule applies, and only 8 of the 35 pass it.
+
+\subsection{Which asks are credible}
+
+We started from six candidate asks and three moves to test as things to avoid. We dropped one ask early, a joint consultation seat in US export-control rule-making, because it looked too unlikely on its face to be worth testing.
+
+Safety value is high if the ask acts directly on chips or frontier developers, medium if it is an enabler that only reduces risk once other steps follow, and low if the link is weak or it could raise risk. Credibility is high if the US would accept the ask on its own terms, medium if a condition on supply could back it and it works with part of US policy, and low if it needs a threat to cut supply or would read in Washington as coercion. The added cases did not change any verdict in Table~\ref{tab:asks}, though they shifted two of them (Section~\ref{sec:why}).
+
+\begin{table}[htbp]
+\centering\small
+\begin{tabularx}{\linewidth}{@{}X >{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{2.0cm} l l@{}}
+\toprule
+\textbf{Ask} & \textbf{Needs leverage?} & \textbf{Safety value} & \textbf{Credibility} & \textbf{Verdict}\\
+\midrule
+A1. Shared anti-diversion and end-use checks & No & High & High & Coordinate on\\
+A2. Frontier model access for members' evaluators & Yes (uncertain) & Medium & Medium & Coordinate on\\
+A3. Safety conditions on buyers above a compute threshold & Yes & High & Low & Avoid\\
+A4. Support for hardware verification, such as location checks & Yes, aimed at chip designers & Medium & Medium & Coordinate on\\
+A5. Withholding supply & It is a threat & Low & Low & Avoid\\
+A6. Coordinating prices & It is supply management & Low & Low & Avoid\\
+A7. Threatening to sell to China & It is a threat & Medium & Low & Avoid\\
+\bottomrule
+\end{tabularx}
+\caption{The asks, judged. Fuller detail, including who has to agree, is in Appendix C.}
+\label{tab:asks}
+\end{table}
+
+\section{Discussion}
+
+\subsection{Why the asks sort this way}
+\label{sec:why}
+
+\textbf{Anti-diversion checks (A1) are the easy one.} Stopping advanced chips reaching unauthorised users is what US export controls already aim at, and the US has pressed the Netherlands and Japan to align their controls since 2023. Shared checks cost the US little and extend its reach, so the coalition would be offering something Washington already asks for.
+
+\textbf{Evaluator access (A2) and hardware verification (A4) are credible, but only as conditions that ride with US policy.} US labs already give the US and UK AI safety institutes early access to new models, so asking for the same is not a stretch. But in 2026 the White House reportedly asked labs to hold models back from UK testers until US officials had checked them, which suggests a negotiated slot rather than open access. The EU data case makes A2 somewhat stronger than in our original assessment: it shows Washington changing its signals-intelligence rules, among its most sensitive, when the condition was narrow and the alternative costly. On hardware verification, a bill in Congress (the Chip Security Act, not passed as of May 2026) points the same way as the ask, but Nvidia opposes it. The coalition's chipmakers and memory makers could back a common standard without cutting anyone off.
+
+\textbf{The threats look like the cases that backfired.} Withholding supply (A5) is a cut, and cuts only partly held where replacement took more than five years, which is true of 8 of the 35 chokepoints. It would also be made by countries that rely on the target for their security. Price coordination (A6) failed in both cases we studied and would breach competition law in the EU, Japan and Korea. Threatening to sell to China (A7) contradicts A1 and existing alignment with US controls, and would not be believed. There is a real argument that more Chinese access to chips could help safety by easing race pressure and keeping China inside shared safety work, which is why we rate its safety value medium. But it fails on credibility, not on value.
+
+\textbf{The hard case is binding conditions on big compute buyers (A3).} It has the most direct safety value of anything on the list, since it would require evaluations and incident reporting from frontier developers. But the coalition sells tools, fab capacity and memory far upstream. A condition on the labs would have to be passed down through several contracts, from ASML to TSMC to Nvidia to the cloud firms to the labs. In practice, enforcing it would mean threatening to cut supply, which is the pattern that backfired. The nuclear safeguards case weakens the case for avoiding A3, but does not overturn it. There, suppliers attached conditions to how buyers used what they bought, and allied buyers accepted within months. But the US was one of the suppliers setting the conditions, and suppliers sold directly to the buyers. In A3 the US is the target and the coalition sits several steps upstream. The nuclear model does suggest a route, which we return to below: conditions that travel with the supply down the chain, as safeguards travel with uranium, agreed with Washington rather than imposed on it.
+
+Overall, the working hypothesis holds up, and it now rests on direct evidence rather than argument alone. Every credible ask is either something the US already wants or a condition that works with part of US policy, and every threat lands in ``avoid''.
+
+\subsection{The bargain, made explicit}
+\label{sec:bargain}
+
+Our original paper treated the step from anti-diversion cooperation to evaluator access and verification as if it would follow naturally. It does not. Aligning with Washington on diversion does not by itself make the US accept foreign evaluators or verification arrangements, both of which it treats as sensitive. The 2023 Dutch and Japanese case shows this. Alignment bought those two countries procedural autonomy: each kept its own licensing and wording, and both were exempted from a December 2024 US rule covering foreign-made chipmaking equipment. But there is no sign that it bought access to models or any verification rights. If middle powers want those, they have to ask for them as an explicit part of the deal. We set out that deal below. It is a proposal derived from our findings, not something we have tested with officials.
+
+\textbf{Who would make it.} In the past cases, cuts only held where the target needed more than five years to replace the supply. Today that describes eight chokepoints in three countries: the Netherlands, Japan and Taiwan. South Korea's hold on HBM memory is large but replaceable within about five years, so it adds weight rather than anchoring the deal. The core bargain is therefore between these three countries and the US, with others able to join on the same terms. This is also an answer to how many middle powers hold enough leverage to secure it: few, and the deal should be built around them rather than around a broad coalition.
+
+\textbf{What they would do.} Each would harmonise end-use checks on the inputs it controls: lithography and other chipmaking tools, leading-edge fab capacity and, if Korea joins, HBM memory. In practice this means common lists of end users of concern, know-your-customer checks on the largest buyers of fab capacity and memory, and checks that installed tools stay where they were licensed, which toolmakers can already observe through the servicing they provide. They would share what they learn about diversion networks with US export-control authorities.
+
+\textbf{What they would offer the US.} Three things the US cannot easily get alone. First, closing diversion routes that run through tools and capacity outside US jurisdiction. Second, earlier and more reliable information on where advanced chips and tools end up. Third, continued alignment of their export controls, without the friction of the US reaching abroad with its own rules.
+
+\textbf{What they would ask in return, in order.}
+\begin{enumerate}[leftmargin=*]
+\item \textbf{Evaluator access.} Pre-deployment access to frontier models above an agreed capability threshold for their own AI safety institutes, sequenced after US testing, as the UK already receives in practice. Sequencing respects the US wish to see models first while still adding independent testers.
+\item \textbf{A role in verification.} A seat in designing US-led hardware verification standards, such as chip location checks, and access to the verification signals for chips made with their tools and capacity. Their firms are where such features would partly be built, so their involvement is practical as well as political.
+\item \textbf{Over time, conditions that travel with the supply.} End-use conditions on the most advanced chips that pass down the supply chain, modelled on nuclear safeguards, agreed with Washington rather than imposed on it. This is the route towards the safety value of A3 without the threat A3 currently needs.
+\end{enumerate}
+
+\textbf{Why the US might agree.} Each request is narrow and specific, and the US can meet it while still getting what it wants, which is the pattern in both condition cases that worked. In the EU data case, Washington changed its intelligence rules when the condition was narrow and the alternative was losing data flows. Here the alternative is diversion routes the US cannot close by itself. The requests also cost the US relatively little: evaluator access is sequenced after its own testing, and verification standards are something parts of the US government already want.
+
+\textbf{If the US says no.} Members should keep the checks, since becoming a diversion route for chips and tools is against their own interests, but tie further steps, such as new controls or limits on servicing, to progress on access and verification. That is a condition, not a cut: supply continues throughout. The 2023 case shows that allies can shape the timing and terms of alignment even under strong US pressure.
+
+\textbf{How each step reduces risk.} Anti-diversion checks act directly: fewer advanced chips reach actors with no safety oversight. Evaluator access adds independent testing of frontier models before deployment by institutes outside the US, so that catching a dangerous capability does not depend on one government's testers. Verification makes compute use checkable, which supports anti-diversion today and any future international agreement on compute. None of this reduces risk if findings are ignored: evaluator access matters only if testing can delay or change a release, which is why the threshold and what happens after a worrying result should be part of the agreement.
+
+\subsection{Recommendations}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{Build the deal around the Netherlands, Japan and Taiwan.} They hold the eight chokepoints the US cannot replace within five years. Others can join on the same terms.
+\item \textbf{Lead with anti-diversion checks, and say clearly what they are for.} Offer harmonised end-use checks and shared information on diversion networks, and ask explicitly for evaluator access and a role in verification in return. Alignment alone has not bought these.
+\item \textbf{Ask for evaluator access on terms that respect US sequencing.} Members' AI safety institutes should seek pre-deployment access after US testing, above an agreed capability threshold.
+\item \textbf{Back US-led hardware verification rather than getting ahead of it.} Chipmakers and memory makers in the coalition can support a common standard, but should move with Washington, not against a US firm on their own.
+\item \textbf{Do not threaten supply, coordinate prices or threaten to sell to China.} On the evidence we have, these would speed up US replacement of the coalition's chokepoints and burn the leverage they rely on.
+\item \textbf{Work towards conditions that travel with the supply.} The nuclear safeguards model is the most promising route to the safety value of binding buyer conditions, but only if it is agreed with the US. Know-your-customer checks on the very largest compute buyers are a first step the US also pursues.
+\item \textbf{Use the lead while it lasts.} The chokepoints with long replacement times are where conditions carry weight. These holds will shrink as US and Chinese investment pays off.
+\end{itemize}
+
+\section{Limitations}
+
+\begin{itemize}[leftmargin=*]
+\item \textbf{One judge per score.} Every score was drafted by an AI assistant (Claude) with a line of evidence, then reviewed and decided by one author. The drafts were written knowing how each past case ended, so they may lean towards fitting the outcomes. We report no inter-rater agreement.
+\item \textbf{Thin history.} Nine cases is few, four are commodities, and only two are conditions with known endings. In one of those, nuclear safeguards, the condition was also backed by a pause in supply while terms were renegotiated, so it is not a pure condition. ``Conditions beat threats'' and ``time to replace separates the cuts'' are patterns in a handful of cases, not tested results.
+\item \textbf{Transfer.} Four of the cases are commodity markets, and chips are harder to substitute than commodities. The two condition cases are about verification and legal safeguards, not chips. They are the closest precedents we found for attaching safety conditions to supply, but the lessons transfer imperfectly.
+\item \textbf{The bargain is untested.} Section~\ref{sec:bargain} follows from our findings, but we have not tested it with officials or firms in any of the countries concerned.
+\item \textbf{Data.} Shares come from one main source and range from 2019 to 2025. Most countries are assigned by firm headquarters, but the leading-edge figure is by location. The HBM figure is a projection. Most materials and all advanced packaging capacity went unmeasured.
+\item \textbf{Press reports.} Two judgments rest partly on press reports we could not check against primary sources: the White House request about UK testing (A2) and Nvidia's opposition to location verification (A4).
+\item \textbf{Sensitivity.} No verdict flips under the scores we were least sure of, but A3 now has two routes to becoming credible: reading Japan and Korea in 2019 as ``partly worked'' rather than ``backfired'', or treating nuclear safeguards as a close enough precedent for conditions passed down the supply chain. Changing our other uncertain scores moves no verdict.
+\item \textbf{Out of scope.} We did not model how firms (as opposed to governments) would behave, could not see private negotiations or classified export-control deliberations, and did not interview officials or firms. We scored Taiwan like any other country and did not ask whether it could join a coalition openly.
+\end{itemize}
+
+\section{Future work}
+
+This remains a first cut for people working on chip diplomacy to test and build on. Next, we would:
+
+\begin{itemize}[leftmargin=*]
+\item test the bargain in Section~\ref{sec:bargain} with officials and firms in the Netherlands, Japan and Taiwan, and with US export-control authorities;
+\item add more cases where leverage took the form of a condition, since the main finding rests on two;
+\item have two people score independently and report how often they agree;
+\item drop or rethink the variables that do not separate outcomes, and test whether how narrow the demand is, stockpiles and money, and how tight the market was explain the remaining differences;
+\item find free, dated sources for chip materials and advanced packaging;
+\item check the press-reported facts behind A2 and A4.
+\end{itemize}
+
+\section{Conclusion}
+
+Countries that hold chokepoints in the AI chip supply chain have something the US needs, but not for long, and not enough to make threats work. In the past cases we studied, cuts only held where the target needed more than five years to replace supply, and most of today's chokepoints fall short of that. Conditions did better: both condition cases worked, including one where the US changed its intelligence rules. The asks these countries can credibly make are the ones that work with US policy, and the most promising version is an explicit bargain led by the Netherlands, Japan and Taiwan: shared anti-diversion checks offered in exchange for evaluator access to frontier models and a role in hardware verification. Threats to cut supply, price coordination and threats to sell to China belong on the avoid list. The most valuable ask, binding safety conditions on the biggest compute buyers, stays out of reach for now, but the nuclear safeguards model shows what a route to it could look like.
+
+\section*{Code}
+
+The data, code and scores are available at \url{https://github.com/andrew-ayobami/chip-supply-chain-leverage}.
+
+\section*{References}
+
+\begingroup\small
+\begin{itemize}[leftmargin=1.5em, itemindent=-1.5em, label={}, itemsep=2pt]
+\item Emerging Technology Observatory (2026). Semiconductor Supply Chain Dataset, September 2026 release. \url{https://eto.tech/dataset-docs/chipexplorer}
+\item Khan, S. M., Peterson, D. and Mann, A. (2021). The Semiconductor Supply Chain: Assessing National Competitiveness. Center for Security and Emerging Technology. \url{https://cset.georgetown.edu/publication/the-semiconductor-supply-chain/}
+\item TrendForce (2025). ``NVIDIA Reportedly Drives 27\% of SK hynix Revenue in 1H25, Cementing AI Chip Partnership'', 18 August 2025. \url{https://www.trendforce.com/news/2025/08/18/news-nvidia-reportedly-drives-27-of-sk-hynix-revenue-in-1h25-cementing-ai-chip-partnership}
+\item Semiconductor Industry Association and Boston Consulting Group (2024). Emerging Resilience in the Semiconductor Supply Chain, May 2024. \url{https://www.semiconductors.org/wp-content/uploads/2024/05/Report_Emerging-Resilience-in-the-Semiconductor-Supply-Chain.pdf}
+\item US Office of the Historian. ``Oil Embargo, 1973--1974''. \url{https://history.state.gov/milestones/1969-1976/oil-embargo}
+\item Encyclopaedia Britannica. ``Arab oil embargo''. \url{https://www.britannica.com/event/Arab-oil-embargo}
+\item International Energy Agency. ``History''. \url{https://www.iea.org/about/history}
+\item Mingst, K. (1976). ``Cooperation or illusion: an examination of the Intergovernmental Council of Copper Exporting Countries''. International Organization 30(2).
+\item Central Intelligence Agency. ``The CIPEC Countries and the Free World Copper Market'' (declassified). \url{https://www.cia.gov/readingroom/node/1953704}
+\item Economic History Society. ``Zambia, CIPEC and the Global South''. \url{https://ehs.org.uk/zambia-cipec-and-the-global-south-visions-for-development-in-the-long-1960s/}
+\item Prest, M. (1986). ``The Collapse of the International Tin Agreement''. IDS Bulletin 17(4). \url{https://www.ids.ac.uk/publications/the-collapse-of-the-international-tin-agreement}
+\item Mallory, I. A. (1990). ``Conduct Unbecoming: The Collapse of the International Tin Agreement''. American University International Law Review.
+\item The Northern Miner. ``The tin metal scheme that went wrong''. \url{https://www.northernminer.com/news/the-tin-metal-scheme-that-went-wrong/1000123981/}
+\item King, A. and Armstrong, S. (2013). ``Did China really ban rare earth metals exports to Japan?'' East Asia Forum, 18 August 2013. \url{https://eastasiaforum.org/2013/08/18/did-china-really-ban-rare-earth-metals-exports-to-japan/}
+\item NATO Strategic Communications Centre of Excellence. ``Hybrid threats: 2010 Senkaku crisis''. \url{https://stratcomcoe.org/cuploads/pfiles/senkaku_crisis.pdf}
+\item Mining.com (2010). ``China-Japan rare earth spat curbs exports''. \url{https://www.mining.com/china-japan-rare-earth-spat-curbs-exports/}
+\item VOA (2011). ``China rare earths exports up in 2010''. \url{https://voa.pangea-cms.com/preview/en-US/a/china-rare-earths-exports-up-in-2010-114128034/168512.html}
+\item Makioka, R. and Zhang, H. (2023). Study of the 2019 Japanese export controls on Korea. RIETI. \url{https://www.rieti.go.jp/en/publications/summary/23030011.html}
+\item Baker McKenzie Sanctions News (2019). ``Additional restrictions added to METI's licensing policies and procedures on exports of controlled items to the Republic of Korea''. \url{https://sanctionsnews.bakermckenzie.com/additional-restrictions-added-to-metis-licensing-policies-and-procedures-on-exports-of-controlled-items-to-the-republic-of-korea}
+\item Korea Times (2023). ``Korea withdraws WTO complaint about Japan's export curb'', 16 March 2023. \url{https://www.koreatimes.co.kr/foreignaffairs/20230316/korea-withdraws-wto-complaint-about-japans-export-curb}
+\item Arms Control Association. ``The Nuclear Suppliers Group (NSG) at a Glance''. \url{https://www.armscontrol.org/factsheets/nuclear-suppliers-group-nsg-glance}
+\item Parliament of Australia, Senate committee report on uranium. ``Safeguards policy: development''. \url{https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Former_Committees/uranium/report/c06-1}
+\item Protocol suspending the safeguards under the trilateral agreement between the IAEA, Canada and Japan, 2 December 1977. The World and Japan database. \url{https://worldjpn.net/documents/texts/JPSC/19771202.T1E.html}
+\item The Press, Christchurch (1977). ``Canada, Common Market near nuclear accord'', 18 February 1977. \url{https://paperspast.natlib.govt.nz/newspapers/CHP19770218.2.66}
+\item Executive Order 14086 (2022). ``Enhancing Safeguards for United States Signals Intelligence Activities'', 7 October 2022. \url{https://www.presidency.ucsb.edu/documents/executive-order-14086-enhancing-safeguards-for-united-states-signals-intelligence}
+\item Wilson Sonsini (2025). ``EU court upholds the validity of the EU--U.S. Data Privacy Framework''. \url{https://www.wsgr.com/en/insights/eu-court-upholds-the-validity-of-the-eu-us-data-privacy-framework.html}
+\item Privacy Company. ``Latombe v. European Commission''. \url{https://www.privacycompany.eu/blog/latombe-v-european-commission-the-dpf-ca-tombe}
+\item Mastanduno, M. (1992). Economic Containment: CoCom and the Politics of East-West Trade. Cornell University Press.
+\item Christian Science Monitor (1987). On the Toshiba--Kongsberg affair, 11 September 1987. \url{https://csmonitor.com/1987/0911/fshiba-f.html}
+\item GlobalSecurity. ``Toshiba--Kongsberg incident''. \url{https://www.globalsecurity.org/intell/world/russia/toshiba.htm}
+\item Wikipedia. ``Coordinating Committee for Multilateral Export Controls''. \url{https://en.wikipedia.org/wiki/CoCom}
+\item CSIS (2023). ``Japan and the Netherlands Announce Plans for New Export Controls on Semiconductor Equipment''. \url{https://www.csis.org/analysis/japan-and-netherlands-announce-plans-new-export-controls-semiconductor-equipment}
+\item CSIS (2023). ``Clues to the U.S.-Dutch-Japanese Semiconductor Export Controls Deal Are Hiding in Plain Sight''. \url{https://www.csis.org/analysis/clues-us-dutch-japanese-semiconductor-export-controls-deal-are-hiding-plain-sight}
+\item CSIS (2024). ``Understanding the Biden Administration's Updated Export Controls''. \url{https://www.csis.org/analysis/understanding-biden-administrations-updated-export-controls}
+\item Tom's Hardware (2025). ``Nvidia defiant over backdoors and kill switches in GPUs as US mulls tracking requirements''. \url{https://tomshardware.com/pc-components/gpus/nvidia-defiant-over-backdoors-and-kill-switches-in-gpus-as-u-s-mulls-tracking-requirements-calls-them-permanent-flaws-that-are-a-gift-to-hackers}
+\item Foundation for American Innovation. ``The Chip Security Act: a bipartisan solution to chip smuggling''. \url{https://www.thefai.org/posts/the-chip-security-act-a-bipartisan-solution-to-chip-smuggling}
+\item The Next Web (2026). ``UK says it will again test OpenAI and Anthropic models before release''. \url{https://thenextweb.com/news/uk-ai-security-institute-pre-release-access-openai-anthropic}
+\item Cloud Security Alliance (2026). Research note on CAISI frontier AI testing agreements. \url{https://labs.cloudsecurityalliance.org/research/csa-research-note-caisi-frontier-ai-testing-agreements-20260/}
+\end{itemize}
+\endgroup
+
+\section*{LLM usage statement}
+
+\begin{itemize}[leftmargin=*]
+\item Claude (Anthropic, via Claude Code): finding sources; writing the data, screening and comparison code; drafting every case and chokepoint score with a line of evidence, each then reviewed and decided by one author; drafting parts of the report; and the video's script, slides and captions.
+\item Piper text-to-speech (open-source, ``Norman'' voice): video narration.
+\end{itemize}
+
+\section*{Appendix A. How the screen was run}
+
+\begin{itemize}[leftmargin=*]
+\item Only the narrowest inputs were screened (for example ``EUV lithography tools'', not ``lithography tools''), so the same hold is not counted twice.
+\item ETO's own country shares were used as given. Exactly 40\% counts as a pass. ``Various countries'' and ``Europe'' cannot pass.
+\item Inputs with no share figure were listed as ``could not screen'', never guessed. Eleven materials fell here, including photoresists, electronic gases and wet chemicals.
+\item The screen found 42 country-input pairs at 40\%. Seven with a world market under \$100 million were dropped from scoring, leaving 35.
+\item ETO files are pinned to GitHub commit 9a4e1b1 of georgetown-cset/eto-chip-explorer (13 October 2026), downloaded on 21 October 2026.
+\item Time to replace for today's chokepoints followed a written rule: low if a US or US-controlled maker already covers most of the need; medium if there is a minority US maker or a mature technology a new entrant could build within 2 to 5 years; high if there is no US maker and it is a lithography-class frontier system.
+\end{itemize}
+
+\section*{Appendix B. Scores for the past cases}
+
+H = high, M = medium, L = low. Form: cut or threat to cut (Cut), supply or price management (Price), or condition (Cond.).
+
+\begin{center}\small
+\setlength{\tabcolsep}{4pt}
+\begin{tabularx}{\linewidth}{@{}X l c c c c c c l@{}}
+\toprule
+\textbf{Case} & \textbf{Form} & \textbf{Conc.} & \textbf{Subst.} & \textbf{Time} & \textbf{Coh.} & \textbf{Dep.} & \textbf{State} & \textbf{Outcome}\\
+\midrule
+Oil embargo 1973 to 1974 & Cut & M & M & H & L & H & H & Partly worked\\
+CIPEC, from 1967 & Price & M & H & M & M & H & M & Failed\\
+Tin council 1985 & Price & M & H & M & M & M & M & Backfired\\
+China and Japan 2010 & Cut & H & L & M & L & H & H & Backfired\\
+Japan and Korea 2019 to 2023 & Cut & H & M & M & L & H & M & Backfired\\
+Nuclear safeguards, from 1974 & Cond. & H & L & H & M & H & H & Worked\\
+EU data flows 2020 to 2023 & Cond. & H & M & M & H & H & H & Worked\\
+CoCom 1949 to 1994 & Cut & H & M & H & L & L & M & Partly worked\\
+Dutch and Japanese controls 2023 & Cond. & H & L & L & M & H & M & Too early\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\section*{Appendix C. The asks in detail}
+
+\begin{center}\small
+\begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}p{3.4cm} X X@{}}
+\toprule
+\textbf{Ask} & \textbf{What it requires of the US government or US firms} & \textbf{Who has to agree}\\
+\midrule
+A1. Anti-diversion and end-use checks & Share diversion intelligence and end-user lists, coordinate licensing; US chip designers cooperate on end-use checks & Members' export agencies, US government, suppliers on both sides\\
+A2. Evaluator access & US labs give members' AI safety institutes pre-deployment access; US government does not block it & US labs, US government, members' institutes\\
+A3. Conditions on big compute buyers & US labs and cloud firms above a threshold run evaluations and report incidents; US government accepts conditions set abroad & Members, coalition firms, US labs and clouds, US government\\
+A4. Hardware verification & US chip designers build in location verification; US government sets a requirement or standard & US chip designers, US government, coalition chipmakers and memory makers\\
+A5. Withholding supply & Nothing it would agree to; imposes costs on the US & All members, and firms that would lose revenue\\
+A6. Coordinating prices & Nothing; raises costs for US buyers & Coalition firms and governments\\
+A7. Threatening to sell to China & Nothing; aimed at US policy & Members and firms\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\clearpage
+\section*{Appendix D. Scores for today's chokepoints (target: US)}
+
+H = high, M = medium, L = low. Columns: concentration, substitutability, time to replace, cohesion, dependence on the US, state control.
+
+\begin{center}\footnotesize
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.1}
+\begin{tabularx}{\linewidth}{@{}l l X >{\raggedright\arraybackslash}p{2.5cm} c c c c c c@{}}
+\toprule
+\textbf{Row} & \textbf{Country} & \textbf{Input} & \textbf{Share (year)} & \textbf{Conc.} & \textbf{Subst.} & \textbf{Time} & \textbf{Coh.} & \textbf{Dep.} & \textbf{State}\\
+\midrule
+C02 & Austria & Mask exposure systems, e-beam & 46.6\% (2025) & M & M & M & H & M & M\\
+C03 & Austria & Wafer bonding and aligning tools & 47.9\% (2025) & M & M & M & H & M & M\\
+C06 & Germany & Mask aligners & 82.2\% (2025) & H & M & M & H & H & M\\
+C07 & Japan & Critical dimensions metrology tools & 72.1\% (2025) & H & M & M & H & H & M\\
+C08 & Japan & Crystal machining tools & 99.7\% (2025) & H & L & M & M & H & M\\
+C09 & Japan & Dicing tools & 95\% (2025) & H & L & M & H & H & M\\
+C11 & Japan & Dry stripping tools & 45.9\% (2025) & M & M & M & M & H & M\\
+C12 & Japan & Handlers and probers & 41.5\% (2025) & M & M & M & M & H & M\\
+C13 & Japan & Insulator etching tools & 55.9\% (2025) & M & M & M & H & H & M\\
+C14 & Japan & Mask exposure systems, e-beam & 53.4\% (2025) & M & M & H & M & H & M\\
+C15 & Japan & Memory test tools & 63.7\% (2025) & H & M & M & H & H & M\\
+C16 & Japan & Packaging tools & 57.3\% (2025) & M & M & M & M & H & M\\
+C17 & Japan & Photomask handlers & 90.3\% (2025) & H & L & M & H & H & M\\
+C18 & Japan & Photomask inspection and repair tools & 42.8\% (2025) & M & M & M & H & H & M\\
+C19 & Japan & Resist processing tools & 95.2\% (2025) & H & L & H & H & H & M\\
+C20 & Japan & Resist processing tools (advanced packaging) & 92.1\% (2025) & H & L & M & H & H & M\\
+C21 & Japan & Single wafer spin and spray systems (advanced packaging) & 66.8\% (2025) & H & M & M & M & H & M\\
+C22 & Japan & SoC test tools & 65.9\% (2025) & H & M & M & H & H & M\\
+C23 & Japan & Tube-based diffusion and deposition tools & 75.1\% (2025) & H & M & M & M & H & M\\
+C24 & Japan & Wafer handlers & 88.2\% (2025) & H & M & M & M & H & M\\
+C25 & Japan & Wet etching and cleaning tools & 51.9\% (2025) & M & M & M & M & H & M\\
+C26 & Japan & i-line lithography tools & 56.9\% (2025) & M & M & H & H & H & M\\
+C27 & Japan & Photomasks & 53\% (2019) & M & H & L & M & H & M\\
+C28 & Japan & Silicon wafers & 56\% (2019) & M & M & M & M & H & M\\
+C29 & Netherlands & ArF dry (DUV) lithography tools & 94.4\% (2025) & H & L & H & H & H & M\\
+C30 & Netherlands & ArF immersion (DUV) lithography tools & 99.3\% (2025) & H & L & H & H & H & M\\
+C31 & Netherlands & Atomic layer deposition tools & 54.5\% (2025) & M & M & M & H & H & M\\
+C32 & Netherlands & EUV lithography tools & 100\% (2025) & H & L & H & H & H & M\\
+C33 & Netherlands & KrF (DUV) lithography tools & 66\% (2025) & H & M & H & H & H & M\\
+C34 & Netherlands & Overlay metrology tools & 47.9\% (2025) & M & H & L & H & H & M\\
+C35 & Singapore & Auto ball bonders for IC & 90.9\% (2025) & H & M & L & H & M & L\\
+C39 & South Korea & HBM memory & 81\% (2025, projection) & H & M & M & M & H & M\\
+C40 & South Korea & Burn-in test tools & 61.4\% (2025) & H & M & M & H & H & M\\
+C41 & Sweden & Mask exposure systems, laser beam & 70.7\% (2025) & H & M & M & H & H & M\\
+C42 & Taiwan & Leading-edge logic capacity (under 10nm) & 69\% (2022, by location) & H & L & H & H & H & M\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+\end{document}

@@ -1,0 +1,35 @@
+## 1 | Conditions, not cutoffs
+Conditions, not cutoffs.
+
+## 2 | The question
+A handful of countries outside the US and China make parts of the A.I. chip supply chain that nobody can yet do without. We asked: what A.I. safety asks could these countries credibly make, and what should they avoid?
+
+## 3 | Why now
+Their hold won't last. The US and China are both building their own supply. So there are two ways to waste it: never use it, or use it badly.
+
+## 4 | What we did
+We let a rule pick the countries: any whose firms hold at least forty percent of world supply of a chip input. Then we compared today with five past supplier coalitions whose endings we know.
+
+## 5 | Eight countries hold chokepoints
+Eight countries came out. Japan holds the most inputs, and the Netherlands the deepest, through A.S.M.L., the only maker of the machines that print the most advanced chips. Korea leads in high bandwidth memory, Taiwan in leading edge chipmaking, and Germany, Austria, Singapore and Sweden hold smaller niches.
+
+## 6 | What history says
+History told one clear story. Leverage held only when the target needed more than five years to replace the supply. Everywhere else, it failed or backfired. And even when it worked, buyers organised.
+
+## 7 | Where today's coalition stands
+Today, the US could replace twenty-seven of the thirty-five chokepoints within about five years, and almost every holder relies on the US for its security. A threat from this group looks like the cases that backfired.
+
+## 8 | Coordinate on
+So what should they ask for? Coordinate on three things. Shared checks to keep advanced chips away from actors with no safety oversight. Access to frontier models for their own evaluators. And support for US-led hardware verification, like location checks on chips. Why these? Anti-diversion checks are what US export controls already aim at, so they cost Washington little, and they act directly on chips reaching actors nobody oversees. Evaluator access and hardware verification each ride with part of US policy. US labs already share early models with American and British testers, and Congress is weighing location checks of its own. So these can be agreed as conditions, without threatening anyone.
+
+## 9 | Avoid
+And avoid three: withholding supply, coordinating prices, and threatening to sell to China. Why not? A threat to withhold supply is aimed at a country that could replace most of it within five years, made by allies who rely on it for their security. Price coordination failed in both past cases where producers tried it. And threatening to sell to China would contradict the anti-diversion checks, and would not be believed. Some argue that more Chinese access to chips could ease the race and help cooperation on safety. But as a threat, it is not credible.
+
+## 10 | The catch
+One catch. The ask with the most direct safety value, binding conditions on the biggest buyers of compute, isn't credible. These countries sit too far up the supply chain to enforce it without a threat.
+
+## 11 | A first cut
+This is a first cut, built on five past cases. We'd love others to test it.
+
+## 12 | Credits
+By Andrew Ayobami, Ayodele Abraham and Gideon Bature. Video made with Claude.

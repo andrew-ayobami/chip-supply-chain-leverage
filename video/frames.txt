@@ -1,0 +1,83 @@
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s01_c00.png'
+duration 4.174
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s02_c00.png'
+duration 8.190
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s02_c01.png'
+duration 6.817
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s03_c00.png'
+duration 1.724
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s03_c01.png'
+duration 3.488
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s03_c02.png'
+duration 4.448
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s04_c00.png'
+duration 5.880
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s04_c01.png'
+duration 5.772
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s05_c00.png'
+duration 1.944
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s05_c01.png'
+duration 7.540
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s05_c02.png'
+duration 10.416
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s06_c00.png'
+duration 2.397
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s06_c01.png'
+duration 4.986
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s06_c02.png'
+duration 3.418
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s06_c03.png'
+duration 3.926
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s07_c00.png'
+duration 9.514
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s07_c01.png'
+duration 4.100
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c00.png'
+duration 2.455
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c01.png'
+duration 1.967
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c02.png'
+duration 5.160
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c03.png'
+duration 3.373
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c04.png'
+duration 5.415
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c05.png'
+duration 1.317
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c06.png'
+duration 9.735
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c07.png'
+duration 5.485
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c08.png'
+duration 7.435
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s08_c09.png'
+duration 4.321
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s09_c00.png'
+duration 5.752
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s09_c01.png'
+duration 1.608
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s09_c02.png'
+duration 8.445
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s09_c03.png'
+duration 4.325
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s09_c04.png'
+duration 4.916
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s09_c05.png'
+duration 6.193
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s09_c06.png'
+duration 3.078
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s10_c00.png'
+duration 1.584
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s10_c01.png'
+duration 6.437
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s10_c02.png'
+duration 5.029
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s11_c00.png'
+duration 3.570
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s11_c01.png'
+duration 2.637
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s12_c00.png'
+duration 4.208
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s12_c01.png'
+duration 4.607
+file 'C:/Users/Hp/Github projects/chip-supply-chain-leverage/video/frames/s12_c01.png'
