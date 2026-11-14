@@ -130,3 +130,22 @@ Each case has a 3-line summary, an outcome, scores on the six variables with one
 - Baker McKenzie Sanctions News, METI's 2019 licensing changes for exports to Korea: https://sanctionsnews.bakermckenzie.com/additional-restrictions-added-to-metis-licensing-policies-and-procedures-on-exports-of-controlled-items-to-the-republic-of-korea
 - Makioka and Zhang (RIETI, 2023), effects of the export controls on Japan–Korea trade and Korean production: https://www.rieti.go.jp/en/publications/summary/23030011.html
 - Korea Times, "Korea withdraws WTO complaint about Japan's export curb", 16 Mar 2023: https://www.koreatimes.co.kr/foreignaffairs/20230316/korea-withdraws-wto-complaint-about-japans-export-curb
+
+---
+
+# Cases added in November 2026
+
+The five cases above are all cuts or price schemes, so none tested whether attaching **conditions** to supply works, which is what the paper recommends, and only one of them worked. Four cases were added to fill that gap. Each was chosen because the leverage took the form of a condition or bargain, or because it involved allies and the US over export controls.
+
+Who the target is, and what the target needs, was fixed **before** scoring (this commit), together with the wider wording of "time to replace" and the "form of leverage" label in `notes/variable_anchors.md`.
+
+| Case | Group using the leverage | Target | What the target needs | Form of leverage |
+| --- | --- | --- | --- | --- |
+| K6 · Nuclear supply safeguards, from 1974 | Nuclear suppliers in the Nuclear Suppliers Group, with Canada and Australia leading on safeguards | Importing states, for example Japan and members of the European Community | Uranium, fuel and nuclear technology | Condition |
+| K7 · EU data flows and US surveillance, 2020–2023 | The EU | The US government | Lawful transfers of EU personal data to US firms | Condition |
+| K8 · CoCom, 1949–1994 | Western allies, including the US | The Soviet bloc | Advanced Western technology | Cut |
+| K9 · Dutch and Japanese chip controls, 2023 | The Netherlands and Japan | The US | Allied chip tools kept out of China | Condition (a bargain over alignment) |
+
+K9's ending is not known yet. It is scored on the six variables, but its outcome is recorded as "too early", and it is left out of the rules of thumb and the closest-case comparison.
+
+Labels for the original five: K1 cut or threat to cut; K2 supply or price management; K3 supply or price management; K4 cut or threat to cut; K5 cut or threat to cut.
