@@ -1,12 +1,12 @@
 # Leverage profile: today's chokepoints against the past cases
 
-Built from the final scores for all 35 chokepoint rows (`scoring/chokepoints_final.csv`) and the 5 past cases (`scoring/cases_final.csv`). Run `python src/profile.py` to reproduce it. Per-row distances are in `results/profile_distances.csv`.
+Built from the final scores for all 35 chokepoint rows (`scoring/chokepoints_final.csv`) and the 8 past cases with known outcomes (`scoring/cases_final.csv`; K9 is left out because its outcome is too early to judge). Run `python src/profile.py` to reproduce it. Per-row distances are in `results/profile_distances.csv`.
 
 **How "closest case" is measured:** the number of score steps between a row and a case, added up across the six variables (low to high counts as 2 steps). The case with the smallest total is the closest. Ties are counted for each case involved.
 
 ## Where the leverage is strongest
 
-**Eight rows** score **high on time to replace**, meaning the US would need more than 5 years to build its own supply. That is the only variable that separated the past cases:
+**Eight rows** score **high on time to replace**, meaning the US would need more than 5 years to build its own supply or a route around the holder. In the past cases, that is what separated the cuts that partly worked from the ones that backfired:
 - **Netherlands (ASML):** EUV (C32), ArF immersion (C30), ArF dry (C29) and KrF (C33) lithography
 - **Taiwan:** leading-edge fabrication (C42)
 - **Japan:** front-end resist processing (C19, Tokyo Electron), i-line lithography (C26, Canon) and e-beam mask writers (C14)
@@ -27,19 +27,30 @@ Five of these (C19, C29, C30, C32, C42) are also **single-firm holds with low su
 
 ## Which past case it most resembles
 
-| Closest case (ties counted for each) | Rows |
-| --- | --- |
-| K5 Japan–Korea 2019 (backfired) | 21 |
-| K2 CIPEC (failed) | 12 |
-| K4 China–Japan 2010 (backfired) | 9 |
-| K3 Tin council (backfired) | 3 |
-| K1 Oil embargo (partly worked) | 2 (C14, C26, both ties with CIPEC) |
+| Closest case (ties counted for each) | Form | Outcome | Rows |
+| --- | --- | --- | --- |
+| K7 EU data flows 2020–23 | condition | worked | 15 |
+| K2 CIPEC | price management | failed | 12 |
+| K6 Nuclear safeguards, from 1974 | condition | worked | 6 |
+| K5 Japan–Korea 2019 | cut | backfired | 5 |
+| K3 Tin council | price management | backfired | 2 |
+| K1 Oil embargo | cut | partly worked | 2 |
+| K4 China–Japan 2010 | cut | backfired | 1 |
 
-- **Overall:** today's chokepoints look most like Japan–Korea 2019 and CIPEC, where the leverage backfired or failed. No row is closest to the oil embargo alone.
-- **The strongest rows are a mix no past case had.** EUV, ArF, Taiwan's fabs and Tokyo Electron's resist processing look like China–Japan 2010 and Japan–Korea 2019 on concentration and substitutability (both backfired). But they score **high** on time to replace, like the oil embargo. So the five cases don't directly cover the strongest chokepoints.
-- **What this suggests:** for most of today's chokepoints, a threat to cut supply resembles past cases that failed or backfired. That supports the working hypothesis that conditions attached to supply work better than threats. Only a handful of ASML, TSMC, Tokyo Electron and Canon rows have the long replacement time that held up in 1973, and even there the closest structural matches backfired.
+- **Counting each row once:** 16 rows are closest only to cases that worked or partly worked, 13 only to cases that failed or backfired, and 6 are tied between the two.
+- **The strongest rows now have a close match.** EUV, ArF immersion, ArF dry, Tokyo Electron's resist processing and Taiwan's leading-edge fabs are all closest to nuclear safeguards (K6): highly concentrated, hard to substitute, slow to replace, and held by countries that rely on the buyer. KrF lithography is closest to EU data flows (K7).
+- **This changed when the condition cases were added.** With only the original five cases (all cuts and price schemes), most rows were closest to cases that backfired, and the strongest rows matched no case well. That result reflected the case set, not the chokepoints.
+
+## How to read this
+
+- **The distance measure compares the structure of the leverage, not how it is used.** It doesn't know whether a row would be used as a cut or a condition.
+- **Read together with the rules of thumb, the picture is consistent:**
+  - Used as a **condition**, the strongest chokepoints look like the nuclear safeguards case, which worked. Most of the rest look like the EU data case, which also worked.
+  - Used as a **cut**, rule 2 applies: cuts only held where replacement took more than five years, which is true of 8 of the 35 rows. A threat from the other 27 would look like the cuts that backfired.
+- **This supports the working hypothesis more directly than before:** the same chokepoints look strong as conditions and weak as threats.
 
 ## Caveats
 
+- **One scorer per case and row, so there is no agreement figure.** Claude drafted the scores; Andrew reviewed the first five cases and the 35 rows. K6–K8 await his review.
 - **The distances are partly driven by variables that barely vary today** (dependence and state control).
-- **The past-case evidence is thin:** only 5 cases, 4 of them commodities (oil, copper, tin, rare earths).
+- **Two condition cases is a thin base.** Both are about verification and legal safeguards rather than chips.

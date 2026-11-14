@@ -27,6 +27,7 @@ def distances(rows, cases):
 
 def main():
     cases = pd.read_csv(ROOT / "scoring" / "cases_final.csv")
+    cases = cases[cases.outcome != "too early"]  # no known ending, so not a guide to what happens
     rows = pd.read_csv(ROOT / "scoring" / "chokepoints_final.csv")
     dist = distances(rows, cases)
     dist.to_csv(ROOT / "results" / "profile_distances.csv", index=False)

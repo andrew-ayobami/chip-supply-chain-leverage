@@ -149,3 +149,105 @@ Who the target is, and what the target needs, was fixed **before** scoring (this
 K9's ending is not known yet. It is scored on the six variables, but its outcome is recorded as "too early", and it is left out of the rules of thumb and the closest-case comparison.
 
 Labels for the original five: K1 cut or threat to cut; K2 supply or price management; K3 supply or price management; K4 cut or threat to cut; K5 cut or threat to cut.
+
+---
+
+## K6 · Nuclear supply safeguards, from 1974 (target: importing states such as Japan and the European Community)
+
+**Summary**
+- **What the supplier wanted:** after India used Canadian-supplied technology for its 1974 nuclear test, suppliers made nuclear exports conditional on stronger safeguards against military use. Canada demanded new safeguards agreements from its buyers, the Nuclear Suppliers Group first met in 1975 and published guidelines in 1978, and in May 1977 Australia announced that its uranium would go only to countries meeting its safeguards conditions.
+- **How the target responded:** Canada halted uranium shipments to the European Community and Japan around the turn of 1977 while new agreements were negotiated. Both accepted Canada's terms: shipments to the Community resumed in July 1977 under an interim agreement, and Canada and Japan signed new safeguards arrangements in December 1977.
+- **How long it lasted:** safeguards conditions have been a standard part of nuclear supply ever since. The exception is India, which refused, was cut off, built its own programme, and in 2008 won a waiver from the suppliers under US pressure.
+
+**Outcome: worked.** The buyers accepted the conditions within months, and the condition outlived the episode by decades.
+
+| Variable | Score | Evidence |
+| --- | --- | --- |
+| Concentration | high | The suppliers that tightened together (Canada, the US, France and others) provided most of the uranium and almost all of the enrichment Japan and the Community relied on. The shares are approximate. |
+| Substitutability | low | The main suppliers all moved to tougher safeguards at the same time, and suppliers outside the group were small. |
+| Time to replace | high | Japan has no uranium of its own, and building a full independent fuel supply takes well over five years. |
+| Cohesion | medium | About three suppliers (the US, Canada and France) made up most of what these buyers needed. The figures are approximate. |
+| Dependence on the target | high | Japan and the Community were among Canada's main uranium customers. There was no security dependence on them. |
+| State control | high | Nuclear exports need government licences, and Canada's uranium industry included a state-owned firm, Eldorado Nuclear. |
+
+**Sources**
+- Arms Control Association, "The Nuclear Suppliers Group at a Glance": https://www.armscontrol.org/factsheets/nuclear-suppliers-group-nsg-glance
+- Australian Senate committee report, "Safeguards policy: development": https://www.aph.gov.au/Parliamentary_Business/Committees/Senate/Former_Committees/uranium/report/c06-1
+- Japan–Canada–IAEA protocol, 2 December 1977 (The World and Japan database): https://worldjpn.net/documents/texts/JPSC/19771202.T1E.html
+- The Press (Christchurch), "Canada, Common Market near nuclear accord", 18 February 1977: https://paperspast.natlib.govt.nz/newspapers/CHP19770218.2.66
+
+---
+
+## K7 · EU data flows and US surveillance, 2020–2023 (target: the US government)
+
+**Summary**
+- **What the supplier wanted:** in July 2020 the EU's top court (the Schrems II ruling) struck down the Privacy Shield, the legal basis for moving EU personal data to the US, because US surveillance law gave Europeans too little protection and no real redress. The EU wanted those safeguards before data could flow freely again.
+- **How the target responded:** the US government changed its own intelligence rules. Executive Order 14086 (7 October 2022) limited signals intelligence to listed legitimate purposes and created a Data Protection Review Court for complaints from EU residents.
+- **How long it lasted:** the EU then recognised the new US safeguards as adequate on 10 July 2023 (the EU–US Data Privacy Framework). The EU General Court upheld that decision on 3 September 2025, although an appeal is possible.
+
+**Outcome: worked.** The US changed rules on a sensitive security matter in order to keep data flowing. Critics argue the changes don't go far enough, and the framework's long-term survival is still being tested in court.
+
+| Variable | Score | Evidence |
+| --- | --- | --- |
+| Concentration | high | Only the EU can permit transfers of EU personal data, and it is the largest partner in US cross-border data flows. |
+| Substitutability | medium | Other legal routes, such as standard contract clauses with extra safeguards, survived the ruling but became uncertain and costly. |
+| Time to replace | medium | The route around the EU was for US firms to keep EU data inside Europe. Large firms began doing so, but rebuilding services that way takes years. |
+| Cohesion | high | One actor: a binding ruling by the EU's court, applied across all member states. |
+| Dependence on the target | high | The EU relies on the US for security through NATO. |
+| State control | high | The ruling bound firms directly, and regulators enforced it: Ireland's data protection authority fined Meta €1.2 billion in 2023 over its transfers. |
+
+**Sources**
+- Executive Order 14086, "Enhancing Safeguards for United States Signals Intelligence Activities", 7 October 2022 (American Presidency Project): https://www.presidency.ucsb.edu/documents/executive-order-14086-enhancing-safeguards-for-united-states-signals-intelligence
+- Wilson Sonsini, "EU court upholds the validity of the EU–U.S. Data Privacy Framework" (2025): https://www.wsgr.com/en/insights/eu-court-upholds-the-validity-of-the-eu-us-data-privacy-framework.html
+- Privacy Company, "Latombe v. European Commission": https://www.privacycompany.eu/blog/latombe-v-european-commission-the-dpf-ca-tombe
+
+---
+
+## K8 · CoCom, 1949–1994 (target: the Soviet bloc)
+
+**Summary**
+- **What the supplier wanted:** Western allies, including the US, agreed lists of technology they would not export to the Soviet bloc, to slow its military development.
+- **How the target responded:** the Soviet bloc built its own industries where it could and tried to obtain controlled technology through neutral countries, front companies and espionage. In the Toshiba–Kongsberg affair, the Japanese and Norwegian firms sold the USSR propeller-milling machines in 1982–84, disguised as less advanced equipment. The machines helped make Soviet submarines quieter. The US banned imports from Kongsberg and Congress moved to sanction Toshiba.
+- **How long it lasted:** the regime held for 45 years and ended in March 1994, after the Cold War. Its lists passed to the Wassenaar Arrangement.
+
+**Outcome: partly worked.** It slowed Soviet access to advanced technology for decades, but leaks like Toshiba–Kongsberg showed its limits.
+
+| Variable | Score | Evidence |
+| --- | --- | --- |
+| Concentration | high | The members held most of the world's advanced computing, electronics and machine-tool supply. |
+| Substitutability | medium | Neutral countries outside the regime, smuggling and espionage covered part of the gap. |
+| Time to replace | high | The Soviet bloc never fully caught up in computing and microelectronics. |
+| Cohesion | low | Many separate members (the US, Japan, West Germany, the UK, France and others) had to hold the line. |
+| Dependence on the target | low | The members traded little with the Soviet bloc and faced it as a security threat, not a partner. |
+| State control | medium | Each government licensed exports, but enforcement varied. Japan's trade ministry approved the Toshiba sales without question. |
+
+**Sources**
+- Christian Science Monitor, on the Toshiba–Kongsberg affair, 11 September 1987: https://csmonitor.com/1987/0911/fshiba-f.html
+- GlobalSecurity, "Toshiba–Kongsberg incident": https://www.globalsecurity.org/intell/world/russia/toshiba.htm
+- Wikipedia, "Coordinating Committee for Multilateral Export Controls" (dates of the regime): https://en.wikipedia.org/wiki/CoCom
+- Mastanduno, M. (1992). *Economic Containment: CoCom and the Politics of East-West Trade*. Cornell University Press.
+
+---
+
+## K9 · Dutch and Japanese chip controls, 2023 (target: the US)
+
+**Summary**
+- **What the supplier wanted:** in January 2023, after months of US pressure, the Netherlands and Japan agreed to restrict exports of advanced chipmaking equipment to China. In return they shaped the terms: each wrote its own rules (the Dutch announced theirs in March 2023, Japan's took effect in July 2023), neither named China, and the deal's exact contents were never published.
+- **How the target responded:** in December 2024 the US extended its rules to cover chipmaking equipment made abroad with US technology, but exempted Japan and the Netherlands, which sources tie to their having already aligned.
+- **How long it lasted:** the arrangement is still running.
+
+**Outcome: too early.** The case is scored on the six variables, but left out of the rules of thumb and the closest-case comparison.
+
+| Variable | Score | Evidence |
+| --- | --- | --- |
+| Concentration | high | ASML and Japanese toolmakers hold most of the equipment the US wanted kept from China (see the Step 1 screen). |
+| Substitutability | low | There are no other suppliers of the most advanced lithography tools. |
+| Time to replace | low | The US has a legal route around the allies: rules covering foreign-made equipment that contains US technology. It used that route for other countries in December 2024. |
+| Cohesion | medium | Two actors, the Netherlands and Japan. |
+| Dependence on the target | high | Both rely on the US for their security. |
+| State control | medium | Both governments license these exports, but the firms are private. |
+
+**Sources**
+- CSIS, "Japan and the Netherlands Announce Plans for New Export Controls on Semiconductor Equipment" (2023): https://www.csis.org/analysis/japan-and-netherlands-announce-plans-new-export-controls-semiconductor-equipment
+- CSIS, "Clues to the U.S.-Dutch-Japanese Semiconductor Export Controls Deal Are Hiding in Plain Sight": https://www.csis.org/analysis/clues-us-dutch-japanese-semiconductor-export-controls-deal-are-hiding-plain-sight
+- CSIS, "Understanding the Biden Administration's Updated Export Controls" (December 2024): https://www.csis.org/analysis/understanding-biden-administrations-updated-export-controls
