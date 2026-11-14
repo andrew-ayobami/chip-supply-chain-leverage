@@ -156,7 +156,7 @@ Full summaries, scores with evidence, and sources: [`notes/step3_cases.md`](note
 
 **Factors the variables may miss:** how narrow the demand is and whether the target can meet it without losing face, whether supply keeps flowing to those who comply, whether the supplier gains anyway, market conditions, stockpiles and money, leakage, and ambiguity over intent.
 
-**Caveat:** there are only two condition cases, and the new case scores were drafted by someone who knew the outcomes.
+**Caveat:** there are only two condition cases, and the case scores were drafted by someone who knew the outcomes, then reviewed by Andrew.
 
 Details: [`notes/step3_patterns.md`](notes/step3_patterns.md).
 

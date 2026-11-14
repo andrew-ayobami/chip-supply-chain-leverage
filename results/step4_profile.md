@@ -51,6 +51,6 @@ Five of these (C19, C29, C30, C32, C42) are also **single-firm holds with low su
 
 ## Caveats
 
-- **One scorer per case and row, so there is no agreement figure.** Claude drafted the scores; Andrew reviewed the first five cases and the 35 rows. K6–K9 await his review.
+- **One scorer per case and row, so there is no agreement figure.** Claude drafted the scores; Andrew reviewed and accepted all case and row scores.
 - **The distances are partly driven by variables that barely vary today** (dependence and state control).
 - **Two condition cases is a thin base.** Both are about verification and legal safeguards rather than chips.
