@@ -80,7 +80,9 @@ Every past case and every chokepoint row is scored low, medium or high on six va
 
 ## Step 3 · What past supplier coalitions show
 
-### The five cases
+### The cases
+
+The first five cases were all cuts or price schemes. Four more were added in November 2026, after the hackathon reviews, so that the set includes leverage used as a **condition** (K6, K7) and allies bargaining over export controls (K8, K9).
 
 **K1 · Arab oil embargo, 1973–74.** *Outcome: partly worked.*
 - **What the supplier wanted:** during the October 1973 war, Arab oil producers cut output and embargoed the US and the Netherlands, to push Israel's backers towards Israeli withdrawal from the 1967 territories.
@@ -107,28 +109,54 @@ Every past case and every chokepoint row is scored low, medium or high on six va
 - **How the target responded:** Korea did not back down while the controls were in force. It filed a WTO complaint and built local hydrogen fluoride supply.
 - **How long it lasted:** the controls stayed for almost four years. Japan lifted them in 2023 after Korea's new government offered its own compensation plan. That plan can be read as a late partial success for Japan.
 
+**K6 · Nuclear supply safeguards, from 1974.** *Outcome: worked.*
+- **What the supplier wanted:** after India's 1974 nuclear test, suppliers made nuclear exports conditional on stronger safeguards. Canada demanded new safeguards agreements, and Australia required them for its uranium from 1977.
+- **How the target responded:** Canada paused uranium shipments to Japan and the European Community while terms were renegotiated, and both accepted within months.
+- **How long it lasted:** safeguards have been a standard condition of nuclear supply ever since. India refused, was cut off, and later won a waiver in 2008.
+
+**K7 · EU data flows and US surveillance, 2020–2023.** *Outcome: worked.*
+- **What the supplier wanted:** the EU's top court struck down the legal basis for sending EU personal data to the US until US surveillance law gave Europeans stronger protection and redress.
+- **How the target responded:** the US changed its signals-intelligence rules and created a redress court (Executive Order 14086, October 2022).
+- **How long it lasted:** the EU recognised the new safeguards in July 2023, and the EU General Court upheld that decision in September 2025.
+
+**K8 · CoCom, 1949–1994.** *Outcome: partly worked.*
+- **What the supplier wanted:** Western allies, including the US, withheld advanced technology from the Soviet bloc.
+- **How the target responded:** the Soviet bloc built its own where it could and obtained some controlled technology through leaks, notably the Toshiba–Kongsberg affair.
+- **How long it lasted:** 45 years, until the end of the Cold War.
+
+**K9 · Dutch and Japanese chip controls, 2023.** *Outcome: too early.*
+- The Netherlands and Japan aligned with US controls on China, but on their own terms and licensing. In December 2024 the US exempted both from a new rule covering foreign-made equipment. The case is scored but left out of the rules of thumb and the profile.
+
 Full summaries, scores with evidence, and sources: [`notes/step3_cases.md`](notes/step3_cases.md) and [`scoring/cases_final.csv`](scoring/cases_final.csv).
 
 ### Scores against outcomes
 
-| Case | Conc. | Subst. | Time to replace | Cohesion | Dependence | State control | Outcome |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| K1 Oil embargo | medium | medium | **high** | low | high | high | partly worked |
-| K2 CIPEC | medium | high | medium | medium | high | medium | failed |
-| K3 Tin council | medium | high | medium | medium | medium | medium | backfired |
-| K4 China–Japan | high | low | medium | low | high | high | backfired |
-| K5 Japan–Korea | high | medium | medium | low | high | medium | backfired |
+| Case | Form | Conc. | Subst. | Time to replace | Cohesion | Dependence | State control | Outcome |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| K1 Oil embargo | cut | medium | medium | **high** | low | high | high | partly worked |
+| K2 CIPEC | price | medium | high | medium | medium | high | medium | failed |
+| K3 Tin council | price | medium | high | medium | medium | medium | medium | backfired |
+| K4 China–Japan | cut | high | low | medium | low | high | high | backfired |
+| K5 Japan–Korea | cut | high | medium | medium | low | high | medium | backfired |
+| K6 Nuclear safeguards | **condition** | high | low | **high** | medium | high | high | worked |
+| K7 EU data flows | **condition** | high | medium | medium | high | high | high | worked |
+| K8 CoCom | cut | high | medium | **high** | low | low | medium | partly worked |
+| K9 Dutch and Japanese controls | condition | high | low | low | medium | high | medium | too early |
 
 ### Rules of thumb
 
-1. **Leverage only held where the target needed more than 5 years to replace supply.** The only case that partly worked (K1) is the only one scored high on time to replace.
-2. **Supply management fails outright when substitutes are easy.** The copper (K2) and tin (K3) cases both failed or backfired.
-3. **A near-monopoly is not enough if the target can diversify within a few years.** China in 2010 and Japan in 2019 both backfired.
-4. **Even a cut that works makes buyers organise.** The 1973 embargo led to the International Energy Agency, stockpiles and new supply.
+1. **Conditions did better than cuts.** Both condition cases worked (K6, K7). No cut fully worked, and both price schemes failed or backfired.
+2. **Cuts only held where the target needed more than 5 years to replace supply.** The two that partly worked (K1, K8) scored high on time to replace; the two that backfired (K4, K5) did not.
+3. **A condition can work even when the target could get around it within a few years** (K7). Both condition cases asked for something narrow and specific that the target could meet while still getting what it wanted.
+4. **Supply management fails when substitutes are easy** (K2, K3).
+5. **Even leverage that works wears down,** unless it becomes the normal terms of trade, as nuclear safeguards did.
+6. **A big power will give ground on a sensitive security matter if the condition is specific and the alternative is costly:** the US changed its intelligence rules to keep EU data flowing (K7).
 
-**Variables that don't separate success from failure:** dependence on the target, state control, cohesion and concentration. Only **time to replace** does.
+**What separates the outcomes:** the form of leverage best of all. Time to replace still separates the cuts, and substitutability the price schemes. Concentration, dependence on the target and state control don't separate them.
 
-**Factors the variables may miss:** the kind of demand (and whether the target can save face), whether the supplier gains anyway, market conditions, stockpiles and money, leakage through intermediaries, and ambiguity over intent.
+**Factors the variables may miss:** how narrow the demand is and whether the target can meet it without losing face, whether supply keeps flowing to those who comply, whether the supplier gains anyway, market conditions, stockpiles and money, leakage, and ambiguity over intent.
+
+**Caveat:** there are only two condition cases, and the new case scores were drafted by someone who knew the outcomes.
 
 Details: [`notes/step3_patterns.md`](notes/step3_patterns.md).
 
@@ -152,19 +180,22 @@ Five of these (EUV, both ArF tools, Taiwan's fabs, Tokyo Electron) are also sing
 
 **Nearly all holders rely on the US:** 32 of 35 rows score high on dependence on the US for security or markets. And 34 of 35 governments can direct their firms only through export licensing.
 
-**Closest past case (by score distance, with ties counted for each case):**
+**Closest past case (by score distance, with ties counted for each case; K9 left out):**
 
-| Case | Rows |
-| --- | --- |
-| Japan–Korea 2019 (backfired) | 21 |
-| CIPEC (failed) | 12 |
-| China–Japan 2010 (backfired) | 9 |
-| Tin council (backfired) | 3 |
-| Oil embargo (partly worked) | 2 (both ties) |
+| Case | Form | Rows |
+| --- | --- | --- |
+| EU data flows (worked) | condition | 15 |
+| CIPEC (failed) | price | 12 |
+| Nuclear safeguards (worked) | condition | 6 |
+| Japan–Korea 2019 (backfired) | cut | 5 |
+| Tin council (backfired) | price | 2 |
+| Oil embargo (partly worked) | cut | 2 |
+| China–Japan 2010 (backfired) | cut | 1 |
 
 **Reading:**
-- **For most of today's chokepoints,** a threat to cut supply resembles past cases that failed or backfired. That supports the hypothesis that conditions on supply are more credible than threats.
-- **The strongest rows are a mix no past case had.** EUV, ArF, Taiwan's fabs and Tokyo Electron are as concentrated as the cases that backfired, but as slow to replace as oil was in 1973. So the five past cases don't directly cover them.
+- **The strongest rows now have a close match.** EUV, ArF immersion, ArF dry, Tokyo Electron and Taiwan's fabs are all closest to nuclear safeguards, a condition that worked.
+- **This reverses the earlier reading.** With only the original five cases, all cuts and price schemes, most rows looked like cases that backfired. That reflected the case set, not the chokepoints.
+- **The measure compares structure, not use.** Used as conditions, the chokepoints look like the cases that worked. Used as cuts, rule 2 applies: only 8 of 35 rows take the US more than 5 years to replace, so a threat from the rest would look like the cuts that backfired.
 
 Details: [`results/step4_profile.md`](results/step4_profile.md), [`scoring/chokepoints_final.csv`](scoring/chokepoints_final.csv), [`results/profile_distances.csv`](results/profile_distances.csv).
 
@@ -227,6 +258,10 @@ The rule was written down before any ask was judged. The plan's sort is: "coordi
 **The working hypothesis holds:** the credible asks are conditions that work with US policy, and every threat lands in "avoid".
 
 **Sensitivity:** only one verdict flips under a disputed score. If Japan–Korea 2019 is read as "partly worked" rather than "backfired" (Korea offered its own compensation plan in 2023), A3 could become credible. Changing the other disputed scores (time to replace for the strongest rows, A2's need for leverage, A7's safety value) moves no verdict.
+
+**What the November 2026 cases change:** no verdict flips, but two shift.
+- **A2 (evaluator access) is somewhat stronger:** the EU data case shows the US giving ground on a sensitive security matter.
+- **A3 (binding buyer conditions) has a weaker case for "avoid":** nuclear safeguards were conditions on how buyers used what they bought, and they worked. But there the US was one of the suppliers imposing them, not the target.
 
 Details: [`notes/step6_verdicts.md`](notes/step6_verdicts.md), [`results/asks.csv`](results/asks.csv).
 

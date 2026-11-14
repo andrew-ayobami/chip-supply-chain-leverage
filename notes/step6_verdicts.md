@@ -73,3 +73,18 @@ The verdicts:
 | **A7 safety value**: medium (Andrew) | Low (first draft) | **None.** A7 is "avoid" on credibility either way. |
 
 **The verdict that most depends on a judgment is A3.** Whether binding buyer conditions are credible turns on how one reads Japan–Korea 2019, and on whether conditions passed down several contracts could be enforced without a threat.
+
+## What the November 2026 cases change
+
+Four cases were added (K6–K9). Two of them, nuclear safeguards and EU data flows, are conditions that worked. That bears directly on the verdicts.
+
+- **The hypothesis now has direct support.** Before, every past case was a cut or a price scheme, so "conditions beat threats" was argued, not tested. Now both condition cases worked, while no cut fully worked. Two cases is still thin.
+- **A1 (anti-diversion checks): no change.** Still high credibility.
+- **A2 (evaluator access): somewhat stronger.** In K7 the US changed its signals-intelligence rules, a highly sensitive area, to keep EU data flowing. That shows Washington can give ground on a sensitive matter when the condition is narrow and specific and the alternative is costly. It doesn't show that anti-diversion cooperation leads to evaluator access. That link still needs to be made explicit, as the judges said.
+- **A3 (binding safety conditions on large compute buyers): weaker case for "avoid", but no flip yet.**
+  - **For A3:** in K6, suppliers attached conditions on how buyers used what they bought, and the buyers (allies, including Japan) accepted within months. The strongest chokepoints are closest to this case.
+  - **Against A3:** in K6 the US was itself one of the suppliers imposing the conditions, and the suppliers sold directly to the buyers. In A3 the US is the target, and the coalition sits several contract steps upstream of the labs.
+  - **A possible route:** nuclear safeguards travel with the material (Australia required them "from the time uranium leaves Australia"). A chip version would attach end-use conditions that travel down the supply chain, agreed with the US rather than imposed on it. This is a suggestion for the AI-safety revisions, not something the project has tested.
+- **A5–A7 (withholding supply, coordinating prices, threatening to sell to China): no change.** Cuts only partly held where replacement took more than five years (true for 8 of 35 rows), and price schemes failed in both cases.
+- **K9 (Dutch and Japanese controls, 2023) shows what alignment bought:** each country kept its own licensing and wording, and the December 2024 US rule on foreign-made equipment exempted both. Alignment bought procedural autonomy. There is no evidence yet that it bought access or verification rights.
+- **Sensitivity:** A3 now has two routes to flipping. One is reading Japan–Korea 2019 as "partly worked". The other is treating K6 as a close enough precedent for conditions passed down the supply chain.
