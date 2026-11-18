@@ -6,7 +6,7 @@ A project by Andrew, Ayodele and Gideon for the Middle Powers hackathon (Track C
 
 **Working hypothesis:** the credible asks are conditions that can be attached to supply, more so than threats to cut it. 
 
-**Where the work stands:** We've submitted this project at the Hackathon and are awaiting peer-review before building on some of the ideas we identified in the future work section of the paper: https://drive.google.com/file/d/136G7zb7bu-BkI16zH5SedE39qHyg6rF7/view?usp=drive_link.
+**Where the work stands:** We've submitted this project at the Hackathon on 1 November 2026, and we revised the paper on 18 November following helpful reviews from judges and peers.
 
 ---
 
@@ -203,24 +203,32 @@ Details: [`results/step4_profile.md`](results/step4_profile.md), [`scoring/choke
 
 ## Step 5 · The asks
 
-Four asks, plus three moves to test as things to avoid. A fifth ask, a joint consultation seat in US export-control rule-making, was dropped as too unlikely on its face to be worth testing.
+Four asks, plus three moves to test as things to avoid. A further ask, a joint consultation seat in US export-control rule-making, was dropped as too unlikely on its face to be worth testing. One more ask, A8, was added in November 2026, after the hackathon reviews, and judged under the same rules.
 
 | ID | Item | Needs a threat or condition on supply? | Safety value |
 | --- | --- | --- | --- |
 | A1 | Shared anti-diversion and end-use checks | No: it is what US export controls already aim at | High: acts directly on chips reaching actors with no safety oversight |
 | A2 | Frontier model access for members' governments and evaluators | Yes (uncertain): labs already share some access, but the White House reportedly asked them to delay UK testing in 2026 | Medium: testing helps only if findings change what is deployed |
 | A3 | Safety conditions on buyers above a compute threshold (evaluations, incident reporting) | Yes: the clearest "condition on supply" | High: acts directly on frontier developers |
-| A4 | Support for hardware verification features, e.g. location checks | Yes, aimed at chip designers: US bills point the same way, but Nvidia opposes it | Medium: an enabler for anti-diversion checks and for verifying future agreements |
+| A4 | Support for hardware verification features, e.g. location checks | Yes, aimed at chip designers: Nvidia opposes mandates, though it offers opt-in location checks | Medium: an enabler for anti-diversion checks and for verifying future agreements |
 | A5 | *To avoid?* Withholding supply | It is a threat to cut | Low |
 | A6 | *To avoid?* Coordinating prices | It is supply management | Low |
 | A7 | *To avoid?* Threatening to sell to China | It is a threat | Medium (contested): could ease US–China race pressure and keep China in shared safety efforts, but adds to China's frontier and military AI capacity |
+| A8 | Shared registry of advanced chipmaking tools (added November 2026) | Partly: the data is the coalition's own | Medium: an enabler for anti-diversion checks and for verifying any future limits on chipmaking capacity |
 
 **Notes:**
 - **Only A1 matches what the US already wants.** The others need some leverage behind them.
 - **A3 is the hardest to enforce.** The coalition's chokepoints sit upstream, at the tool, fab and memory makers. So conditions on the labs that buy compute would have to be passed down through several contracts.
+- **A4 has more support than we first assessed.** Nvidia opposes mandated tracking and remote kill switches, but in December 2025 it built opt-in software that estimates which country its Blackwell chips are running in. So the resistance is to compulsion, not the technology. The Chip Security Act, which would require location checks on exported AI chips, advanced in the House in 2026 but is not law. Location checks are the part that is feasible today; checks on how chips are used are still research, roughly four to eight years from deployment by one estimate.
+- **A8 adds little for the most advanced tools, but fills real gaps further down.** There are only a few hundred EUV machines, all made and serviced by ASML, so their whereabouts are already known. The gaps are where diversion happens:
+  - fabs reportedly run under other companies' names;
+  - older lithography tools that can still legally go to most Chinese buyers, some reportedly upgraded through secondary channels;
+  - leaks through toolmakers' own channels, such as the $252 million Applied Materials settlement in 2026 over ion implanters shipped to SMIC through its Korean subsidiary.
+
+  The information mostly exists, but it is split across toolmakers and governments. A registry joins it up and gives any future agreement on chipmaking capacity a baseline.
 - **The safety-value scores are judgments** made against a rule written before scoring.
 
-Details, including what each ask requires of the US and who has to agree: [`notes/step5_asks.md`](notes/step5_asks.md), [`results/asks.csv`](results/asks.csv).
+Details, including what each ask requires of the US and who has to agree: [`notes/step5_asks.md`](notes/step5_asks.md), [`results/asks.csv`](results/asks.csv). A8 is described in this README only for now.
 
 ---
 
@@ -236,7 +244,7 @@ The rule was written down before any ask was judged. The plan's sort is: "coordi
 | Credibility ↓ / Safety value → | low | medium | high |
 | --- | --- | --- | --- |
 | **high** | | | **A1** |
-| **medium** | | **A2, A4** | |
+| **medium** | | **A2, A4, A8** | |
 | **low** | A5, A6 | A7 | A3 |
 
 | Coordinate on | Avoid |
@@ -244,11 +252,12 @@ The rule was written down before any ask was judged. The plan's sort is: "coordi
 | **A1** Shared anti-diversion and end-use checks | **A3** Binding safety conditions on large compute buyers |
 | **A2** Model access for members' evaluators, negotiated alongside A1 | **A5** Withholding supply |
 | **A4** Support for US-led hardware verification standards | **A6** Coordinating prices |
-| | **A7** Threatening to sell to China |
+| **A8** Shared registry of advanced chipmaking tools | **A7** Threatening to sell to China |
 
 **Why:**
 - **A1 is what US export controls already aim at,** so it costs the US little.
-- **A2 and A4 can be backed by conditions rather than cuts, and each lines up with part of US policy.** For A2, US labs already give the US and UK institutes pre-deployment access. For A4, Congress's Chip Security Act points the same way.
+- **A2 and A4 can be backed by conditions rather than cuts, and each lines up with part of US policy.** For A2, US labs already give the US and UK institutes pre-deployment access. For A4, Congress's Chip Security Act points the same way, and Nvidia already offers opt-in location checks while opposing mandates.
+- **A8 uses the coalition's own data, so it needs little leverage,** and the US would welcome it. Firms will resist sharing commercially sensitive records, and no registry stops determined smuggling.
 - **The threats (A5, A7) and supply management (A6) look like the past cases that failed or backfired.**
   - 27 of 35 chokepoint rows can be replaced within about 5 years.
   - Nearly every holder relies on the US for its security.
