@@ -48,7 +48,7 @@ The verdicts:
 | Credibility ↓ / Safety value → | low | medium | high |
 | --- | --- | --- | --- |
 | **high** | | | **A1** |
-| **medium** | | **A2, A4** | |
+| **medium** | | **A2, A8, A4** | |
 | **low** | A5, A6 | A7 | A3 |
 
 ## The sort
@@ -58,7 +58,7 @@ The verdicts:
 | **A1** Shared anti-diversion and end-use checks | **A3** Binding safety conditions on large compute buyers, as stated |
 | **A2** Model access for members' evaluators, negotiated alongside A1 | **A5** Withholding supply |
 | **A4** Support for US-led hardware verification standards | **A6** Coordinating prices |
-| | **A7** Threatening to sell to China |
+| | **A7** Threatening to sell to China | **A8** Shared registry of advanced chipmaking tools |
 
 - **The hypothesis holds.** Every credible ask is either something the US already wants or a condition that works with part of US policy. Every threat or supply-management move lands in "avoid".
 - **The tension worth stating:** the ask with the most direct safety value (A3) is not credible as a binding condition. A weaker version could fold into A1, for example know-your-customer checks on very large compute buyers, which the US also pursues. This is a suggestion, not something the project tested.
