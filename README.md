@@ -1,12 +1,13 @@
 # Chip-supply-chain leverage for AI safety
 
-A project by Andrew, Ayodele and Gideon for the Middle Powers hackathon (Track C, Diplomacy). 
+A project by Andrew, Ayodele and Gideon for the Mangrove Middle Powers hackathon (Track C, Diplomacy). 
 
 **Question:** which AI-safety asks can the countries that hold chip-supply-chain chokepoints, other than the US and China, credibly attach to their leverage? What should they coordinate on, and what should they avoid?
 
-**Working hypothesis:** the credible asks are conditions that can be attached to supply, more so than threats to cut it. 
+**Working hypothesis:** AI safety asks from chip-supply-chain countries could work when attached as conditions on continued
+supply, but would fail when brandished as threats to cut supply. 
 
-**Where the work stands:** We've submitted this project at the Hackathon on 1 November 2026, and we revised the paper on 18 November following helpful reviews from judges and peers.
+**Where the work stands:** We submitted this project at the Hackathon on 1 November 2026, and we revised the paper on 18 November following helpful reviews from judges and peers.
 
 ---
 
