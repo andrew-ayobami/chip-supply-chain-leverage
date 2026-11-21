@@ -48,7 +48,7 @@ The verdicts:
 | Credibility ↓ / Safety value → | low | medium | high |
 | --- | --- | --- | --- |
 | **high** | | | **A1** |
-| **medium** | | **A2, A8, A4** | |
+| **medium** | | **A2, A4, A8** | |
 | **low** | A5, A6 | A7 | A3 |
 
 ## The sort
@@ -58,7 +58,7 @@ The verdicts:
 | **A1** Shared anti-diversion and end-use checks | **A3** Binding safety conditions on large compute buyers, as stated |
 | **A2** Model access for members' evaluators, negotiated alongside A1 | **A5** Withholding supply |
 | **A4** Support for US-led hardware verification standards | **A6** Coordinating prices |
-| | **A7** Threatening to sell to China | **A8** Shared registry of advanced chipmaking tools |
+| **A8** Shared registry of advanced chipmaking tools | **A7** Threatening to sell to China |  
 
 - **The hypothesis holds.** Every credible ask is either something the US already wants or a condition that works with part of US policy. Every threat or supply-management move lands in "avoid".
 - **The tension worth stating:** the ask with the most direct safety value (A3) is not credible as a binding condition. A weaker version could fold into A1, for example know-your-customer checks on very large compute buyers, which the US also pursues. This is a suggestion, not something the project tested.
@@ -69,8 +69,8 @@ The verdicts:
 | --- | --- | --- |
 | **K5 outcome** (Japan–Korea): backfired | Partly worked, since Korea offered its own compensation plan in 2023 | The rule "threats only held where replacement took more than 5 years" would weaken, and 21 of today's rows would most resemble a case that partly worked. **A3 could move to medium credibility and flip to "coordinate on".** A5 and A6 stay "avoid" (low safety value), and A7 stays "avoid", because its low credibility rests on alliance dependence, not on the cases. |
 | **Time to replace for the strongest rows** (ASML lithography, Taiwan's fabs): high | Medium, if US fabs and alternatives arrive faster | **None.** No row would then resemble the oil embargo, which makes threat-backed asks even less credible. |
-| **A2 needs leverage**: yes (uncertain) | No, if the US government doesn't actually restrict allied testing | **None.** A2 rises to high credibility but is already "coordinate on". |
-| **A7 safety value**: medium (Andrew) | Low (first draft) | **None.** A7 is "avoid" on credibility either way. |
+| **A2 needs leverage**: yes | No, if the US government doesn't actually restrict allied testing | **None.** A2 rises to high credibility but is already "coordinate on". |
+| **A7 safety value**: medium  | Low (first draft) | **None.** A7 is "avoid" on credibility either way. |
 
 **The verdict that most depends on a judgment is A3.** Whether binding buyer conditions are credible turns on how one reads Japan–Korea 2019, and on whether conditions passed down several contracts could be enforced without a threat.
 
