@@ -1,4 +1,4 @@
-# Leverage profile: today's chokepoints against the past cases
+# Leverage profile: comparing today's chokepoints against the past cases
 
 Built from the final scores for all 35 chokepoint rows (`scoring/chokepoints_final.csv`) and the 8 past cases with known outcomes (`scoring/cases_final.csv`; K9 is left out because its outcome is too early to judge). Run `python src/profile.py` to reproduce it. Per-row distances are in `results/profile_distances.csv`.
 
@@ -6,7 +6,7 @@ Built from the final scores for all 35 chokepoint rows (`scoring/chokepoints_fin
 
 ## Where the leverage is strongest
 
-**Eight rows** score **high on time to replace**, meaning the US would need more than 5 years to build its own supply or a route around the holder. In the past cases, that is what separated the cuts that partly worked from the ones that backfired:
+**Eight rows** score **high on the time-to-replace variable**, meaning the US would need more than 5 years to build its own supply or a route around the holder. In the past cases, that is what separated the cuts that partly worked from the ones that backfired:
 - **Netherlands (ASML):** EUV (C32), ArF immersion (C30), ArF dry (C29) and KrF (C33) lithography
 - **Taiwan:** leading-edge fabrication (C42)
 - **Japan:** front-end resist processing (C19, Tokyo Electron), i-line lithography (C26, Canon) and e-beam mask writers (C14)
@@ -51,6 +51,6 @@ Five of these (C19, C29, C30, C32, C42) are also **single-firm holds with low su
 
 ## Caveats
 
-- **One scorer per case and row, so there is no agreement figure.** Claude drafted the scores; Andrew reviewed and accepted all case and row scores.
+- **One scorer per case and row, so there is no agreement figure.** 
 - **The distances are partly driven by variables that barely vary today** (dependence and state control).
 - **Two condition cases is a thin base.** Both are about verification and legal safeguards rather than chips.
